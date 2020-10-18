@@ -1,0 +1,48 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/Amith Kumar.jpg",
+    "name": "Amith Kumar ",
+    "description": "He is ambitious and constantly tries to become better. One can definitely say that he is a jack of all trades, who doesn't stop until he becomes master of all. At times he may look clumsy but he's a perfectionist. But don't let all of this fool you, because he cares only about the things which are tech related. This electronic enthusiast is obsessed with Ironman and his technology. With all this technological jargon you may think he is a self obsessed, and introvert,but he is a down to earth guy who loves 90s music and thinks everyone is a friend. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "./assets/img/core-team/Rakshak Gowda J.JPG",
+    "name": "Rakshak Gowda J ",
+    "description": "Big movie and anime buff. Cannot hold back when it comes to open world rpg gaming and food. Reliable and fun loving . Adept at coding. Likes to keep up to date with current technology and passionate about AI and Machine Learning. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  }
+]

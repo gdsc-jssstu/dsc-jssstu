@@ -1,0 +1,48 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/Bbake Waikhom.jpg",
+    "name": "Bebikananda Waikhom ",
+    "description": "A hardworking, tech enthusiast introvert with an intention to take up opportunities that are challenging to break the limits of what he can do. Coding is his happy pill. Developing a problem solution is his cup of tea. Other than that his love of music, meditation and a pet monkey on his shoulder is priceless.",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "./assets/img/core-team/Pranav Bedre.jpg",
+    "name": "Pranav Bedre G H ",
+    "description": "Tech enthusiast, budding app developer & an aspiring full stack web developer. Previously worked on custom Android ROMs & kernels. Supporter of open source projects. Socially awkward specie, usually found with his friends or at his computer desk. Converts coke into code. His love for chicken is eternal. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  }
+]
