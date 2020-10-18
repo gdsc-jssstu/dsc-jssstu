@@ -39,3 +39,15 @@ hr {
 .card{
   width:16rem;
 }
+
+.team-sidebar{
+  border-left: 5px solid black;
+}
+
+.team-sidebar ul{
+  list-style-type: none;
+}
+
+.sticky-top {
+  top: 5em;
+}
