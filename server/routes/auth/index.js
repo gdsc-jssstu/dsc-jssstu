@@ -17,7 +17,7 @@ router.post('/register', async (req, res) => {
     // Validate User details
     const validatorResult = validators.registerValidator(userObject);
     if (validatorResult.error)
-        return res.json({
+        return res.status(400).json({
             "success": false,
             "error": validatorResult.error.details[0].message
         });
@@ -25,7 +25,7 @@ router.post('/register', async (req, res) => {
     // Check if user already exists
     const isExistUser = await User.findOne({ where: { email: userObject.email } });
     if (isExistUser)
-        return res.json({
+        return res.status(400).json({
             "success": false,
             "error": "User with same email already exists"
         });
@@ -47,7 +47,7 @@ router.post('/login', async (req, res) => {
     // Validate User details
     const validatorResult = validators.loginValidator(loginObject);
     if (validatorResult.error)
-        return res.json({
+        return res.status(400).json({
             "success": false,
             "error": validatorResult.error.details[0].message
         });
@@ -55,7 +55,7 @@ router.post('/login', async (req, res) => {
     // Find User
     const user = await User.findOne({ where: { email: loginObject.email } });
     if (!user)
-        return res.json({
+        return res.status(400).json({
             "success": false,
             "error": "User does not exist"
         });
@@ -63,7 +63,7 @@ router.post('/login', async (req, res) => {
     // Check if password hashes match
     const isValidPassword = await bcrypt.compare(loginObject.password, user.secret);
     if (!isValidPassword)
-        return res.json({
+        return res.status(400).json({
             "success": false,
             "error": "Password is incorrect"
         });
