@@ -1,0 +1,48 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/Rajat Shrivastava.jpg",
+    "name": "Rajat Shrivastava ",
+    "description": "An avid reader and learner, Rajat is a passionate coder. He loves finding solutions to challenging puzzles and can often be found quizzing his friends on tricky riddles. He's always working on new and interesting projects and constantly experimenting with different technologies. His most recent projects regard machine learning and deep learning. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "./assets/img/core-team/shiv shankar.jpg",
+    "name": "Shiva Shankar H.C ",
+    "description": "He is a computer science enthusiast and he is passionate in developing web and android applications .He is currently working on Deep Neural Networks for facial expressions classifier and has experience in developing applications on Kubernetes and MEAN stack. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  }
+]

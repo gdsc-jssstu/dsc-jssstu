@@ -1,0 +1,71 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/Chir - Chiranthan S.jpg",
+    "name": "Chiranthan S ",
+    "description": "He might seem to be a loquacious person during the beginning. He acts as a spur to your ideas and has never failed in convincing the crowd to believe in him. He is interested in Machine learning and Cloud Computing aspects as well.He often keeps saying 'alone we can do so little, together we can do so much' and strongly believes in ideology of teamwork. An earnest companion one can wish for. He does his homework for the tasks assigned and won't let you down. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "./assets/img/core-team/Nimish Aarya.jpg",
+    "name": "Nimish L ",
+    "description": "Meet Nimish Aarya, a kind of a guy who intends to be loyal to everyone. His personality exceeds him. You can always tell him everything because he is a patient listener. Bits of conversation would spark grand ideas which would swirl around in his head. His curiosity and need to experience things pushed him in new directions. Some of his interesting works are in Image processing and web development. Android development and Machine Learning has caught his interests. Being a part of this club, he too aspires to make the world a better place. You can always reach out to him at any time.",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "./assets/img/core-team/Aurora John.jpg",
+    "name": "Hymavathi B U ",
+    "description": "She is an arrogant girl at the first look but a sweet and easygoing person after you get to know her.An ardent shopaholic and an ailurophile.A sci-fi fan,tech freak,crypto and stock market entusiast. She engages in conversations very easily and loves talking with people.Loves debating as if it's a hobby. Former AIESECer. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  }
+]

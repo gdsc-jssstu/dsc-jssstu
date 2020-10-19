@@ -1,0 +1,25 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/triveni.jpg",
+    "name": "Triveni",
+    "description": "Well organized,eager to learn and ambitious person. Loves to explore new technologies and ideas.Cooking and sketching gives her butterflies. Passionate about meeting new people and learning new concepts. Food and Dogs gives her cloud nine feelings. And Being a minion freak makes her happy as a clam. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  }
+]

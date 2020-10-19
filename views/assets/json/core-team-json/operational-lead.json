@@ -1,0 +1,48 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/Shashawath Vijayakumar.jpeg",
+    "name": "V Shaashwath ",
+    "description": "Being the Operational Lead of the DSC in his college Shashwath has quite a personality to himself. For starters he's got long hair, quite sarcastic and has a fairly good sense of humor ! He's got enough patience and tolerance for the person reading this and him as well. Shash is inclined towards coding and he loves stuff about cosmos. He's pretty impressive with his communication skills and has a very good stage presence ! Shash thinks that Managerial tasks are his forte and he manages to keep up to that and would always know a guy who knows a guy to get your job done in one way or the other. Apparently he loves to work in a team and is good at leading one too! Coding is what he's preferred to love and work with even though he's 3 years into ECE. He's a fun guy and would rather stab you in the front. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "./assets/img/core-team/Vishruth.jpeg",
+    "name": "Vishruth ",
+    "description": "This exceptional tall person is a self-proclaimed introvert. Though most people get to see a silent, observant and curious side of him, those that know him better would say he never shuts his mouth. Full of ideas and solutions for various problems, his jovial and humourous approach to such obstacles make him a fun person to be around. Extremely organized with a touch of OCD, he's great at communication and people. With his seemingly care-free and breezy attitude, he tries his best at making people comfortable and succeeds most of the time. He welcomes any, and all cat videos. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  }
+]

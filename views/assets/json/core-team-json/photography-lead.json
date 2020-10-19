@@ -1,0 +1,48 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/Chyavan MC.jpeg",
+    "name": "Chyavan M C ",
+    "description": "Chyavan is a hardcore film and music enthusiast and a critic. He is constantly trying out videography and music stuff himself. That makes him perfect for the position as the club's photographer and videographer. He's also a pretty decent coder fluent in Python and Java, and is always looking for hackathons and workshops to test his skills (which he fails most of the times but is never gets bored of). ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "./assets/img/core-team/Srivatsa MN.jpeg",
+    "name": "Srivatsa M N ",
+    "description": "He is someone who is always willing to know more and learn about anything that seems interesting. A certain contributor for discussions on current trends with frank opinions. His love for traveling , music , homemade food and thriller movies/TV shows is eternal . He is a canine buff but doesn't disappoint other pets when he comes across them. His strong analytical and logical skills brings out the engineer and the programmer within him. Being a good team worker, he likes to manage and execute tasks given to him in professional manner. A passionate photographer who views the surroundings in unexplored perspectives possesses a constant zeal to improve his skills in the same field. With industry experience related to photography under his belt, he is eager to show his diligence through his works as a photography and video coverage lead of the institution's DSC club. ",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  }
+]
