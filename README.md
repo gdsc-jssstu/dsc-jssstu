@@ -8,11 +8,11 @@ Lorem ipsum
 2. Run `npm install` to install all dependencies.
 3. Run `npm start` to start the app.
 
-## How to run the Client (React)
+## How to run the Client (Next.js)
 
 1. In another terminal, navigate to the `client` directory.
 2. Run `npm install` to install all dependencies.
-3. Run `npm start` to start the app
+3. Run `npm run dev` to start the app
 
 ## Check if they are connected
 
@@ -22,11 +22,13 @@ Lorem ipsum
 4. Enjoy!
 
 ## How to set-up DB for development
+
 Method 1: We have a docker compose yml file in the server dir. Just perform a `docker-compose up`
 from the server subdirectory and you should have a db ready to go
 Method 2: Run a local mysql instance with creds in discord
 
 ## Api endpoints
+
 ```
 POST /api/auth/register  : User registeration               : (implemented)
 POST /api/auth/login     : Return JWT for valid user        : (implemented)
@@ -39,9 +41,11 @@ POST /api/projects       : auth, add new project
 ```
 
 ## Adding authenticated routes in backend
+
 For easy maintainence, I've written a small middlewhere for all routes that require auth
 in `/server/routes/auth/authRoute.js`. So if you were to make a auth route, all you have
 to do is
+
 ```
 const authRoute = require(<path to authRoute.js>);
 const router = ... (usual express stuff)
