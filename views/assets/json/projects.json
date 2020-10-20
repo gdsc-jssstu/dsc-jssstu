@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "fullName": "JSSSTU CS Department",
+    "bio": "CSE department website for teachers to maintain their log of various activities.",
+    "category": "Web",
+    "profilePicture": "./assets/img/projects/jssstucse.jpg",
+    "sessions": [
+      {
+        "id": 71595,
+        "name": "WEB App"
+      }
+    ],
+    "links": [
+      {
+        "title": "website",
+        "url": "https://jssstu-cs.herokuapp.com/",
+        "linkType": "website"
+      },
+      {
+        "title": "github",
+        "url": "https://github.com/dsc-jssstu/jsstu-cse-webapp",
+        "linkType": "github"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "fullName": "Project ReachOut",
+    "profilePicture": "./assets/img/projects/projectReachout.jpeg",
+    "category": "Android",
+    "bio": "Project Reachout is an NGO which mainly focuses on upbringing talents and helping a bunch of specially-abled kids to bring joy in their lives to cope up with this world.",
+    "links": [
+      {
+        "title": "youtube",
+        "url": "https://youtu.be/HMPDMOthVDU",
+        "linkType": "youtube"
+      },
+      {
+        "title": "playStore",
+        "url": "https://play.google.com/store/apps/details?id=com.projectreachout",
+        "linkType": "playStore"
+      }
+    ]
+  }
+]

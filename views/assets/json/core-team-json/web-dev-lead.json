@@ -1,0 +1,48 @@
+[
+  {
+    "displayPicture": "./assets/img/core-team/nitin bhat.jpg",
+    "name": "Nitin Bhat ",
+    "description": "Shining among the crowd is this articulate, CSE 4th year student, Nitin Bhat. At first glance, he appears to be silent and unbothered but that's always because he's brainstorming about ideas on how to build a new app or improve the already existing one he created. He's a Full-stack web developer, well versed with Data structures and algorithms. Major work is in nodejs and has worked as a freelancer using the same skillset. A huge tech enthusiast, he can be found hanging out with friends, coding, playing his guitar or cooking (he makes really tasty chicken). With his I know what I'm doing attitude, he ensures nobody has to worry about anything around him. A person who doesn't like to be idle and doesn't know how to be.",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "#"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "displayPicture": "https://res.cloudinary.com/dykt1kcdk/image/upload/v1585219391/portfolio/1_a3uk0i.jpg",
+    "name": "Binu Kumar",
+    "description": "Innovative, Hardworking, Ambitious and deadline-driven with a huge enthusiast of Web Development. He is open-minded person and give their opinion confidently and straight forward. Contributor of big open source projects like covid19india.org, react-datepicker. He prefer to keep learning, continue challenging himself, and do interesting things that matter.",
+    "links": [
+      {
+        "linkType": "Blog",
+        "link": "https://binu42.netlify.app/"
+      },
+      {
+        "linkType": "Twitter",
+        "link": "#"
+      },
+      {
+        "linkType": "Facebook",
+        "link": "#"
+      },
+      {
+        "linkType": "LinkedIn",
+        "link": "https://www.linkedin.com/in/binu-kumar-5a7038146/"
+      }
+    ]
+  }
+]
