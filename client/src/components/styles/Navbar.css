@@ -1,0 +1,132 @@
+:root {
+    --shadow-color: #ccc;
+    --navbar-color: #fff;
+    --navbar-dark-color: #444;
+}
+
+.nav-padding {
+    display: block;
+    height: 65px;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0;
+    background: var(--navbar-color);
+    box-shadow: 0px 0px 5px 5px var(--shadow-color);
+}
+
+.nav {
+    background: white;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+    list-style: none;
+}
+
+.navlink-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.navitem .react-ripples {
+    width: 100%;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: var(--navbar-dark-color);
+    background: var(--navbar-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.navbar-brand-img-container {
+    margin-left: 30px;
+}
+
+.hamburger {
+    z-index: 1;
+    margin-left: 2%;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger .line {
+    z-index: 2;
+    background: var(--navbar-dark-color);
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+}
+
+.closebtn {
+    display: none;
+}
+
+.closebtn .lineone {
+    z-index: 2;
+    background: var(--navbar-dark-color);;
+    width: 30px;
+    height: 3px;
+    position: fixed;
+    transform: rotate(45deg);
+}
+
+.closebtn .linetwo {
+    z-index: 2;
+    background: var(--navbar-dark-color);;
+    width: 30px;
+    height: 3px;
+    position: fixed;
+    transform: rotate(-45deg);
+}
+
+
+@media only screen and (max-width: 844px) {
+    .nav {
+        background: var(--navbar-color);
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 250px;
+        display: block;
+        z-index: 2;
+        transform: translateX(-250px);
+        transition: transform 250ms ease-out;
+    }
+
+    .navopen {
+        transform: translateX(0px);
+    }
+    
+    .navitem {
+        padding: 5px;
+        height: 70px;
+    }
+    .navitem a {
+        background: var(--navbar-color);
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .closebtn {
+        display: block;
+        margin-top: 32px;
+        padding-bottom: 25px;
+        margin-left: 200px;
+        cursor: pointer;
+    }
+}
