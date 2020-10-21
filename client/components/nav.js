@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
@@ -8,7 +8,7 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
   const logoNavLightRef = useRef(null);
   const logoNavRef = useRef(null);
 
-  var modeText = "Dark Mode";
+  var [isDarkMode, setDarkMode] = useState(false);
 
   const onMenuOpen = () => {
     menuRef.current.style.display = "inherit";
@@ -18,36 +18,34 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
     menuRef.current.style.display = "none";
   };
 
-  const setDarkMode = () => {
-    const bodyClass = document.body.classList;
-    bodyClass.add("dark");
-    localStorage.setItem("dark", true);
+  const darkModeHandler = () => {
     if (logoLightRef) logoLightRef.current.style.display = "none";
     logoNavLightRef.current.style.display = "none";
     if (logoRef) logoRef.current.style.display = "";
     logoNavRef.current.style.display = "";
-    modeText = "Light Mode";
-  };
+    localStorage.setItem("dark", isDarkMode);
+  }
 
-  const setLightMode = () => {
-    const bodyClass = document.body.classList;
-    bodyClass.remove("dark");
-    localStorage.setItem("dark", false);
+  const lightModeHandler = () => {
     if (logoLightRef) logoLightRef.current.style.display = "";
     logoNavLightRef.current.style.display = "";
     if (logoRef) logoRef.current.style.display = "none";
     logoNavRef.current.style.display = "none";
-    modeText = "Dark Mode";
-  };
+    localStorage.setItem("dark", isDarkMode);
+  }
 
   const darkModeToggle = () => {
-    const bodyClass = document.body.classList;
-    bodyClass.contains("dark") ? setLightMode() : setDarkMode();
+    document.body.classList.toggle('dark');
+    setDarkMode(!isDarkMode);
+    if (isDarkMode) {
+      darkModeHandler();
+    } else {
+      lightModeHandler();
+    }
   };
 
   const handleScroll = () => {
     const logoMark = headerRef.current.getBoundingClientRect().top;
-    // console.log(logoMark);
     window.pageYOffset > logoMark
       ? navRef.current.classList.add("navbar-scrolled")
       : navRef.current.classList.remove("navbar-scrolled");
@@ -55,7 +53,11 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
 
   useEffect(() => {
     var dark = localStorage.getItem("dark");
-    dark === "true" ? setDarkMode() : setLightMode();
+    setDarkMode(dark);
+    if (dark)
+      darkModeHandler();
+    else
+      lightModeHandler();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -68,19 +70,19 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="/#home">Home</Link>
             ) : (
-              <>
-                <Link href="/">Home</Link>
-              </>
-            )}
+                <>
+                  <Link href="/">Home</Link>
+                </>
+              )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             {page == "home" ? (
               <Link href="#team">Team</Link>
             ) : (
-              <>
-                <Link href="/team">Team</Link>
-              </>
-            )}
+                <>
+                  <Link href="/team">Team</Link>
+                </>
+              )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/events">Events</Link>
@@ -89,10 +91,10 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#updates">Projects</Link>
             ) : (
-              <>
-                <Link href="/projects">Projects</Link>
-              </>
-            )}
+                <>
+                  <Link href="/projects">Projects</Link>
+                </>
+              )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/resources">Resources</Link>
@@ -101,10 +103,10 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#blog">Blog</Link>
             ) : (
-              <>
-                <Link href="/blog">Blog</Link>
-              </>
-            )}
+                <>
+                  <Link href="/blog">Blog</Link>
+                </>
+              )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/#contact">Contact Us</Link>
@@ -114,7 +116,7 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             onClick={darkModeToggle}
             ref={darkModeRef}
           >
-            {modeText}
+            {isDarkMode ? 'Dark Mode' : 'Light Mode'}
           </h2>
         </div>
         <img
@@ -155,19 +157,19 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="/#home">Home</Link>
             ) : (
-              <>
-                <Link href="/">Home</Link>
-              </>
-            )}
+                <>
+                  <Link href="/">Home</Link>
+                </>
+              )}
           </div>
           <div className="menu-item">
             {page == "home" ? (
               <Link href="#team">Team</Link>
             ) : (
-              <>
-                <Link href="/team">Team</Link>
-              </>
-            )}
+                <>
+                  <Link href="/team">Team</Link>
+                </>
+              )}
           </div>
           <div className="menu-item">
             <Link href="/events">Events</Link>
@@ -176,10 +178,10 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#updates">Projects</Link>
             ) : (
-              <>
-                <Link href="/projects">Projects</Link>
-              </>
-            )}
+                <>
+                  <Link href="/projects">Projects</Link>
+                </>
+              )}
           </div>
           <div className="menu-item">
             <Link href="/resources">Resources</Link>
@@ -188,16 +190,16 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#blog">Blog</Link>
             ) : (
-              <>
-                <Link href="/blog">Blog</Link>
-              </>
-            )}
+                <>
+                  <Link href="/blog">Blog</Link>
+                </>
+              )}
           </div>
           <div className="menu-item">
             <Link href="/#contact">Contact Us</Link>
           </div>
           <div className="menu-item" onClick={darkModeToggle} ref={darkModeRef}>
-            {modeText}
+            {isDarkMode ? 'Dark Mode' : 'Light Mode'}
           </div>
         </div>
         <div className="menu-phone" id="menu-open">
