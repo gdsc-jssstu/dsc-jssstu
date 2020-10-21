@@ -1,25 +1,28 @@
+import { useRef } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
 // import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const darkModeToggle = () => {
-    const bodyClass = document.body.classList;
-    bodyClass.contains("dark")
-      ? bodyClass.remove("dark")
-      : bodyClass.add("dark");
-  };
+  const headerRef = useRef(null);
+  const logoLightRef = useRef(null);
+  const logoRef = useRef(null);
 
   return (
-    <Layout page="home">
+    <Layout
+      page="home"
+      headerRef={headerRef}
+      logoLightRef={logoLightRef}
+      logoRef={logoRef}
+    >
       <Head>
         <title>{siteTitle}</title>
       </Head>
 
       <div className="main" id="home">
         <div className="main-text-holder">
-          <div className="main-text-holder-heading">
+          <div className="main-text-holder-heading" ref={headerRef}>
             <picture>
               <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
               <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
@@ -28,6 +31,7 @@ export default function Home() {
                 data-aos="fade-up"
                 className="logo"
                 alt="DSC JSSSTU"
+                ref={logoRef}
               />
             </picture>
             <picture>
@@ -38,6 +42,7 @@ export default function Home() {
                 data-aos="fade-up"
                 className="logo-light"
                 alt="DSC JSSSTU"
+                ref={logoLightRef}
               />
             </picture>
           </div>
@@ -256,11 +261,7 @@ export default function Home() {
       </div>
 
       <div className="footer container-main  container-main-last">
-        <div
-          className="dark-light-toggle  text-center"
-          id="dark-light-toggle"
-          onClick={darkModeToggle}
-        >
+        <div className="dark-light-toggle  text-center" id="dark-light-toggle">
           <p>I want dark mode</p>
         </div>
       </div>

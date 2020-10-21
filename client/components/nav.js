@@ -1,9 +1,13 @@
 import { useRef, useEffect } from "react";
 import Link from "next/link";
 
-export default function Nav({ page }) {
+export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
   const menuRef = useRef(null);
   const darkModeRef = useRef(null);
+  const navRef = useRef(null);
+  const logoNavLightRef = useRef(null);
+  const logoNavRef = useRef(null);
+
   var modeText = "Dark Mode";
 
   const onMenuOpen = () => {
@@ -18,6 +22,10 @@ export default function Nav({ page }) {
     const bodyClass = document.body.classList;
     bodyClass.add("dark");
     localStorage.setItem("dark", true);
+    if (logoLightRef) logoLightRef.current.style.display = "none";
+    logoNavLightRef.current.style.display = "none";
+    if (logoRef) logoRef.current.style.display = "";
+    logoNavRef.current.style.display = "";
     modeText = "Light Mode";
   };
 
@@ -25,6 +33,10 @@ export default function Nav({ page }) {
     const bodyClass = document.body.classList;
     bodyClass.remove("dark");
     localStorage.setItem("dark", false);
+    if (logoLightRef) logoLightRef.current.style.display = "";
+    logoNavLightRef.current.style.display = "";
+    if (logoRef) logoRef.current.style.display = "none";
+    logoNavRef.current.style.display = "none";
     modeText = "Dark Mode";
   };
 
@@ -33,9 +45,19 @@ export default function Nav({ page }) {
     bodyClass.contains("dark") ? setLightMode() : setDarkMode();
   };
 
+  const handleScroll = () => {
+    const logoMark = headerRef.current.getBoundingClientRect().top;
+    // console.log(logoMark);
+    window.pageYOffset > logoMark
+      ? navRef.current.classList.add("navbar-scrolled")
+      : navRef.current.classList.remove("navbar-scrolled");
+  };
+
   useEffect(() => {
     var dark = localStorage.getItem("dark");
     dark === "true" ? setDarkMode() : setLightMode();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -101,7 +123,7 @@ export default function Nav({ page }) {
           alt="Open Menu"
         />
       </div>
-      <div className="navbar">
+      <div className="navbar" ref={navRef}>
         <div className="navbar-dsc-logo">
           <picture>
             <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
@@ -112,6 +134,7 @@ export default function Nav({ page }) {
               className="logo-nav"
               alt="DSC JSSSTU"
               style={{ marginRight: "45px", marginLeft: "-20px" }}
+              ref={logoNavRef}
             />
           </picture>
           <picture>
@@ -123,6 +146,7 @@ export default function Nav({ page }) {
               className="logo-nav-light"
               alt="DSC JSSSTU"
               style={{ marginRight: "45px", marginLeft: "-20px" }}
+              ref={logoNavLightRef}
             />
           </picture>
         </div>

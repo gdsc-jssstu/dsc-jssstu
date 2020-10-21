@@ -6,7 +6,13 @@ import Nav from "./nav";
 
 export const siteTitle = "DSC JSSSTU";
 
-export default function Layout({ children, page }) {
+export default function Layout({
+  children,
+  page,
+  headerRef,
+  logoLightRef,
+  logoRef,
+}) {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -80,7 +86,12 @@ export default function Layout({ children, page }) {
       <div className="error-message" id="error-message" />
 
       <div>
-        <Nav page={page} />
+        <Nav
+          page={page}
+          headerRef={headerRef}
+          logoLightRef={logoLightRef}
+          logoRef={logoRef}
+        />
 
         <div name="top" id="top">
           {children}

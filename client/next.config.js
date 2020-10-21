@@ -6,4 +6,8 @@ module.exports = withPWA({
     disable: prod ? false : true,
     dest: "public",
   },
+  experimental: {
+    modern: true,
+    polyfillsOptimization: true,
+  },
 });
