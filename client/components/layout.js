@@ -3,7 +3,6 @@ import Head from "next/head";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Nav from "./nav";
-import Footer from "./footer";
 
 export const siteTitle = "DSC JSSSTU";
 
@@ -67,36 +66,15 @@ export default function Layout({ children, page }) {
         <title>{siteTitle}</title>
 
         {/* <!--     Links to css CDN's     --> */}
-        <link
-          defer
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
           rel="stylesheet"
-        />
+        /> */}
 
         {/* <!--     Links to css files     --> */}
-        <link defer rel="stylesheet" href="css/index.css" />
-        <link defer rel="stylesheet" href="css/svg.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/svg.css" />
       </Head>
-
-      {/* <div id="preloader">
-        <div id="status">
-          <div className="showbox">
-            <div className="loader">
-              <svg className="circular" viewBox="25 25 50 50">
-                <circle
-                  className="path"
-                  cx="50"
-                  cy="50"
-                  r="20"
-                  fill="none"
-                  strokeWidth="2"
-                  strokeMiterlimit="10"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="success-message" id="success-message" />
       <div className="error-message" id="error-message" />
@@ -108,8 +86,6 @@ export default function Layout({ children, page }) {
           {children}
         </div>
       </div>
-
-      <Footer page={page} />
     </div>
   );
 }

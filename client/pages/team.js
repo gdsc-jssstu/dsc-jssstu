@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 // import Link from "next/link";
 
@@ -21,37 +22,42 @@ export default function Team() {
               Presenting board of 2020-2021
             </h2>
           </div>
-          <div className="main-down-arrow" id="down-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
-              <g
-                id="Group_2"
-                data-name="Group 2"
-                transform="translate(-966 -967.48)"
+          <Link href="#our-work">
+            <div className="main-down-arrow" id="down-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 28.55 44.393"
               >
-                <path
-                  id="Path_1"
-                  data-name="Path 1"
-                  d="M982,967.98V1011.1"
-                  transform="translate(-1.5)"
-                  fill="none"
-                  stroke="#141414"
-                  strokeLinecap="round"
-                  strokeWidth={1}
-                />
-                <path
-                  id="Path_2"
-                  data-name="Path 2"
-                  d="M966.813,997.8l13.973,13.577L994.363,997.8"
-                  transform="translate(-0.313)"
-                  fill="none"
-                  stroke="#141414"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1}
-                />
-              </g>
-            </svg>
-          </div>
+                <g
+                  id="Group_2"
+                  data-name="Group 2"
+                  transform="translate(-966 -967.48)"
+                >
+                  <path
+                    id="Path_1"
+                    data-name="Path 1"
+                    d="M982,967.98V1011.1"
+                    transform="translate(-1.5)"
+                    fill="none"
+                    stroke="#141414"
+                    strokeLinecap="round"
+                    strokeWidth={1}
+                  />
+                  <path
+                    id="Path_2"
+                    data-name="Path 2"
+                    d="M966.813,997.8l13.973,13.577L994.363,997.8"
+                    transform="translate(-0.313)"
+                    fill="none"
+                    stroke="#141414"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1}
+                  />
+                </g>
+              </svg>
+            </div>
+          </Link>
           <img
             src="images/team.svg"
             className="main-image"
@@ -60,7 +66,7 @@ export default function Team() {
         </div>
         <div
           className="container-main holded-container container-main-last"
-          id="our-work-scroll"
+          id="our-work"
         >
           <h1
             className="barlow-medium text-center"

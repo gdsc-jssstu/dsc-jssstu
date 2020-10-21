@@ -4,13 +4,20 @@ import Link from "next/link";
 // import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const darkModeToggle = () => {
+    const bodyClass = document.body.classList;
+    bodyClass.contains("dark")
+      ? bodyClass.remove("dark")
+      : bodyClass.add("dark");
+  };
+
   return (
     <Layout page="home">
       <Head>
         <title>{siteTitle}</title>
       </Head>
 
-      <div className="main" id="home-scroll">
+      <div className="main" id="home">
         <div className="main-text-holder">
           <div className="main-text-holder-heading">
             <picture>
@@ -41,40 +48,42 @@ export default function Home() {
             which inspires thousands. Join Us!
           </p>
         </div>
-        <div className="main-down-arrow" id="down-arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
-            <g
-              id="Group_2"
-              data-name="Group 2"
-              transform="translate(-966 -967.48)"
-            >
-              <path
-                id="Path_1"
-                data-name="Path 1"
-                d="M982,967.98V1011.1"
-                transform="translate(-1.5)"
-                fill="none"
-                stroke="#141414"
-                strokeLinecap="round"
-                strokeWidth={1}
-              />
-              <path
-                id="Path_2"
-                data-name="Path 2"
-                d="M966.813,997.8l13.973,13.577L994.363,997.8"
-                transform="translate(-0.313)"
-                fill="none"
-                stroke="#141414"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-              />
-            </g>
-          </svg>
-        </div>
+        <Link href="#our-work">
+          <div className="main-down-arrow" id="down-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
+              <g
+                id="Group_2"
+                data-name="Group 2"
+                transform="translate(-966 -967.48)"
+              >
+                <path
+                  id="Path_1"
+                  data-name="Path 1"
+                  d="M982,967.98V1011.1"
+                  transform="translate(-1.5)"
+                  fill="none"
+                  stroke="#141414"
+                  strokeLinecap="round"
+                  strokeWidth={1}
+                />
+                <path
+                  id="Path_2"
+                  data-name="Path 2"
+                  d="M966.813,997.8l13.973,13.577L994.363,997.8"
+                  transform="translate(-0.313)"
+                  fill="none"
+                  stroke="#141414"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1}
+                />
+              </g>
+            </svg>
+          </div>
+        </Link>
         <img src="images/landing.svg" className="main-image" alt="Home Page" />
       </div>
-      <div className="container-main holded-container" id="our-work-scroll">
+      <div className="container-main holded-container" id="our-work">
         <h1 data-aos="fade-up" className=" text-center">
           Our Focus
         </h1>
@@ -91,7 +100,7 @@ export default function Home() {
           WomenTechies, and tons of insightful workshops!
         </p>
       </div>
-      <div className="container-main holded-container" id="team-scroll">
+      <div className="container-main holded-container" id="team">
         <h1 data-aos="fade-up" className=" text-center">
           Get to know the team
         </h1>
@@ -99,13 +108,13 @@ export default function Home() {
           We’ve got a strong team filled with caffeine addicted developers,
           gradients loving designers and machine like working managers.
         </p>
-        <a href="/team">
+        <Link href="/team">
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Meet The Team</div>
           </div>
-        </a>
+        </Link>
       </div>
-      <div className="container-main holded-container" id="updates-scroll">
+      <div className="container-main holded-container" id="updates">
         <h1 data-aos="fade-up" className=" text-center">
           Updates
         </h1>
@@ -125,7 +134,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="container-main holded-container" id="updates-scroll">
+      <div className="container-main holded-container" id="blog">
         <h1 data-aos="fade-up" className=" text-center">
           Our Blogs
         </h1>
@@ -141,7 +150,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="container-main holded-container" id="contact-scroll">
+      <div className="container-main holded-container" id="contact">
         <h1 data-aos="fade-up" className=" text-center">
           Contact us
         </h1>
@@ -247,7 +256,11 @@ export default function Home() {
       </div>
 
       <div className="footer container-main  container-main-last">
-        <div className="dark-light-toggle  text-center" id="dark-light-toggle">
+        <div
+          className="dark-light-toggle  text-center"
+          id="dark-light-toggle"
+          onClick={darkModeToggle}
+        >
           <p>I want dark mode</p>
         </div>
       </div>
