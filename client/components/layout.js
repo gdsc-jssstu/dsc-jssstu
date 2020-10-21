@@ -305,6 +305,16 @@ export default function Layout({ children, page }) {
                     <i className="fa fa-instagram" />
                   </a>
                   <a>&nbsp;</a>
+
+                  <a
+                    id="social_button"
+                    href="https://www.linkedin.com/company/dsc-jssstu"
+                    target="_blank"
+                  >
+                    <i className="fa fa-linkedin" />
+                  </a>
+                  <a>&nbsp;</a>
+
                   <a
                     id="social_button"
                     href="https://github.com/dsc-jssstu"
@@ -313,14 +323,7 @@ export default function Layout({ children, page }) {
                     <i className="fa fa-github" />
                   </a>
                   <a>&nbsp;</a>
-                  <a
-                    id="social_button"
-                    href="https://www.facebook.com/dsc.jsstu.3"
-                    target="_blank"
-                  >
-                    <i className="fa fa-facebook" />
-                  </a>
-                  <a>&nbsp;</a>
+
                   <a>&nbsp;</a>
                 </span>
               </div>
@@ -396,7 +399,7 @@ export default function Layout({ children, page }) {
                   fontSize: "14px",
                 }}
               >
-                © 2019 <b>DSC JSSSTU</b> <span className="hide-bar"> | </span>
+                © 2020 <b>DSC JSSSTU</b> <span className="hide-bar"> | </span>
                 <a id="details_redirect" href="#">
                   <b>
                     Developed with{" "}
