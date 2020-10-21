@@ -399,7 +399,7 @@ export default function Layout({ children, page }) {
                   fontSize: "14px",
                 }}
               >
-                © 2019 <b>DSC JSSSTU</b> <span className="hide-bar"> | </span>
+                © 2020 <b>DSC JSSSTU</b> <span className="hide-bar"> | </span>
                 <a id="details_redirect" href="#">
                   <b>
                     Developed with{" "}
