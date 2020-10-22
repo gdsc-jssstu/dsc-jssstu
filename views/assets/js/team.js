@@ -1,5 +1,5 @@
-$('.flip-card').on('click',
-  function(){
-    $(this).toggleClass('flipped')
-  }
-)
+function flip(id)
+{
+    el=document.getElementById(id);
+    el.classList.toggle('flipped');
+}

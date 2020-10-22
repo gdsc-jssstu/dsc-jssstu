@@ -5,8 +5,8 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Bootstrap CSS
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
 	<!-- Font Awesome-->
 	<script src="https://kit.fontawesome.com/8dc6827451.js" crossorigin="anonymous"></script>
 	<!--Custom Stylesheet-->
@@ -19,18 +19,41 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 py-3 d-flex justify-content-center"> <img src="./assets/img/team.png" class="img-responsive" alt="team-header" /> </div>
-				<div class="col-md-4 my-auto py-3">
+				<div class="col-md-4 my-auto py-3 team-header-content">
 					<h1 class="d-flex justify-content-center justify-content-md-start">Team</h1>
 					<p class="d-flex justify-content-center justify-content-md-start">One log creates a small fire, adequate to warm you up, add just a few more pieces to blast an immense bonfire, large enough to warm up your entire circle; needless to say that individuality totalTeams but teamwork dynamites. At DSC JSSSTU celebrate teamwork and attribute the success of DSC to the wonderful individuals who put untiring efforts for it.</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row pl-0 pl-lg-5">
 			<!--Team Cards-->
-			<div class="col-xl-8 order-12 order-xl-1">
+			<div class="col-xl-10 order-12 order-xl-1">
 				<section class="team-cards pb-5">
+
+					<!--Staff Coordinator-->
+					<div class="container chapter-lead py-5">
+						<div class="row">
+							<h2 class="team-row-heads mx-auto">STAFF COORDINATOR</h2>
+							<hr/> </div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card m-3 mx-auto chapter-lead-card" style="width: 85%">
+									<div class="row no-gutters">
+										<div class="col-md-4"> <img src="./assets/img/face.jpg" class="card-img" alt="team-lead"> </div>
+										<div class="col-md-8">
+											<div class="card-body text-md-left text-center">
+												<h5 class="card-title">Card title</h5>
+												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					<!--Team Lead-->
 					<div class="container chapter-lead py-5">
 						<div class="row">
@@ -60,7 +83,7 @@
 								<hr/> </div>
 							<div class="row">
 								<div class="col-xl-4 col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="1" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -80,7 +103,7 @@
 									</div>
 								</div>
 								<div class="col-xl-4 col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="2" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -100,7 +123,7 @@
 									</div>
 								</div>
 								<div class="col-xl-4 col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="3" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -131,7 +154,7 @@
 								<h2 class="team-row-heads mx-auto">MACHINE LEARNING</h2> </div>
 							<div class="row">
 								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="4" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -151,7 +174,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="5" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -171,7 +194,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="6" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -191,7 +214,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="7" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -218,7 +241,7 @@
 								<h2 class="team-row-heads mx-auto">WEB</h2> </div>
 							<div class="row">
 								<div class="col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="8" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -238,7 +261,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="9" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -265,7 +288,7 @@
 								<h2 class="team-row-heads mx-auto">ANDROID</h2> </div>
 							<div class="row">
 								<div class="col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="10" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -285,7 +308,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="11" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -311,7 +334,7 @@
 							<div class="row">
 								<div class="col-md-6 py-5">
 									<h2 class="team-row-heads text-center">FLUTTER</h2>
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="12" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -332,7 +355,7 @@
 								</div>
 								<div class="col-md-6 py-5">
 									<h2 class="team-row-heads text-center">TECH ADVISOR</h2>
-									<div class=" flip-card card m-3 mx-auto">
+									<div class="flip-card card m-3 mx-auto" id="13" onClick="flip(this.id)">
 										<div class="flip-card-inner">
 											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 												<div class="card-body text-center">
@@ -364,7 +387,7 @@
 							<h2 class="team-row-heads mx-auto">COMM AND OUTREACH</h2> </div>
 						<div class="row">
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="14" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -384,7 +407,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="15" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -411,7 +434,7 @@
 							<h2 class="team-row-heads mx-auto">GRAPHIC DESIGNER</h2> </div>
 						<div class="row">
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="16" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -431,7 +454,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="17" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -458,7 +481,7 @@
 							<h2 class="team-row-heads mx-auto">EDITORIAL</h2> </div>
 						<div class="row">
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="18" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -478,7 +501,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="19" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -509,7 +532,7 @@
 							<h2 class="team-row-heads mx-auto">EVENT COORDINATOR</h2> </div>
 						<div class="row">
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="20" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -529,7 +552,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="21" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -555,7 +578,7 @@
 						<div class="row">
 							<div class="col-md-6 py-5">
 								<h2 class="team-row-heads text-center">OP EXEC</h2>
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="22" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -576,7 +599,7 @@
 							</div>
 							<div class="col-md-6 py-5">
 								<h2 class="team-row-heads text-center">PR</h2>
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="23" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -603,7 +626,7 @@
 							<h2 class="team-row-heads mx-auto">VIDEO EDITORS</h2> </div>
 						<div class="row">
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="24" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -623,7 +646,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class=" flip-card card m-3 mx-auto">
+								<div class="flip-card card m-3 mx-auto" id="25" onClick="flip(this.id)">
 									<div class="flip-card-inner">
 										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
 											<div class="card-body text-center">
@@ -647,39 +670,16 @@
 				</section>
 			</div>
 			<!--Staff Coordinator and Year Timeline-->
-			<div class="col-xl-4 order-1 order-xl-12 pb-3 mb-3 py-lg-5 my-lg-5">
+			<div class="col-xl-2 order-1 order-xl-12 pb-3 mb-3 py-lg-5 my-lg-5">
 				<section class="team-sidebar sticky-top">
 					<div class="container">
 						<div class="row side-row">
-							<div class="col-xl-7 order-3 order-xl-1">
+							<div class="col-xl-12 order-3 order-xl-1">
 								<div class="pt-5 px-5 horizontal">
 									<p class="d-flex justify-content-around"> <span>2018</span> <span>2019</span> <span class="active">2020</span> <span>2021</span> </p>
 								</div>
-								<!--For larger view-->
-								<div class="card mx-auto staff-card-lg mx-auto"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-									<div class="card-body text-center">
-										<h5 class="card-title">Card title</h5>
-										<p class="font-weight-bold">Staff Co-ordinator</p>
-										<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									</div>
-								</div>
-								<!--For smaller view-->
-								<div class="card m-3 mx-auto chapter-lead-card staff-card-md" style="width: 85%">
-									<div class="row no-gutters">
-										<div class="col-md-4"> <img src="./assets/img/face.jpg" class="card-img" alt="team-lead"> </div>
-										<div class="col-md-8">
-											<div class="card-body text-md-left text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="font-weight-bold">Staff Co-ordinator</p>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
-							<div class="col-xl-3 pr-5 py-5 order-1 order-xl-3 vertical">
+							<div class="col-xl-12 pr-5 py-5 order-1 order-xl-3 vertical">
 								<ul>
 									<li class="p-3">2018</li>
 									<li class="p-3">2019</li>
@@ -693,9 +693,6 @@
 			</div>
 		</div>
 	</div>
-	<!--jQuery and Bootstrap Bundle (includes Popper) -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<script src="./assets/js/team.js"></script>
 </body>
 
