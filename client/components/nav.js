@@ -135,7 +135,6 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
               data-aos="fade-up"
               className="logo-nav"
               alt="DSC JSSSTU"
-              style={{ marginRight: "45px", marginLeft: "-20px" }}
               ref={logoNavRef}
             />
           </picture>
@@ -147,7 +146,6 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
               data-aos="fade-up"
               className="logo-nav-light"
               alt="DSC JSSSTU"
-              style={{ marginRight: "45px", marginLeft: "-20px" }}
               ref={logoNavLightRef}
             />
           </picture>
