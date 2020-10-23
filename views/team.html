@@ -5,8 +5,6 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap CSS
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
 	<!-- Font Awesome-->
 	<script src="https://kit.fontawesome.com/8dc6827451.js" crossorigin="anonymous"></script>
 	<!--Custom Stylesheet-->
@@ -15,37 +13,39 @@
 </head>
 
 <body>
+<div class="team">
 	<section class="team-header pt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 py-3 d-flex justify-content-center"> <img src="./assets/img/team.png" class="img-responsive" alt="team-header" /> </div>
-				<div class="col-md-4 my-auto py-3 team-header-content">
-					<h1 class="d-flex justify-content-center justify-content-md-start">Team</h1>
-					<p class="d-flex justify-content-center justify-content-md-start">One log creates a small fire, adequate to warm you up, add just a few more pieces to blast an immense bonfire, large enough to warm up your entire circle; needless to say that individuality totalTeams but teamwork dynamites. At DSC JSSSTU celebrate teamwork and attribute the success of DSC to the wonderful individuals who put untiring efforts for it.</p>
+				<div class="col-md-8 team-header-image">
+					<img src="./assets/img/team.png" alt="team-header" />
+				</div>
+				<div class="col-md-4 team-header-content">
+					<h1 class="team-header-content-h1">Team</h1>
+					<p class="team-header-content-p">One log creates a small fire, adequate to warm you up, add just a few more pieces to blast an immense bonfire, large enough to warm up your entire circle; needless to say that individuality totalTeams but teamwork dynamites. At DSC JSSSTU celebrate teamwork and attribute the success of DSC to the wonderful individuals who put untiring efforts for it.</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<div class="container">
+	<div class="container team-cards-container">
 		<div class="row">
 			<!--Team Cards-->
-			<div class="col-xl-11 order-12 order-xl-1">
-				<section class="team-cards pb-5">
-
+			<div class="col-xl-12">
+				<section class="team-cards">
 					<!--Staff Coordinator-->
-					<div class="container chapter-lead py-5">
+					<div class="container staff-lead">
 						<div class="row">
-							<h2 class="team-row-heads mx-auto">STAFF COORDINATOR</h2>
+							<h2 class="team-row-heads ">STAFF COORDINATOR</h2>
 							<hr/> </div>
 						<div class="row">
 							<div class="col-md-12">
-								<div class="card m-3 mx-auto chapter-lead-card" style="width: 85%">
+								<div class="flip-card chapter-lead-card" style="width: 85%">
 									<div class="row no-gutters">
-										<div class="col-md-4"> <img src="./assets/img/face.jpg" class="card-img" alt="team-lead"> </div>
+										<div class="col-md-4"> <img src="./assets/img/face.jpg" class="card-img-top" alt="team-lead"> </div>
 										<div class="col-md-8">
 											<div class="card-body text-md-left text-center">
 												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
+												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
 												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 											</div>
 										</div>
@@ -53,322 +53,324 @@
 								</div>
 							</div>
 						</div>
-
-					<!--Team Lead-->
-					<div class="container chapter-lead py-5">
-						<div class="row">
-							<h2 class="team-row-heads mx-auto">COMMUNITY LEAD</h2>
-							<hr/> </div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="card m-3 mx-auto chapter-lead-card" style="width: 85%">
-									<div class="row no-gutters">
-										<div class="col-md-4"> <img src="./assets/img/face.jpg" class="card-img" alt="team-lead"> </div>
-										<div class="col-md-8">
-											<div class="card-body text-md-left text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--Each card is in col, with flip-card-front and flip-card-back-->
-						<!--EXECOM-->
-						<div class="container team-card-row py-5">
+						<!--Team Lead-->
+						<div class="container chapter-lead">
 							<div class="row">
-								<h2 class="team-row-heads mx-auto">EXECOM</h2>
+								<h2 class="team-row-heads ">COMMUNITY LEAD</h2>
 								<hr/> </div>
 							<div class="row">
-								<div class="col-xl-4 col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="1" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
+								<div class="col-md-12">
+									<div class="flip-card chapter-lead-card" style="width: 85%">
+										<div class="row no-gutters">
+											<div class="col-md-4"> <img src="./assets/img/face.jpg" class="card-img-top" alt="team-lead"> </div>
+											<div class="col-md-8">
+												<div class="card-body text-md-left text-center">
 													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
 													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
-												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="2" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
-												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="3" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
-												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<!--TECHINCAL-->
-						<div class="row pt-5">
-							<h2 class="mx-auto">TECHNICAL TEAM</h2>
-							<hr/> </div>
-						<!--Machine Learning-->
-						<div class="container team-card-row py-5">
-							<div class="row">
-								<h2 class="team-row-heads mx-auto">MACHINE LEARNING</h2> </div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="4" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
+							<!--Each card is in col, with flip-card-front and flip-card-back-->
+							<!--EXECOM-->
+							<div class="execom">
+								<div class="container team-card-row">
+									<div class="row">
+										<h2 class="team-row-heads ">EXECOM</h2>
+										<hr/> </div>
+									<div class="row">
+										<div class="col-xl-4 col-md-6">
+											<div class="flip-card" id="1" onClick="flip(this.id)">
+												<div class="flip-card-inner">
+													<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+														<div class="card-body text-center">
+															<h5 class="card-title">Card title</h5>
+															<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+															<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+															<p class="read-more">Read More +</p>
+														</div>
+													</div>
+													<div class="flip-card-back ">
+														<div class="card-body text-center">
+															<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+															<p class="read-more">Go Back</p>
+														</div>
+													</div>
 												</div>
 											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
+										</div>
+										<div class="col-xl-4 col-md-6">
+											<div class="flip-card" id="2" onClick="flip(this.id)">
+												<div class="flip-card-inner">
+													<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+														<div class="card-body text-center">
+															<h5 class="card-title">Card title</h5>
+															<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+															<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+															<p class="read-more">Read More +</p>
+														</div>
+													</div>
+													<div class="flip-card-back ">
+														<div class="card-body text-center">
+															<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+															<p class="read-more">Go Back</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-md-6">
+											<div class="flip-card" id="3" onClick="flip(this.id)">
+												<div class="flip-card-inner">
+													<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+														<div class="card-body text-center">
+															<h5 class="card-title">Card title</h5>
+															<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+															<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+															<p class="read-more">Read More +</p>
+														</div>
+													</div>
+													<div class="flip-card-back ">
+														<div class="card-body text-center">
+															<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+															<p class="read-more">Go Back</p>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="5" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
+								<!--TECHINCAL-->
+							<div class="technical">
+							<div class="row team-row">
+								<h2 class="mx-auto">TECHNICAL TEAM</h2>
+								<hr/> </div>
+							<!--Machine Learning-->
+							<div class="container team-card-row">
+								<div class="row">
+									<h2 class="team-row-heads">MACHINE LEARNING</h2> </div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="flip-card" id="4" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
 												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="6" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
-												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="7" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
+									<div class="col-md-6">
+										<div class="flip-card" id="5" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
 												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--Web-->
-						<div class="container team-card-row py-5">
-							<div class="row">
-								<h2 class="team-row-heads mx-auto">WEB</h2> </div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="8" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
-												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="9" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
+									<div class="col-md-6">
+										<div class="flip-card" id="6" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
 												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--Android-->
-						<div class="container team-card-row py-5">
-							<div class="row">
-								<h2 class="team-row-heads mx-auto">ANDROID</h2> </div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="10" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
-												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="flip-card card m-3 mx-auto" id="11" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
+									<div class="col-md-6">
+										<div class="flip-card" id="7" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
 												</div>
-											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<!--Flutter and Tech Advisor-->
-						<div class="container team-card-row">
-							<div class="row">
-								<div class="col-md-6 py-5">
-									<h2 class="team-row-heads text-center">FLUTTER</h2>
-									<div class="flip-card card m-3 mx-auto" id="12" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
+							<!--Web-->
+							<div class="container team-card-row">
+								<div class="row">
+									<h2 class="team-row-heads ">WEB</h2> </div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="flip-card" id="8" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
+												</div>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="flip-card" id="9" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
+												</div>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6 py-5">
-									<h2 class="team-row-heads text-center">TECH ADVISOR</h2>
-									<div class="flip-card card m-3 mx-auto" id="13" onClick="flip(this.id)">
-										<div class="flip-card-inner">
-											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-												<div class="card-body text-center">
-													<h5 class="card-title">Card title</h5>
-													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-													<p class="read-more text-muted">Read More +</p>
+							</div>
+							<!--Android-->
+							<div class="container team-card-row">
+								<div class="row">
+									<h2 class="team-row-heads ">ANDROID</h2> </div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="flip-card" id="10" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
+												</div>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
-											<div class="flip-card-back py-3 px-2 my-0">
-												<div class="card-body text-center">
-													<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-													<p class="read-more text-muted">Go Back</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="flip-card" id="11" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
+												</div>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Flutter and Tech Advisor-->
+							<div class="container team-card-row">
+								<div class="row">
+									<div class="col-md-6 team-card-column">
+										<h2 class="team-row-heads text-center">FLUTTER</h2>
+										<div class="flip-card" id="12" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
+												</div>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 team-card-column">
+										<h2 class="team-row-heads text-center">TECH ADVISOR</h2>
+										<div class="flip-card" id="13" onClick="flip(this.id)">
+											<div class="flip-card-inner">
+												<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+													<div class="card-body text-center">
+														<h5 class="card-title">Card title</h5>
+														<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+														<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="read-more">Read More +</p>
+													</div>
+												</div>
+												<div class="flip-card-back ">
+													<div class="card-body text-center">
+														<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+														<p class="read-more">Go Back</p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -378,143 +380,145 @@
 						</div>
 					</div>
 					<!--CREATIVE-->
-					<div class="row pt-5">
-						<h2 class="mx-auto">CREATIVE TEAM</h2>
-						<hr/> </div>
-					<!--Communication and Outreach-->
-					<div class="container team-card-row py-5">
-						<div class="row">
-							<h2 class="team-row-heads mx-auto">COMM AND OUTREACH</h2> </div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="14" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
+					<div class="creative">
+						<div class="row team-row">
+							<h2 class="mx-auto">CREATIVE TEAM</h2>
+							<hr/> </div>
+						<!--Communication and Outreach-->
+						<div class="container team-card-row">
+							<div class="row">
+								<h2 class="team-row-heads ">COMM AND OUTREACH</h2> </div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="flip-card" id="14" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front "> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center creative">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
 											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="15" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
-											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+											<div class="flip-card-back ">
+												<div class="card-body text-center bcreative">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<!--Graphic Designer-->
-					<div class="container team-card-row py-5">
-						<div class="row">
-							<h2 class="team-row-heads mx-auto">GRAPHIC DESIGNER</h2> </div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="16" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
+								<div class="col-md-6">
+									<div class="flip-card" id="15" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
 											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="17" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
-											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!--Editorial-->
-					<div class="container team-card-row py-5">
-						<div class="row">
-							<h2 class="team-row-heads mx-auto">EDITORIAL</h2> </div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="18" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p class="read-more text-muted">Read More +</p>
+						<!--Graphic Designer-->
+						<div class="container team-card-row">
+							<div class="row">
+								<h2 class="team-row-heads ">GRAPHIC DESIGNER</h2> </div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="flip-card" id="16" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="flip-card" id="17" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="19" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p class="read-more text-muted">Read More +</p>
+						</div>
+						<!--Editorial-->
+						<div class="container team-card-row">
+							<div class="row">
+								<h2 class="team-row-heads ">EDITORIAL</h2> </div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="flip-card" id="18" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="flip-card" id="19" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -523,143 +527,145 @@
 						</div>
 					</div>
 					<!--ORGANISATIONAL-->
-					<div class="row pt-5">
-						<h2 class="mx-auto">ORGANISATIONAL TEAM</h2>
-						<hr/> </div>
-					<!--Event Coordinators-->
-					<div class="container team-card-row py-5">
-						<div class="row">
-							<h2 class="team-row-heads mx-auto">EVENT COORDINATOR</h2> </div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="20" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
+					<div class="organisational">
+						<div class="row team-row">
+							<h2 class="mx-auto">ORGANISATIONAL TEAM</h2>
+							<hr/> </div>
+						<!--Event Coordinators-->
+						<div class="container team-card-row">
+							<div class="row">
+								<h2 class="team-row-heads ">EVENT COORDINATOR</h2> </div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="flip-card" id="20" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
 											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="21" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
-											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<!--Op Exec and PR-->
-					<div class="container team-card-row">
-						<div class="row">
-							<div class="col-md-6 py-5">
-								<h2 class="team-row-heads text-center">OP EXEC</h2>
-								<div class="flip-card card m-3 mx-auto" id="22" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
+								<div class="col-md-6">
+									<div class="flip-card" id="21" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
 											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 py-5">
-								<h2 class="team-row-heads text-center">PR</h2>
-								<div class="flip-card card m-3 mx-auto" id="23" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
-											</div>
-										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!--Video Editor-->
-					<div class="container team-card-row py-5">
-						<div class="row">
-							<h2 class="team-row-heads mx-auto">VIDEO EDITORS</h2> </div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="24" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
+						<!--Op Exec and PR-->
+						<div class="container team-card-row">
+							<div class="row">
+								<div class="col-md-6 team-card-column">
+									<h2 class="team-row-heads">OP EXEC</h2>
+									<div class="flip-card" id="22" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+									</div>
+								</div>
+								<div class="col-md-6 team-card-column">
+									<h2 class="team-row-heads text-center">PR</h2>
+									<div class="flip-card" id="23" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="flip-card card m-3 mx-auto" id="25" onClick="flip(this.id)">
-									<div class="flip-card-inner">
-										<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
-											<div class="card-body text-center">
-												<h5 class="card-title">Card title</h5>
-												<p class="team-social-media"> <a href="#"><i class="fab fa-twitter mx-2"></i></a> <a href="#"><i class="fab fa-linkedin mx-2"></i></a> <a href="#"><i class="fas fa-globe mx-2"></i></a> </p>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<p class="read-more text-muted">Read More +</p>
+						</div>
+						<!--Video Editor-->
+						<div class="container team-card-row">
+							<div class="row">
+								<h2 class="team-row-heads ">VIDEO EDITORS</h2> </div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="flip-card" id="24" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
-										<div class="flip-card-back py-3 px-2 my-0">
-											<div class="card-body text-center">
-												<p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis. </p>
-												<p class="read-more text-muted">Go Back</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="flip-card" id="25" onClick="flip(this.id)">
+										<div class="flip-card-inner">
+											<div class="flip-card-front"> <img src="./assets/img/face.jpg" class="card-img-top" alt="...">
+												<div class="card-body text-center">
+													<h5 class="card-title">Card title</h5>
+													<p class="team-social-media"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-globe"></i></a> </p>
+													<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+													<p class="read-more">Read More +</p>
+												</div>
+											</div>
+											<div class="flip-card-back ">
+												<div class="card-body text-center">
+													<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet. </p>
+													<p class="read-more">Go Back</p>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -670,29 +676,24 @@
 				</section>
 			</div>
 			<!--Staff Coordinator and Year Timeline-->
-			<div class="col-xl-1 order-1 order-xl-12 pb-3 mb-3 py-lg-5 my-lg-5">
+			<div class="sidebar-column">
 				<section class="team-sidebar sticky-top">
 					<div class="container">
-						<div class="row side-row">
-							<div class="col-xl-12 order-3 order-xl-1">
-								<div class="pt-5 px-5 horizontal">
-									<p class="d-flex justify-content-around"> <span>2018</span> <span>2019</span> <span class="active">2020</span> <span>2021</span> </p>
-								</div>
-							</div>
-							<div class="col-xl-12 pr-5 py-5 order-1 order-xl-3 vertical">
-								<ul>
-									<li class="p-3">2018</li>
-									<li class="p-3">2019</li>
-									<li class="p-3 active">2020</li>
-									<li class="p-3">2021</li>
-									<ul>
-							</div>
+						<div id="mySidebar" class="sidebar">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+							<a href="#">2020</a> <a href="#">2019</a>
+						</div>
+						<div id="main">
+							<button class="openbtn" onclick="openNav()">
+								<
+							</button>
 						</div>
 					</div>
 				</section>
 			</div>
 		</div>
 	</div>
+</div>
 	<script src="./assets/js/team.js"></script>
 </body>
 
