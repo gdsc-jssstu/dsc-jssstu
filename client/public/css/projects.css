@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+* {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-tap-highlight-color: transparent;
+}
+.card{
+  min-height: 32rem!important;
+}
+
+.dark .card {
+  color: #fff;
+  background: linear-gradient(rgba(32, 32, 32, 0.1), rgba(117, 112, 112, 0.1));
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navbar-dsc-logo {
+  display: inline-block;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  display: table;
+  width: 40%;
+  padding: 10px 10px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1080px) {
+  .column {
+    width: 70%;
+  }
+
+}
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+  .column {
+    width: 70%;
+    margin: auto;
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .row{
+    margin: 0;
+  }
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  width: 70%; /* Set full-width to expand the whole page */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../images/after-landing.svg") center center fixed;
+  background-size: cover;
+}
+.dark .row {
+  background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)),
+    url("../images/after-landing-dark.svg") center center fixed;
+  background-size: cover;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0px 15px 15px 15px;
+  text-align: center;
+  font-size: large;
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.card_top {
+  height: 100px;
+  width: 100px;
+}
+
