@@ -1,35 +1,34 @@
+import { useRef } from 'react';
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
+import EventTimeline from '../components/EventTimeline';
 
 export default function Events() {
+  const headerRef = useRef(null);
   return (
-    <Layout page="events">
+    <Layout page="events"
+      headerRef={headerRef}>
       <Head>
         <title>{siteTitle} - Events</title>
       </Head>
-
-      <div className="main main-raised" style={{ marginTop: 0 }}>
+      <div className="main main-raised" style={{ marginTop: 0, overflow: 'hidden' }}>
         <div className="container">
           <div className="container-page">
-            <div className="row mt-5">
-              <div className="col-lg-6">
-                <p>&nbsp;</p>
-                <h2 className="title">Events</h2>
-                <h5 className="description">
-                  Learing goes hand-in-hand with building new and cool stuff.
-                  And here, we keep building stuff all the time. Here are a few
-                  of them.
-                </h5>
-                <p>&nbsp;</p>
+            <div data-aos="fade-up" className="event-header-container">
+              <div className="header-text-container">
+                <h2 className="title" ref={headerRef}>Events</h2>
+                <h5 className="description">Here at DSC JSSSTU we put the fun in functions and events.
+                Attend Study Jams / Hackathon / Developer Conferences to learn more about the latest
+                technologies.
+                    Interested in being a Speaker at one of our events? Just drop us your Proposal. </h5>
               </div>
-              <div className="col-lg-6" style={{ textAlign: "center" }}>
-                <img
-                  className="img-fluid"
-                  src="https://d33wubrfki0l68.cloudfront.net/4ca4b8ee50e95fb46c02681f286963aa6fa94c9f/4ead2/assets/img/kit/dunkathon.png"
-                />
+              <div>
+                <img className="header-img"
+                  src="https://d33wubrfki0l68.cloudfront.net/ccfa8808b9399e10d2ea4f26760ba995f0a4c741/7b481/assets/img/kit/speaker_banner.png" />
               </div>
             </div>
+            <EventTimeline style={{height: '100%'}} />
           </div>
         </div>
       </div>
