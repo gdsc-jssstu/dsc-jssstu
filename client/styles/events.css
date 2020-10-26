@@ -16,7 +16,6 @@
 
 .dark .event-header-container {
     box-shadow: 0px 5px 5px #000;
-    z-index: 2;
     background: #333;
     color: #fff;
 }
@@ -51,6 +50,7 @@
     height: 100%;
     padding: 19px;
     overflow: hidden;
+    z-index: 0;
 }
 
 .etmln_container::after {
@@ -59,15 +59,15 @@
     content: '';
     position: fixed;
     width: 3px;
-    height: 300%;
+    height: 100%;
     left: 20px;
     top: 0;
     transform: scaleY(1.2);
 }
 
 .dark .etmln_container::after {
-    z-index: 1;
-    background: #fff;
+    z-index: 0;
+    background: #333;
     content: '';
     position: fixed;
     width: 3px;
@@ -91,6 +91,7 @@
     padding: 13px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .dark .etmln_timeline_item_content {
@@ -122,6 +123,12 @@
     width: 20px;
     height: 20px;
     left: 9px;
+    z-index: 1;
+}
+
+.dark .etmln_timeline_dot {
+    border: 3px #888;
+    border-style: solid;
 }
 
 .etmln_txt_info {
@@ -130,7 +137,6 @@
 
     width: 50%;
     margin-right: 20px;
-    border-right: 2px solid #888;
 }
 
 .etmln_event_name {
@@ -147,10 +153,42 @@
     text-transform: uppercase;
 }
 
+.etmln_event_discription {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .etmln_img_slider {
-    background: coral;
     width: 50%;
-    height: 250px;
+    height: inherit;
+}
+
+.etmln-img-container {
+    height: 350px;
+}
+
+.etmln-img {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.carousel-root {
+    height: 100%;
+}
+.carousel-root .carousel {
+    height: 100%;
+}
+
+.carousel-root .carousel .slider-wrapper {
+    height: 100%;
+}
+
+.carousel-root .carousel .slider-wrapper .slider {
+    height: 100%;
 }
 
 @media (max-width: 991px) {
@@ -181,6 +219,6 @@
 
     .etmln_img_slider {
         width: 100%;
-        height: 250px;
+        height: inherit;
     }
 }

@@ -6,8 +6,12 @@ const EventTimeline = () => {
     return (
         <>
             <div className='etmln_container'>
+                {eventData.sort((a, b) => { 
+                    let ad = new Date(a.date);
+                    let bd = new Date(b.date);
 
-                {eventData.map((event, idx) => {
+                    return (bd - ad);
+                 }).map((event, idx) => {
                     return (<EventTimelineItem event={event} key={idx} />);
                 })}
             </div>

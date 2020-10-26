@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Carousel } from 'react-responsive-carousel';
 
 const EventTimelineItem = ({ event }) => {
     return (
@@ -11,7 +12,15 @@ const EventTimelineItem = ({ event }) => {
                         <span className='etmln_event_discription'>{event.discription}</span>
                         <span className='etmln_timeline_dot'></span>
                     </div>
-                    <div className="etmln_img_slider"></div>
+                    <div className="etmln_img_slider">
+                        <Carousel renderThumbs={() => { }}>
+                            {event.images.map((img, idx) => {
+                                return (<div className="etmln-img-container" key={{idx}}>
+                                    <img className="etmln-img" src={img}></img>
+                                </div>);
+                            })}
+                        </Carousel>
+                    </div>
                 </div>
             </div>
         </>
