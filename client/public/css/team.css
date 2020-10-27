@@ -80,50 +80,6 @@
   box-sizing: border-box;
 }
 
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.team h1, .team h2, .team h3, .team h4, .team h5, .team h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.team p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.team img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-.team h1{
-  font-size: 3.5rem;
-}
-
-.team h2{
-  font-size: 2rem;
-}
-
-.team h5{
-  font-size: 1.25rem;
-}
-
 .container{
   width: 100%;
   padding-right: 15px;
@@ -281,7 +237,7 @@ hr {
   margin-right: auto !important;
   margin-left: auto !important;
   text-align: center !important;
-  margin-top: 1.5rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .section-heading{
@@ -376,12 +332,14 @@ hr {
 }
 
 .flip-card .card-title {
+  font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
 
 .flip-card .card-text{
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
+  font-size: 1rem;
 }
 
 .flip-card .card-img,

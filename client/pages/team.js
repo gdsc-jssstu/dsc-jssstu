@@ -28,9 +28,9 @@ export default function Team() {
             <h1 data-aos="fade-up" className="barlow-extralight">
               The Team
             </h1>
-            <p data-aos="fade-up" className="barlow-medium">
-              One log creates a small fire, adequate to warm you up, add just a few more pieces to blast an immense bonfire, large enough to warm up your entire circle; needless to say that individuality totalTeams but teamwork dynamites. At DSC JSSSTU celebrate teamwork and attribute the success of DSC to the wonderful individuals who put untiring efforts for it.
-            </p>
+            <h2 data-aos="fade-up" className="barlow-medium">
+              Presenting board of 2020-2021
+            </h2>
           </div>
           <Link href="#our-work">
             <div className="main-down-arrow" id="down-arrow">
@@ -75,7 +75,7 @@ export default function Team() {
           />
           </div>
 
-          <div className="main team-cards-container">
+          <div className="team-cards-container container-main  container-main-last" id="our-work">
         		<div className="row">
         			{/*Team Cards*/}
         			<div className="col-xl-12">
