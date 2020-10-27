@@ -632,6 +632,7 @@ input:focus {
   }
   .dark .container-main {
     background: #202020;
+    z-index: -99;
   }
   .menu {
     display: none;
