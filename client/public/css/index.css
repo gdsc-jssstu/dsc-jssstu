@@ -1,5 +1,5 @@
 .logo {
-  width: 400px;
+  width: 350px;
 }
 
 .logo-light {
@@ -11,7 +11,7 @@
 }
 
 .logo-nav-light {
-  width: 300px;
+  width: 250px;
 }
 
 .dark {
@@ -234,7 +234,7 @@ body {
   /* z-index: 103; */
 }
 
-.navbar-scrolled>.navbar-dsc-logo1 {
+.navbar-scrolled > .navbar-dsc-logo1 {
   display: none;
 }
 
@@ -276,7 +276,7 @@ body {
 }
 
 .menu-item:hover {
-  background: rgba(66,133,244, 0.4);
+  background: rgba(66, 133, 244, 0.4);
 }
 
 .main-menu {
@@ -297,7 +297,7 @@ body {
 .main-menu-image {
   height: 35vw;
   width: auto;
-  display: inline-block;
+  display: inline-flex;
   float: right;
   max-height: 200px;
   position: absolute;
@@ -342,7 +342,7 @@ body {
 .main-image {
   height: 35vw;
   width: auto;
-  display: inline-block;
+  display: inline-flex;
   float: right;
   padding-right: 10vw;
   max-height: 500px;
@@ -371,7 +371,8 @@ body {
 }
 
 .dark .container-main {
-  background: url("../images/after-landing-dark.svg") center center fixed no-repeat;
+  background: url("../images/after-landing-dark.svg") center center fixed
+    no-repeat;
   background-size: cover;
   /* opacity:0.2; */
 }

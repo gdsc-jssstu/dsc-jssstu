@@ -1,14 +1,9 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import Link from "next/link";
 
-export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
+export default function Nav({ page, headerRef, theme, toggleTheme }) {
   const menuRef = useRef(null);
-  const darkModeRef = useRef(null);
   const navRef = useRef(null);
-  const logoNavLightRef = useRef(null);
-  const logoNavRef = useRef(null);
-
-  var [isDarkMode, setDarkMode] = useState(false);
 
   const onMenuOpen = () => {
     menuRef.current.style.display = "inherit";
@@ -16,32 +11,6 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
 
   const onMenuClose = () => {
     menuRef.current.style.display = "none";
-  };
-
-  const darkModeHandler = () => {
-    if (logoLightRef) logoLightRef.current.style.display = "none";
-    logoNavLightRef.current.style.display = "none";
-    if (logoRef) logoRef.current.style.display = "";
-    logoNavRef.current.style.display = "";
-    localStorage.setItem("dark", isDarkMode);
-  };
-
-  const lightModeHandler = () => {
-    if (logoLightRef) logoLightRef.current.style.display = "";
-    logoNavLightRef.current.style.display = "";
-    if (logoRef) logoRef.current.style.display = "none";
-    logoNavRef.current.style.display = "none";
-    localStorage.setItem("dark", isDarkMode);
-  };
-
-  const darkModeToggle = () => {
-    document.body.classList.toggle("dark");
-    setDarkMode(!isDarkMode);
-    if (isDarkMode) {
-      darkModeHandler();
-    } else {
-      lightModeHandler();
-    }
   };
 
   const handleScroll = () => {
@@ -52,9 +21,6 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
   };
 
   useEffect(() => {
-    var dark = localStorage.getItem("dark");
-    setDarkMode(dark);
-    dark === "true" ? darkModeHandler() : lightModeHandler();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -108,12 +74,8 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/#contact">Contact Us</Link>
           </h2>
-          <h2
-            className="text-center"
-            onClick={darkModeToggle}
-            ref={darkModeRef}
-          >
-            {isDarkMode ? "Dark Mode" : "Light Mode"}
+          <h2 className="text-center" onClick={toggleTheme}>
+            {theme === "light" ? "Dark theme" : "Light theme"}
           </h2>
         </div>
         <img
@@ -127,24 +89,30 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
           <picture>
             <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
             <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
-            <img
-              src="images/DSC_JSSSTU-dark.png"
-              data-aos="fade-up"
-              className="logo-nav"
-              alt="DSC JSSSTU"
-              ref={logoNavRef}
-            />
+            {theme === "dark" ? (
+              <img
+                src="images/DSC_JSSSTU-dark.png"
+                data-aos="fade-up"
+                className="logo-nav"
+                alt="DSC JSSSTU"
+              />
+            ) : (
+              <></>
+            )}
           </picture>
           <picture>
             <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
             <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
-            <img
-              src="images/DSC_JSSSTU-color.png"
-              data-aos="fade-up"
-              className="logo-nav-light"
-              alt="DSC JSSSTU"
-              ref={logoNavLightRef}
-            />
+            {theme === "light" ? (
+              <img
+                src="images/DSC_JSSSTU-color.png"
+                data-aos="fade-up"
+                className="logo-nav-light"
+                alt="DSC JSSSTU"
+              />
+            ) : (
+              <></>
+            )}
           </picture>
         </div>
         <div className="menu">
@@ -193,8 +161,8 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
           <div className="menu-item">
             <Link href="/#contact">Contact Us</Link>
           </div>
-          <div className="menu-item" onClick={darkModeToggle} ref={darkModeRef}>
-            {isDarkMode ? "Dark Mode" : "Light Mode"}
+          <div className="menu-item" onClick={toggleTheme}>
+            {theme === "light" ? "Dark theme" : "Light theme"}
           </div>
         </div>
         <div className="menu-phone" id="menu-open">

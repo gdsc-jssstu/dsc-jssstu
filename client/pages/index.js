@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
@@ -6,16 +6,15 @@ import Link from "next/link";
 
 export default function Home() {
   const headerRef = useRef(null);
-  const logoLightRef = useRef(null);
-  const logoRef = useRef(null);
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem("theme");
+    setTheme(localTheme);
+  }, []);
 
   return (
-    <Layout
-      page="home"
-      headerRef={headerRef}
-      logoLightRef={logoLightRef}
-      logoRef={logoRef}
-    >
+    <Layout page="home" headerRef={headerRef}>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -26,28 +25,32 @@ export default function Home() {
             <picture>
               <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
               <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
-              <img
-                src="images/DSC_JSSSTU-dark.png"
-                data-aos="fade-up"
-                className="logo"
-                alt="DSC JSSSTU"
-                ref={logoRef}
-              />
+              {theme === "dark" ? (
+                <img
+                  src="images/DSC_JSSSTU-dark.png"
+                  className="logo"
+                  alt="DSC JSSSTU"
+                />
+              ) : (
+                <></>
+              )}
             </picture>
             <picture>
               <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
               <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
-              <img
-                src="images/DSC_JSSSTU-color.png"
-                data-aos="fade-up"
-                className="logo-light"
-                alt="DSC JSSSTU"
-                ref={logoLightRef}
-              />
+              {theme === "light" ? (
+                <img
+                  src="images/DSC_JSSSTU-color.png"
+                  className="logo-light"
+                  alt="DSC JSSSTU"
+                />
+              ) : (
+                <></>
+              )}
             </picture>
           </div>
-          <h2 data-aos="fade-up">Powered by Google Developers</h2>
-          <p data-aos="fade-up" className="continous-text">
+          <h2>Powered by Google Developers</h2>
+          <p className="continous-text">
             At DSC JSSSTU, our aim is to learn and teach. Developers, designers
             and managers come together under one roof to create a community
             which inspires thousands. Join Us!
