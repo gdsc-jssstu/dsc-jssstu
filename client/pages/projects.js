@@ -12,16 +12,6 @@ export default function Projects() {
       <Head>
         <title>{siteTitle} - Projects</title>
         <link rel="stylesheet" href="css/projects.css" />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-          crossOrigin="anonymous"
-        />
       </Head>
 
       <div className="main main-raised" style={{ marginTop: "20" }}>
@@ -59,10 +49,11 @@ export default function Projects() {
                   width: "100%",
                   objectFit: "contain",
                 }}
-                src="images/DSC Logo.png"
+                src="images/jssstucse.jpg"
                 alt="dsc logo"
               ></img>
-              <h2 style={{ fontWeight: "400", color: "blue" }}>
+              <p>&nbsp;</p>
+              <h2 style={{ fontWeight: "400", color: "#06f" }}>
                 {" "}
                 JSSSTU CS Department
               </h2>
@@ -73,44 +64,50 @@ export default function Projects() {
                   style={{ background: "rgb(0, 101, 202)" }}
                 ></span>
               </p>
-              <p>
+              <p className="para">
                 CSE department website for teachers to maintain their log of
                 various activities.
               </p>
-              <a>&emsp;</a>
-              <ul className="pad" style={{ listStyleType: "none" }}>
-                <li>
-                  <a
-                    id="social_link1"
-                    href="https://jssstu-cs.herokuapp.com/"
-                    target="_blank"
-                    style={{ color: "#484848" }}
-                  >
-                    <i className="fa fa-link fa-lg" aria-hidden="true" style={{ paddingTop: "120px" }} ></i>
-                  </a>
-                  <a>&emsp;</a>
-                  <a>&emsp;</a>
-                  <a
-                    id="social_link2"
-                    href="https://github.com/dsc-jssstu/jsstu-cse-webapp"
-                    target="_blank"
-                    style={{ color: "#484848" }}
-                  >
-                    <i className="fab fa-github fa-lg" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
+
+              <p>&emsp;</p>
+              <div className="icons small-icons">
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img style={{ height: "5px", width: "5px" }}
+                    src="images/Linkedin.svg"
+                    className="circle-icon"
+                    alt="DSC JSSSTU Link"
+                  />
+                </a>
+                <a
+                  href="https://github.com/dsc-jssstu/jsstu-cse-webapp"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/Github.svg"
+                    className="circle-icon"
+                    alt="DSC JSSSTU GitHub"
+                  />
+                </a>
+              </div>
+
             </div>
           </div>
 
           <div className="column">
             <div className="card">
               <img
-                style={{ height: "100%", width: "100%", objectFit: "contain" }}
-                src="images/DSC Logo.png"
+                style={{ height: "169px", width: "100%", backgroundColor: "#ffd904a1", objectFit: "scale-down" }}
+                src="images/projectReachout.jpeg"
                 alt="dsc logo"
               ></img>
-              <h2 style={{ fontWeight: "400", color: "blue" }}>
+              <p>&nbsp;</p>
+              <h2 style={{ fontWeight: "400", color: "#06f" }}>
                 Project Reachout App
               </h2>
               <b>Android</b>
@@ -122,28 +119,32 @@ export default function Projects() {
                 talents and helping a bunch of specially-abled kids to bring joy
                 in their lives to cope up with this world.
               </p>
-              <a>&emsp;</a>
-              <ul style={{ listStyleType: "none" }}>
-                <li>
-                  <a
-                    id="social_link3"
-                    href="https://youtu.be/HMPDMOthVDU"
-                    target="_blank"
-                    style={{ color: "#484848" }}
-                  >
-                    <i className="fab fa-youtube fa-lg" aria-hidden="true"></i>
-                  </a>
-                  <a>&emsp;</a>
-                  <a
-                    id="social_link4"
-                    href="https://play.google.com/store/apps/details?id=com.projectreachout"
-                    target="_blank"
-                    style={{ color: "#484848" }}
-                  >
-                    <i className="fab fa-google-play" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
+
+              <div className="icons small-icons">
+
+                <a
+                  href="https://youtu.be/HMPDMOthVDU"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/Youtube.svg"
+                    className="circle-icon"
+                    alt="DSC JSSSTU Youtube"
+                  />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/Github.svg"
+                    className="circle-icon"
+                    alt="DSC JSSSTU GitHub"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
