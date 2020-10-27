@@ -253,6 +253,9 @@ hr {
   min-height: 32rem;
   width: 16rem;
 }
+.team-social-media{
+  color: #ffffff;
+}
 
 .read-more {
   cursor: pointer;
@@ -342,6 +345,7 @@ hr {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
+  padding: 3%;
 }
 
 .flip-card-inner {
@@ -427,6 +431,9 @@ hr {
 
 .sidebar a:hover {
   color: #f1f1f1;
+}
+.sidebar a.active {
+  color: #ffffff;
 }
 
 .sidebar .closebtn {
