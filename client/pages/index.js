@@ -128,11 +128,11 @@ export default function Home() {
           development side by churning out high quality projects.
         </p>
         <Link href="/projects">
-        <div data-aos="fade-up" className="buttons">
+          <div data-aos="fade-up" className="buttons">
             <div className="button-maker" id="projects-button">
               <div className="button-text">Projects</div>
             </div>
-        </div>
+          </div>
         </Link>
       </div>
       <div className="container-main holded-container" id="blog">

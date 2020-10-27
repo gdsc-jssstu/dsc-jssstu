@@ -24,7 +24,7 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
     if (logoRef) logoRef.current.style.display = "";
     logoNavRef.current.style.display = "";
     localStorage.setItem("dark", isDarkMode);
-  }
+  };
 
   const lightModeHandler = () => {
     if (logoLightRef) logoLightRef.current.style.display = "";
@@ -32,10 +32,10 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
     if (logoRef) logoRef.current.style.display = "none";
     logoNavRef.current.style.display = "none";
     localStorage.setItem("dark", isDarkMode);
-  }
+  };
 
   const darkModeToggle = () => {
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle("dark");
     setDarkMode(!isDarkMode);
     if (isDarkMode) {
       darkModeHandler();
@@ -54,10 +54,7 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
   useEffect(() => {
     var dark = localStorage.getItem("dark");
     setDarkMode(dark);
-    if (dark)
-      darkModeHandler();
-    else
-      lightModeHandler();
+    dark === "true" ? darkModeHandler() : lightModeHandler();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -70,19 +67,19 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="/#home">Home</Link>
             ) : (
-                <>
-                  <Link href="/">Home</Link>
-                </>
-              )}
+              <>
+                <Link href="/">Home</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             {page == "home" ? (
               <Link href="#team">Team</Link>
             ) : (
-                <>
-                  <Link href="/team">Team</Link>
-                </>
-              )}
+              <>
+                <Link href="/team">Team</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/events">Events</Link>
@@ -91,10 +88,10 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#updates">Projects</Link>
             ) : (
-                <>
-                  <Link href="/projects">Projects</Link>
-                </>
-              )}
+              <>
+                <Link href="/projects">Projects</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/resources">Resources</Link>
@@ -103,10 +100,10 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#blog">Blog</Link>
             ) : (
-                <>
-                  <Link href="/blog">Blog</Link>
-                </>
-              )}
+              <>
+                <Link href="/blog">Blog</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/#contact">Contact Us</Link>
@@ -116,7 +113,7 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             onClick={darkModeToggle}
             ref={darkModeRef}
           >
-            {isDarkMode ? 'Dark Mode' : 'Light Mode'}
+            {isDarkMode ? "Dark Mode" : "Light Mode"}
           </h2>
         </div>
         <img
@@ -155,19 +152,19 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="/#home">Home</Link>
             ) : (
-                <>
-                  <Link href="/">Home</Link>
-                </>
-              )}
+              <>
+                <Link href="/">Home</Link>
+              </>
+            )}
           </div>
           <div className="menu-item">
             {page == "home" ? (
               <Link href="#team">Team</Link>
             ) : (
-                <>
-                  <Link href="/team">Team</Link>
-                </>
-              )}
+              <>
+                <Link href="/team">Team</Link>
+              </>
+            )}
           </div>
           <div className="menu-item">
             <Link href="/events">Events</Link>
@@ -176,10 +173,10 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#updates">Projects</Link>
             ) : (
-                <>
-                  <Link href="/projects">Projects</Link>
-                </>
-              )}
+              <>
+                <Link href="/projects">Projects</Link>
+              </>
+            )}
           </div>
           <div className="menu-item">
             <Link href="/resources">Resources</Link>
@@ -188,16 +185,16 @@ export default function Nav({ page, headerRef, logoLightRef, logoRef }) {
             {page == "home" ? (
               <Link href="#blog">Blog</Link>
             ) : (
-                <>
-                  <Link href="/blog">Blog</Link>
-                </>
-              )}
+              <>
+                <Link href="/blog">Blog</Link>
+              </>
+            )}
           </div>
           <div className="menu-item">
             <Link href="/#contact">Contact Us</Link>
           </div>
           <div className="menu-item" onClick={darkModeToggle} ref={darkModeRef}>
-            {isDarkMode ? 'Dark Mode' : 'Light Mode'}
+            {isDarkMode ? "Dark Mode" : "Light Mode"}
           </div>
         </div>
         <div className="menu-phone" id="menu-open">
