@@ -1,18 +1,20 @@
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-}
-* {
   -webkit-tap-highlight-color: rgba(255,255,255,0);
-  -webkit-tap-highlight-color: transparent;
+
 }
 .card{
-  min-height: 32rem!important;
-}
 
+  font-size: .875rem;
+}
 .dark .card {
-  color: #fff;
-  background: linear-gradient(rgba(32, 32, 32, 0.1), rgba(117, 112, 112, 0.1));
+    background: #424242;
+    box-shadow: 9px 9px 16px rgba(205,209,214,.061), -9px -9px 16px rgba(255,255,255,.02);
+}
+.para{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 html * {
   -webkit-font-smoothing: antialiased;
@@ -20,9 +22,6 @@ html * {
 }
 .navbar-dsc-logo {
   display: inline-block;
-}
-body {
-  font-family: "Open Sans", sans-serif;
 }
 
 /* Float four columns side by side */
@@ -42,7 +41,7 @@ body {
 /* Responsive columns */
 @media screen and (max-width: 700px) {
   .column {
-    width: 70%;
+    width: 100%;
     margin: auto;
     display: block;
     float: none;
@@ -80,6 +79,7 @@ body {
   background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)),
     url("../images/after-landing-dark.svg") center center fixed;
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 /* Clear floats after the columns */
 .row:after {
@@ -89,6 +89,7 @@ body {
 }
 /* Style the counter cards */
 .card {
+  min-height: 28rem!important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 0px 15px 15px 15px;
   text-align: center;
@@ -108,4 +109,3 @@ body {
   height: 100px;
   width: 100px;
 }
-
