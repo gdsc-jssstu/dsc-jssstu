@@ -22,8 +22,8 @@ export default function Team() {
         <link rel="stylesheet" href="css/team.css" />
       </Head>
 
-      <div>
-        <div className="main" id="home-scroll">
+      <div className="team">
+        <div className="container-fluid team-header main" id="home-scroll">
           <div className="main-text-holder" ref={headerRef}>
             <h1 data-aos="fade-up" className="barlow-extralight">
               The Team
@@ -68,11 +68,13 @@ export default function Team() {
               </svg>
             </div>
           </Link>
-          <img
-            src="images/team.svg"
-            className="main-image"
-            alt="DSC VIT Team"
-          />
+          <div className="team-header-image">
+            <img
+              src="images/team.svg"
+              className="main-image"
+              alt="DSC VIT Team"
+            />
+          </div>
           </div>
 
           <div className="team-cards-container container-main  container-main-last" id="our-work">
@@ -93,7 +95,17 @@ export default function Team() {
         										<div className="col-md-8">
         											<div className="card-body text-md-left text-center">
         												<h5 className="card-title">Card title</h5>
-        												<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+        												<p className="team-social-media">
+                                  <a href="#" target="_blank" rel="noopener">
+                                    <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                  </a>
+                                  <a href="" target="_blank" rel="noopener">
+                                    <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                  </a>
+                                  <a href="#" target="_blank" rel="noopener">
+                                    <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                  </a>
+                                </p>
         												<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         											</div>
         										</div>
@@ -114,7 +126,17 @@ export default function Team() {
         											<div className="col-md-8">
         												<div className="card-body text-md-left text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         												</div>
         											</div>
@@ -136,7 +158,17 @@ export default function Team() {
         													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         														<div className="card-body text-center">
         															<h5 className="card-title">Card title</h5>
-        															<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                      <p className="team-social-media">
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener">
+                                          <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                      </p>
         															<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         															<p className="read-more">Read More +</p>
         														</div>
@@ -156,7 +188,17 @@ export default function Team() {
         													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         														<div className="card-body text-center">
         															<h5 className="card-title">Card title</h5>
-        															<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                      <p className="team-social-media">
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener">
+                                          <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                      </p>
         															<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         															<p className="read-more">Read More +</p>
         														</div>
@@ -176,7 +218,17 @@ export default function Team() {
         													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         														<div className="card-body text-center">
         															<h5 className="card-title">Card title</h5>
-        															<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                      <p className="team-social-media">
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener">
+                                          <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                      </p>
         															<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         															<p className="read-more">Read More +</p>
         														</div>
@@ -208,7 +260,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -228,7 +290,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -248,7 +320,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -268,7 +350,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -295,7 +387,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -315,7 +417,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -342,7 +454,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -362,7 +484,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -388,7 +520,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -409,7 +551,17 @@ export default function Team() {
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
         														<h5 className="card-title">Card title</h5>
-        														<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
         														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         														<p className="read-more">Read More +</p>
         													</div>
@@ -443,7 +595,17 @@ export default function Team() {
         											<div className="flip-card-front "> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center creative">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -463,7 +625,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -490,7 +662,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -510,7 +692,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -537,7 +729,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -557,7 +759,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -590,7 +802,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -610,7 +832,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -636,7 +868,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -657,7 +899,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -684,7 +936,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>
@@ -704,7 +966,17 @@ export default function Team() {
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
         													<h5 className="card-title">Card title</h5>
-        													<p className="team-social-media"> <a href="#"><i className="fab fa-twitter"></i></a> <a href="#"><i className="fab fa-linkedin"></i></a> <a href="#"><i className="fas fa-globe"></i></a> </p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
         													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         													<p className="read-more">Read More +</p>
         												</div>

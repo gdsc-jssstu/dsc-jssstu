@@ -1,6 +1,6 @@
 .main-image{
     width: 30vw;
-    min-width: 200px;
+    min-width: 350px;
 }
 
 .container-main{
@@ -33,7 +33,7 @@
 @media (min-width: 992px) and (max-width: 1180px) {
 
     .main-image{
-        top: 30vh;
+        top: 50vh;
     }
 
 }
@@ -54,8 +54,8 @@
         top: 30vh;
         transform:translateY(0%);
         float: left;
-        padding-left:10vw;
-        height: 250px;
+        padding-left:15vw;
+        width: 350px;
     }
 }
 
@@ -66,8 +66,8 @@
         top: 30vh;
         transform:translateY(0%);
         float: left;
-        padding-left:10vw;
-        height: 250px;
+        padding-left:15vw;
+        width: 350px;
     }
 }
 
@@ -186,7 +186,7 @@ hr {
   display: block;
   width: 100%;
   color: #202121;
-  background-color: var(--underline-color-1);
+  background-color: black;
   height: 2px;
 }
 
@@ -238,6 +238,11 @@ hr {
   margin-left: auto !important;
   text-align: center !important;
   margin: 1rem 0 1rem 0;
+}
+
+.team .social-circle-icon{
+  height: 1.5rem;
+  margin: 1rem;
 }
 
 .section-heading{
@@ -333,13 +338,14 @@ hr {
 
 .flip-card .card-title {
   font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  font-weight: bold;
 }
 
 .flip-card .card-text{
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
   font-size: 1rem;
+  line-height: 1.15;
 }
 
 .flip-card .card-img,
