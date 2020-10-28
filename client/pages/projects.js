@@ -1,14 +1,9 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import Link from "next/link";
-import { useRef } from "react";
 
 export default function Projects() {
-  const headerRef = useRef(null);
-  const logoLightRef = useRef(null);
-  const logoRef = useRef(null);
   return (
-    <Layout page="projects" headerRef={headerRef}>
+    <Layout page="projects">
       <Head>
         <title>{siteTitle} - Projects</title>
         <link rel="stylesheet" href="css/projects.css" />
@@ -23,7 +18,7 @@ export default function Projects() {
               <p>&nbsp;</p>
               <p>&nbsp;</p>
               <p>&nbsp;</p>
-              <h2 className="title" ref={headerRef}>Projects</h2>
+              <h2 className="title">Projects</h2>
               <h5 className="description">
                 Learing goes hand-in-hand with building new and cool stuff. And
                 here, we keep building stuff all the time. Here are a few of
@@ -71,13 +66,9 @@ export default function Projects() {
 
               <p>&emsp;</p>
               <div className="icons small-icons">
-
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img style={{ height: "5px", width: "5px" }}
+                <a href="#" target="_blank" rel="noopener">
+                  <img
+                    style={{ height: "5px", width: "5px" }}
                     src="images/Linkedin.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Link"
@@ -95,14 +86,18 @@ export default function Projects() {
                   />
                 </a>
               </div>
-
             </div>
           </div>
 
           <div className="column">
             <div className="card">
               <img
-                style={{ height: "169px", width: "100%", backgroundColor: "#ffd904a1", objectFit: "scale-down" }}
+                style={{
+                  height: "169px",
+                  width: "100%",
+                  backgroundColor: "#ffd904a1",
+                  objectFit: "scale-down",
+                }}
                 src="images/projectReachout.jpeg"
                 alt="dsc logo"
               ></img>
@@ -121,7 +116,6 @@ export default function Projects() {
               </p>
 
               <div className="icons small-icons">
-
                 <a
                   href="https://youtu.be/HMPDMOthVDU"
                   target="_blank"
@@ -133,11 +127,7 @@ export default function Projects() {
                     alt="DSC JSSSTU Youtube"
                   />
                 </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <a href="#" target="_blank" rel="noopener">
                   <img
                     src="images/Github.svg"
                     className="circle-icon"

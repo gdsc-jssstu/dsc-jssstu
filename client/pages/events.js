@@ -1,14 +1,10 @@
-import { useRef } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import Link from "next/link";
 import EventTimeline from "../components/EventTimeline";
 
 export default function Events() {
-  const headerRef = useRef(null);
-
   return (
-    <Layout page="events" headerRef={headerRef}>
+    <Layout page="events">
       <Head>
         <title>{siteTitle} - Events</title>
         <link rel="stylesheet" href="css/events.css" />
@@ -16,7 +12,6 @@ export default function Events() {
       <div
         className="main main-raised"
         style={{ marginTop: 0, overflow: "hidden" }}
-        ref={headerRef}
       >
         <div className="container">
           <div className="container-page">
