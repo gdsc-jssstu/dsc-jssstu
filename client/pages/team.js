@@ -11,8 +11,8 @@ export default function Team() {
         <link rel="stylesheet" href="css/team.css" />
       </Head>
 
-      <div>
-        <div className="main" id="home-scroll">
+      <div className="team">
+        <div className="container-fluid team-header main" id="home-scroll">
           <div className="main-text-holder">
             <h1 data-aos="fade-up" className="barlow-extralight">
               The Team
@@ -57,889 +57,954 @@ export default function Team() {
               </svg>
             </div>
           </Link>
-          <img
-            src="images/team.svg"
-            className="main-image"
-            alt="DSC VIT Team"
-          />
-        </div>
-        <div
-          className="container-main holded-container container-main-last"
-          id="our-work"
-        >
-          <h1
-            className="barlow-medium text-center"
-            style={{ paddingBottom: "90px" }}
-          >
-            The Board
-          </h1>
-          <div className="icons" id="board">
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/angad.jpg"
-                alt="Angad Sharma"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Angad Sharma</h3>
-                <p className="text-center barlow-medium">Community Lead</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/ubaid.jpg"
-                alt="Ubaid Usmani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Ubaid Usmani</h3>
-                <p className="text-center barlow-medium">Technical Lead</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/prateek.jpg"
-                alt="Prateek Mewara"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Prateek Mewara</h3>
-                <p className="text-center barlow-medium">Android Lead</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/ekaansh.jpg"
-                alt="Ekaansh Arora"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Ekaansh Arora</h3>
-                <p className="text-center barlow-medium">Design Lead</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/meherdeep.jpg"
-                alt="Meherdeep Thakur"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Meherdeep Thakur</h3>
-                <p className="text-center barlow-medium">Management Lead</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/sanchi.jpg"
-                alt="Sanchi Chopra"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Sanchi Chopra</h3>
-                <p className="text-center barlow-medium">WTM Lead</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/deepak.jpg"
-                alt="Deepak Nahar"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Deepak Nahar</h3>
-                <p className="text-center barlow-medium">
-                  Digital Marketing &amp; Content Lead
-                </p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/satkriti.jpg"
-                alt="Satkriti Singh"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Satkriti Singh</h3>
-                <p className="text-center barlow-medium">
-                  Women Empowerment <br />
-                  Lead
-                </p>
-              </div>
-            </div>
-            {/* <div class="circle-icon-holder">
-
-                        <img class="circle-icon" src="images/board19/apurva.jpg" alt="Apruva Nitanjay">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Apurva Nitanjay</h3>
-                            <p class="text-center barlow-medium">Projects Lead</p>
-                        </div>
-
-                    </div>
-
-                    <div class="circle-icon-holder">
-
-                        <img class="circle-icon" src="images/board19/akshay.jpg" alt="Akshat Raghavan">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Akshay Raghavan</h3>
-                            <p class="text-center barlow-medium">Operations Lead</p>
-                        </div>
-
-                    </div>
-
-                    <div class="circle-icon-holder">
-
-                        <img class="circle-icon" src="images/board19/preethi.jpg" alt="Preethi G">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Preethi G</h3>
-                            <p class="text-center barlow-medium">PR Lead</p>
-                        </div>
-
-                    </div>
-
-                    <div class="circle-icon-holder">
-
-                        <img class="circle-icon" src="images/board19/amrut.jpg" alt="Amrut Phadke">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Amrut Phadke</h3>
-                            <p class="text-center barlow-medium">Projects Lead</p>
-                        </div>
-
-                    </div> */}
+          <div className="team-header-image">
+            <img
+              src="images/team.svg"
+              className="main-image"
+              alt="DSC VIT Team"
+            />
           </div>
-          <div id="board-expander">
-            <div className="button-maker">
-              <div className="barlow-thin button-text">Show All</div>
-            </div>
           </div>
-        </div>
-        <div
-          className="container-main holded-container container-main-last"
-          id="our-work-scroll"
-        >
-          <h1
-            className="barlow-medium text-center"
-            style={{ paddingBottom: "90px" }}
-          >
-            Technical Team
-          </h1>
-          <div className="icons" id="technical">
-            {/* <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/techteam/yaswant.jpg" alt="Yaswant Narayan">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Yaswant Narayan</h3>
-                            <p class="text-center barlow-medium">Android</p>
-                        </div>
 
-                    </div>
+          <div className="team-cards-container container-main  container-main-last" id="our-work">
+        		<div className="row">
+        			{/*Team Cards*/}
+        			<div className="col-xl-12">
+        				<section className="team-cards">
+        					{/*Staff Coordinator*/}
+        					<div className="container staff-lead">
+        						<div className="row">
+        							<h2 className="team-row-heads ">STAFF COORDINATOR</h2>
+        							<hr/> </div>
+        						<div className="row">
+        							<div className="col-md-12">
+        								<div className="flip-card chapter-lead-card" >
+        									<div className="row no-gutters">
+        										<div className="col-md-4"> <img src="images/face.jpg" className="card-img-top" alt="team-lead" /> </div>
+        										<div className="col-md-8">
+        											<div className="card-body text-md-left text-center">
+        												<p className="card-title">Card title</p>
+        												<p className="team-social-media">
+                                  <a href="#" target="_blank" rel="noopener">
+                                    <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                  </a>
+                                  <a href="" target="_blank" rel="noopener">
+                                    <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                  </a>
+                                  <a href="#" target="_blank" rel="noopener">
+                                    <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                  </a>
+                                </p>
+        												<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        						{/*Team Lead*/}
+        						<div className="container chapter-lead">
+        							<div className="row">
+        								<h2 className="team-row-heads ">COMMUNITY LEAD</h2>
+        								<hr/> </div>
+        							<div className="row">
+        								<div className="col-md-12">
+        									<div className="flip-card chapter-lead-card" >
+        										<div className="row no-gutters">
+        											<div className="col-md-4"> <img src="images/face.jpg" className="card-img-top" alt="team-lead" /> </div>
+        											<div className="col-md-8">
+        												<div className="card-body text-md-left text-center">
+        													<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        							{/*Each card is in col, with flip-card-front and flip-card-back*/}
+        							{/*EXECOM*/}
+        							<div className="execom">
+        								<div className="container team-card-row">
+        									<div className="row">
+        										<h2 className="team-row-heads ">EXECOM</h2>
+        										<hr/> </div>
+        									<div className="row">
+        										<div className="col-xl-4 col-md-6">
+        											<div className="flip-card" id="1" /*{onClick=this.handleClick.bind(this)}*/>
+        												<div className="flip-card-inner">
+        													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        														<div className="card-body text-center">
+        															<p className="card-title">Card title</p>
+                                      <p className="team-social-media">
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener">
+                                          <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                      </p>
+        															<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        															<p className="read-more">Read More +</p>
+        														</div>
+        													</div>
+        													<div className="flip-card-back ">
+        														<div className="card-body text-center">
+        															<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        															<p className="read-more">Go Back</p>
+        														</div>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        										<div className="col-xl-4 col-md-6">
+        											<div className="flip-card" id="2" /*{onClick=this.handleClick.bind(this)}*/>
+        												<div className="flip-card-inner">
+        													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        														<div className="card-body text-center">
+        															<p className="card-title">Card title</p>
+                                      <p className="team-social-media">
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener">
+                                          <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                      </p>
+        															<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        															<p className="read-more">Read More +</p>
+        														</div>
+        													</div>
+        													<div className="flip-card-back ">
+        														<div className="card-body text-center">
+        															<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        															<p className="read-more">Go Back</p>
+        														</div>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        										<div className="col-xl-4 col-md-6">
+        											<div className="flip-card" id="3" /*{onClick=this.handleClick.bind(this)}*/>
+        												<div className="flip-card-inner">
+        													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        														<div className="card-body text-center">
+        															<p className="card-title">Card title</p>
+                                      <p className="team-social-media">
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                        </a>
+                                        <a href="" target="_blank" rel="noopener">
+                                          <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener">
+                                          <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                        </a>
+                                      </p>
+        															<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        															<p className="read-more">Read More +</p>
+        														</div>
+        													</div>
+        													<div className="flip-card-back ">
+        														<div className="card-body text-center">
+        															<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        															<p className="read-more">Go Back</p>
+        														</div>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								{/*TECHINCAL*/}
+        							<div className="technical">
+        							<div className="row team-row">
+        								<h2 className="section-heading mx-auto">TECHNICAL TEAM</h2>
+        								<hr/> </div>
+        							{/*Machine Learning*/}
+        							<div className="container team-card-row">
+        								<div className="row">
+        									<h2 className="team-row-heads">MACHINE LEARNING</h2> </div>
+        								<div className="row">
+        									<div className="col-md-6">
+        										<div className="flip-card" id="4" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div className="col-md-6">
+        										<div className="flip-card" id="5" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div className="col-md-6">
+        										<div className="flip-card" id="6" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div className="col-md-6">
+        										<div className="flip-card" id="7" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        							{/*Web*/}
+        							<div className="container team-card-row">
+        								<div className="row">
+        									<h2 className="team-row-heads ">WEB</h2> </div>
+        								<div className="row">
+        									<div className="col-md-6">
+        										<div className="flip-card" id="8" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div className="col-md-6">
+        										<div className="flip-card" id="9" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        							{/*Android*/}
+        							<div className="container team-card-row">
+        								<div className="row">
+        									<h2 className="team-row-heads ">ANDROID</h2> </div>
+        								<div className="row">
+        									<div className="col-md-6">
+        										<div className="flip-card" id="10" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div className="col-md-6">
+        										<div className="flip-card" id="11" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        							{/*Flutter and Tech Advisor*/}
+        							<div className="container team-card-row">
+        								<div className="row">
+        									<div className="col-md-6 team-card-column">
+        										<h2 className="team-row-heads text-center">FLUTTER</h2>
+        										<div className="flip-card" id="12" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div className="col-md-6 team-card-column">
+        										<h2 className="team-row-heads text-center">TECH ADVISOR</h2>
+        										<div className="flip-card" id="13" /*{onClick=this.handleClick.bind(this)}*/>
+        											<div className="flip-card-inner">
+        												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        													<div className="card-body text-center">
+        														<p className="card-title">Card title</p>
+                                    <p className="team-social-media">
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                      </a>
+                                      <a href="" target="_blank" rel="noopener">
+                                        <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                      <a href="#" target="_blank" rel="noopener">
+                                        <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                      </a>
+                                    </p>
+        														<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        														<p className="read-more">Read More +</p>
+        													</div>
+        												</div>
+        												<div className="flip-card-back ">
+        													<div className="card-body text-center">
+        														<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        														<p className="read-more">Go Back</p>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        					{/*CREATIVE*/}
+        					<div className="creative">
+        						<div className="row team-row">
+        							<h2 className="section-heading mx-auto">CREATIVE TEAM</h2>
+        							<hr/> </div>
+        						{/*Communication and Outreach*/}
+        						<div className="container team-card-row">
+        							<div className="row">
+        								<h2 className="team-row-heads ">COMM AND OUTREACH</h2> </div>
+        							<div className="row">
+        								<div className="col-md-6">
+        									<div className="flip-card" id="14" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front "> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center creative">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center bcreative">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<div className="col-md-6">
+        									<div className="flip-card" id="15" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        						{/*Graphic Designer*/}
+        						<div className="container team-card-row">
+        							<div className="row">
+        								<h2 className="team-row-heads ">GRAPHIC DESIGNER</h2> </div>
+        							<div className="row">
+        								<div className="col-md-6">
+        									<div className="flip-card" id="16" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<div className="col-md-6">
+        									<div className="flip-card" id="17" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        						{/*Editorial*/}
+        						<div className="container team-card-row">
+        							<div className="row">
+        								<h2 className="team-row-heads ">EDITORIAL</h2> </div>
+        							<div className="row">
+        								<div className="col-md-6">
+        									<div className="flip-card" id="18" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<div className="col-md-6">
+        									<div className="flip-card" id="19" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        					{/*ORGANISATIONAL*/}
+        					<div className="organisational">
+        						<div className="row team-row">
+        							<h2 className="section-heading mx-auto">ORGANISATIONAL TEAM</h2>
+        							<hr/> </div>
+        						{/*Event Coordinators*/}
+        						<div className="container team-card-row">
+        							<div className="row">
+        								<h2 className="team-row-heads ">EVENT COORDINATOR</h2> </div>
+        							<div className="row">
+        								<div className="col-md-6">
+        									<div className="flip-card" id="20" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<div className="col-md-6">
+        									<div className="flip-card" id="21" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        						{/*Op Exec and PR*/}
+        						<div className="container team-card-row">
+        							<div className="row">
+        								<div className="col-md-6 team-card-column">
+        									<h2 className="team-row-heads">OP EXEC</h2>
+        									<div className="flip-card" id="22" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<div className="col-md-6 team-card-column">
+        									<h2 className="team-row-heads text-center">PR</h2>
+        									<div className="flip-card" id="23" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        						{/*Video Editor*/}
+        						<div className="container team-card-row">
+        							<div className="row">
+        								<h2 className="team-row-heads ">VIDEO EDITORS</h2> </div>
+        							<div className="row">
+        								<div className="col-md-6">
+        									<div className="flip-card" id="24" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet.</p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<div className="col-md-6">
+        									<div className="flip-card" id="25" /*{onClick=this.handleClick.bind(this)}*/>
+        										<div className="flip-card-inner">
+        											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
+        												<div className="card-body text-center">
+        													<p className="card-title">Card title</p>
+                                  <p className="team-social-media">
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
+                                    </a>
+                                    <a href="" target="_blank" rel="noopener">
+                                      <img src="images/Github.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener">
+                                      <img src="images/Linkedin.svg" className="social-circle-icon" alt="" />
+                                    </a>
+                                  </p>
+        													<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        													<p className="read-more">Read More +</p>
+        												</div>
+        											</div>
+        											<div className="flip-card-back ">
+        												<div className="card-body text-center">
+        													<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc viverra in magna sed aliquam. Integer euismod, ex sit amet lobortis imperdiet, eros sapien sodales nisi, at scelerisque libero libero vitae ex. Nunc rhoncus vestibulum nunc a convallis.Integer euismod, ex sit amet lobortis imperdiet. </p>
+        													<p className="read-more">Go Back</p>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
 
-                    <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/techteam/paritosh.jpg" alt="Paritosh Mahajan">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Paritosh Mahajan</h3>
-                            <p class="text-center barlow-medium">ML</p>
-                        </div>
+        					</div>
+                  </div>
+        			</div>
 
-                    </div>
 
-                    <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/techteam/vikrame.jpg" alt="Vikrame Vasudev">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Vikrame Vasudev</h3>
-                            <p class="text-center barlow-medium">Web</p>
-                        </div>
+        			{/*Staff Coordinator and Year Timeline*/}
+        			<div className="sidebar-column">
+        				<section className="team-sidebar sticky-top">
+        					<div className="container">
+        						<div id="mySidebar" className="sidebar">
+        							<a /*href="javascript:void(0)"*/ href="#" className="closebtn" /*onclick="closeNav()"*/>×</a>
+        							<a href="#">2020</a> <a href="#">2019</a>
+        						</div>
+        						<div id="main">
+        							<button className="openbtn" /*onclick="openNav()"*/ >
+                       	&lt;
+                      </button>
 
-                    </div> */}
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/amogh.jpg"
-                alt="Amogh Lele"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Amogh Lele</h3>
-                <p className="text-center barlow-medium">Android</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/siddhartha.jpg"
-                alt="Amogh Lele"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Siddhartha</h3>
-                <p className="text-center barlow-medium">Android</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/fenil.jpg"
-                alt="Amogh Lele"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Fenil Jain</h3>
-                <p className="text-center barlow-medium">Android</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/ritik.jpg"
-                alt="Amogh Lele"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Rithik Jain</h3>
-                <p className="text-center barlow-medium">Android</p>
-              </div>
-            </div>
-            {/* <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/techteam/nikhil.jpg" alt="Nikhil Singh">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Nikhil Singh</h3>
-                            <p class="text-center barlow-medium">Web</p>
-                        </div>
-
-                    </div> */}
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/purushottam.jpg"
-                alt="Purushottam Sharma"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Purushottam Sharma</h3>
-                <p className="text-center barlow-medium">Web</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/ananya.jpg"
-                alt="Ananya Ganesh"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Ananya Ganesh</h3>
-                <p className="text-center barlow-medium">Web</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/nirmit.jpeg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Nirmit Jatana</h3>
-                <p className="text-center barlow-medium">Web</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/ashutosh.jpg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Ashutosh Kaushik</h3>
-                <p className="text-center barlow-medium">Web</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/prakhar.jpg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Prakhar Soni</h3>
-                <p className="text-center barlow-medium">Web</p>
-              </div>
-            </div>
-            {/* <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="" alt="Aviral">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Aviral</h3>
-                            <p class="text-center barlow-medium">Web</p>
-                        </div>
-
-                    </div> */}
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/riddhi.jpg"
-                alt="Riddhi Gupta"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Riddhi Gupta</h3>
-                <p className="text-center barlow-medium">Backend</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/abhishek.jpg"
-                alt="Abhishek Kushwaha"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Abhishek Kushwaha</h3>
-                <p className="text-center barlow-medium">Backend</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/kush.jpeg"
-                alt="Abhishek Kushwaha"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Kushal</h3>
-                <p className="text-center barlow-medium">Backend</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/SaiSandeepRayanuthala.jpg"
-                alt="Abhishek Kushwaha"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">
-                  Sai Sandeep Rayanuthala
-                </h3>
-                <p className="text-center barlow-medium">Backend</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/hishaam.jpg"
-                alt="Abhishek Kushwaha"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin"> Md Hishaam Akhtar</h3>
-                <p className="text-center barlow-medium">Backend</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/PragatiBhattad.jpg"
-                alt="Abhishek Kushwaha"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Pragati Bhattad</h3>
-                <p className="text-center barlow-medium">Backend</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/vishaal.jpg"
-                alt="Vishaal Selvaraj"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Vishaal Selvaraj</h3>
-                <p className="text-center barlow-medium">Algorithms</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/mayank.jpg"
-                alt="Vishaal Selvaraj"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Mayank Kumar</h3>
-                <p className="text-center barlow-medium">Algorithms</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/deepak.jpg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Deepak Malpani</h3>
-                <p className="text-center barlow-medium">ML</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/ShantanuVerma.jpg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Shantanu Verma</h3>
-                <p className="text-center barlow-medium">ML</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/chanakya.jpg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Chanakya Kapoor</h3>
-                <p className="text-center barlow-medium">ML</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/raman.jpg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Raman</h3>
-                <p className="text-center barlow-medium">ML</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/techteam/GovindKrishnan.jpg"
-                alt="Deepak Malpani"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Govind Krishnan</h3>
-                <p className="text-center barlow-medium">System Developer</p>
-              </div>
-            </div>
-          </div>
-          <div id="technical-expander">
-            <div className="button-maker">
-              <div className="barlow-thin button-text">Show All</div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="container-main holded-container container-main-last"
-          id="our-work-scroll"
-        >
-          <h1
-            className="barlow-medium text-center"
-            style={{ paddingBottom: "90px" }}
-          >
-            Management Team
-          </h1>
-          <div className="icons" id="management">
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/hardik.jpg"
-                alt="Hardik Kataria"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Hardik Kataria</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/dhruv.jpg"
-                alt="Dhruv Mittal"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Dhruv Mittal</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/vivek.jpg"
-                alt="Vivek Shetty"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Vivek Shetty</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/akshat.jpg"
-                alt="Akshat Gupta"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Akshat Gupta</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/shubham.jpg"
-                alt="Shubham Srivastava"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Shubham Srivastava</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/muskan.jpg"
-                alt="Muskan Rastogi"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Muskan Rastogi</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/kritika.jpg"
-                alt="Kritika Sharma"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Kritika Sharma</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/naynika.jpg"
-                alt="Naynika Wason"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Naynika Wason</h3>
-                <p className="text-center barlow-medium">Content</p>
-              </div>
-            </div>
-            {/* <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/managers/shreya.jpg" alt="Shreya Maheshwari">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Shreya Maheshwari</h3>
-                            <p class="text-center barlow-medium">Content</p>
-                        </div>
-
-                    </div> */}
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/saloni.jpg"
-                alt="Saloni Parekh"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Saloni Parekh</h3>
-                <p className="text-center barlow-medium">Content</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/manorama.jpg"
-                alt="Manorama Maharana"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Manorama Maharana</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/arjun.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Arjun Bhanot</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/ABDEALI.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">ABDEALI</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/AdityaMadan.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Aditya Madan</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/AnshulBamb.jpeg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Anshul Bamb</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/Arushi Jain.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Arushi Jain</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/Gurnehmat.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Gurnehmat Dhindsa</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/JanviPrasad.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Janvi Prasad</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/NeilKavalakkat.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Neil Kavalakkat</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/PranavRaaghav.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Pranav Raaghav</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/RohitMenon.jpeg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Rohit Menon</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/SHIVANSHTIWARI.jpeg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Shivansh Tiwari</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/Shresth.jpg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Shresth Tiwary</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            {/* <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/managers/srinjay.jpeg" alt="Arjun Bhanot">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Srinjay Saha</h3>
-                            <p class="text-center barlow-medium">Manager</p>
-                        </div>
-
-                    </div> */}
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/managers/Yuvraj.jpeg"
-                alt="Arjun Bhanot"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Yuvraj</h3>
-                <p className="text-center barlow-medium">Manager</p>
-              </div>
-            </div>
-            {/* <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/managers/cyril.jpg" alt="Cyril Peter">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Cyril Peter</h3>
-                            <p class="text-center barlow-medium">Manager</p>
-                        </div>
-
-                    </div> */}
-          </div>
-          <div id="management-expander">
-            <div className="button-maker">
-              <div className="barlow-thin button-text">Show All</div>
-            </div>
-          </div>
-        </div>
-        <div className="container-main holded-container" id="our-work-scroll">
-          <h1
-            className="barlow-medium text-center"
-            style={{ paddingBottom: "90px" }}
-          >
-            Design Team
-          </h1>
-          <div className="icons" id="design">
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/riya.jpg"
-                alt="Riya Kanabar"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Riya Kanabar</h3>
-                <p className="text-center barlow-medium">Graphic</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/ruchica.jpg"
-                alt="Ruchica Sinha"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Ruchica Sinha</h3>
-                <p className="text-center barlow-medium">Graphic</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/aditya.jpg"
-                alt="Aditya Rathore"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Aditya Rathore</h3>
-                <p className="text-center barlow-medium">3D &amp; Motion</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/shravani.jpg"
-                alt="Shravani Shete"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Shravani Shete</h3>
-                <p className="text-center barlow-medium">Graphic</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/ronish.jpg"
-                alt="Ronish Sawal"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Ronish Sawal</h3>
-                <p className="text-center barlow-medium">Graphic</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/ishi.jpg"
-                alt="Ronish Sawal"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Ishi Yadav</h3>
-                <p className="text-center barlow-medium">Graphic</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/swayam.jpg"
-                alt="Ronish Sawal"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Swayam S. Sharma</h3>
-                <p className="text-center barlow-medium">Graphic</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/ChiyaBorkar.jpg"
-                alt="Ronish Sawal"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Chiya Borkar</h3>
-                <p className="text-center barlow-medium">Graphic</p>
-              </div>
-            </div>
-            <div className="circle-icon-holder">
-              <img
-                className="circle-icon"
-                src="images/designers/thanmay.jpg"
-                alt="Ronish Sawal"
-              />
-              <div className="circle-icon-caption">
-                <h3 className="text-center barlow-thin">Thanmay V.</h3>
-                <p className="text-center barlow-medium">3D &amp; Motion</p>
-              </div>
-            </div>
-            {/* <div class="circle-icon-holder">
-                        
-                        <img class="circle-icon" src="images/designers/ronish.jpg" alt="Ronish Sawal">
-                        <div class="circle-icon-caption">
-                            <h3 class="text-center barlow-thin">Ronish Sawal</h3>
-                            <p class="text-center barlow-medium">Graphic</p>
-                        </div>
-
-                    </div> */}
-          </div>
-          <div id="design-expander">
-            <div className="button-maker">
-              <div className="barlow-thin button-text">Show All</div>
+        						</div>
+        					</div>
+              </section>
+        	     </div>
+            </section>
             </div>
           </div>
         </div>
