@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import EventTimeline from "../components/EventTimeline";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Events() {
   return (
@@ -15,7 +16,7 @@ export default function Events() {
       >
         <div className="container">
           <div className="container-page">
-            <div data-aos="fade-up" className="event-header-container">
+            <div className="event-header-container">
               <div className="header-text-container">
                 <h2 className="title">Events</h2>
                 <h5 className="description">
@@ -26,10 +27,18 @@ export default function Events() {
                 </h5>
               </div>
               <div>
-                <img
-                  className="header-img"
-                  src="https://d33wubrfki0l68.cloudfront.net/ccfa8808b9399e10d2ea4f26760ba995f0a4c741/7b481/assets/img/kit/speaker_banner.png"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet="images/speaker_banner.webp"
+                  />
+                  <source type="image/png" srcSet="images/speaker_banner.png" />
+                  <img
+                    className="header-img"
+                    src="images/speaker_banner.png"
+                    alt="DSC JSSSTU Events"
+                  />
+                </picture>
               </div>
             </div>
             <EventTimeline style={{ height: "100%" }} />

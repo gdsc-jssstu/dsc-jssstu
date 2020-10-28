@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "next": "9.5.5",
+    "next": "10.0.0",
     "next-pwa": "^3.1.5",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-responsive-carousel": "^3.2.10"
   },
   "homepage": "."

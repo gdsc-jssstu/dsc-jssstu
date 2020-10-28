@@ -2,9 +2,6 @@ import { useEffect } from "react";
 import { useDarkMode } from "./themeMode";
 import Head from "next/head";
 import AOS from "aos";
-import "aos/dist/aos.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 import Nav from "./nav";
 
 export const siteTitle = "DSC JSSSTU";
@@ -13,8 +10,10 @@ export default function Layout({ children, page, headerRef }) {
   const [theme, toggleTheme] = useDarkMode();
 
   useEffect(() => {
-    AOS.init();
     AOS.refresh();
+    window.addEventListener("scroll", function () {
+      AOS.refresh();
+    });
   }, []);
 
   return (
