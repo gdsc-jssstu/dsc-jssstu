@@ -14,7 +14,11 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
   };
 
   const handleScroll = () => {
-    const logoMark = headerRef.current.getBoundingClientRect().top;
+    const logoMark =
+      page === "home"
+        ? headerRef.current.getBoundingClientRect().top
+        : Number.NEGATIVE_INFINITY;
+
     window.pageYOffset > logoMark
       ? navRef.current.classList.add("navbar-scrolled")
       : navRef.current.classList.remove("navbar-scrolled");

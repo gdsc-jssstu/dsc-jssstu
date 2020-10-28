@@ -1,21 +1,10 @@
-import { useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
-// import Link from "next/link";
 
 export default function Team() {
-  const headerRef = useRef(null);
-  const logoLightRef = useRef(null);
-  const logoRef = useRef(null);
-
-  /*handleClick(){
-    this.refs.flipCard.classNameList.toggle('flipped');
-  }*/
-
-
   return (
-    <Layout page="team" headerRef={headerRef}>
+    <Layout page="team">
       <Head>
         <title>{siteTitle} - Team</title>
 
@@ -24,7 +13,7 @@ export default function Team() {
 
       <div className="team">
         <div className="container-fluid team-header main" id="home-scroll">
-          <div className="main-text-holder" ref={headerRef}>
+          <div className="main-text-holder">
             <h1 data-aos="fade-up" className="barlow-extralight">
               The Team
             </h1>
