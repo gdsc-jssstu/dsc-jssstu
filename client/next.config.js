@@ -5,6 +5,7 @@ module.exports = withPWA({
   pwa: {
     disable: prod ? false : true,
     dest: "public",
+    skipWaiting: false,
   },
   experimental: {
     modern: true,
