@@ -83,7 +83,7 @@ export default function Team() {
         										<div className="col-md-4"> <img src="images/face.jpg" className="card-img-top" alt="team-lead" /> </div>
         										<div className="col-md-8">
         											<div className="card-body text-md-left text-center">
-        												<h5 className="card-title">Card title</h5>
+        												<p className="card-title">Card title</p>
         												<p className="team-social-media">
                                   <a href="#" target="_blank" rel="noopener">
                                     <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -114,7 +114,7 @@ export default function Team() {
         											<div className="col-md-4"> <img src="images/face.jpg" className="card-img-top" alt="team-lead" /> </div>
         											<div className="col-md-8">
         												<div className="card-body text-md-left text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -146,7 +146,7 @@ export default function Team() {
         												<div className="flip-card-inner">
         													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         														<div className="card-body text-center">
-        															<h5 className="card-title">Card title</h5>
+        															<p className="card-title">Card title</p>
                                       <p className="team-social-media">
                                         <a href="#" target="_blank" rel="noopener">
                                           <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -176,7 +176,7 @@ export default function Team() {
         												<div className="flip-card-inner">
         													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         														<div className="card-body text-center">
-        															<h5 className="card-title">Card title</h5>
+        															<p className="card-title">Card title</p>
                                       <p className="team-social-media">
                                         <a href="#" target="_blank" rel="noopener">
                                           <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -206,7 +206,7 @@ export default function Team() {
         												<div className="flip-card-inner">
         													<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         														<div className="card-body text-center">
-        															<h5 className="card-title">Card title</h5>
+        															<p className="card-title">Card title</p>
                                       <p className="team-social-media">
                                         <a href="#" target="_blank" rel="noopener">
                                           <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -248,7 +248,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -278,7 +278,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -308,7 +308,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -338,7 +338,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -375,7 +375,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -405,7 +405,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -442,7 +442,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -472,7 +472,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -508,7 +508,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -539,7 +539,7 @@ export default function Team() {
         											<div className="flip-card-inner">
         												<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         													<div className="card-body text-center">
-        														<h5 className="card-title">Card title</h5>
+        														<p className="card-title">Card title</p>
                                     <p className="team-social-media">
                                       <a href="#" target="_blank" rel="noopener">
                                         <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -583,7 +583,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front "> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center creative">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -613,7 +613,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -650,7 +650,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -680,7 +680,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -717,7 +717,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -747,7 +747,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -790,7 +790,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -820,7 +820,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -856,7 +856,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -887,7 +887,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -924,7 +924,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>
@@ -954,7 +954,7 @@ export default function Team() {
         										<div className="flip-card-inner">
         											<div className="flip-card-front"> <img src="images/face.jpg" className="card-img-top" alt="..." />
         												<div className="card-body text-center">
-        													<h5 className="card-title">Card title</h5>
+        													<p className="card-title">Card title</p>
                                   <p className="team-social-media">
                                     <a href="#" target="_blank" rel="noopener">
                                       <img src="images/Instagram.svg" className="social-circle-icon" alt=""/>

@@ -265,6 +265,7 @@ hr {
 .read-more {
   cursor: pointer;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .team-cards .fab, .team-cards .fas  {
