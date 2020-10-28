@@ -19,10 +19,10 @@ export default function Team() {
         <div className="container-fluid team-header main" id="home-scroll">
           <div className="main-text-holder">
             <h1 data-aos="fade-up" className="barlow-extralight">
-              The Team
+              The Team (2019)
             </h1>
             <h2 data-aos="fade-up" className="barlow-medium">
-              Presenting board of 2020-2021
+              THIS IS THE 2019-2020 PAGE
             </h2>
           </div>
           <Link href="#our-work">
