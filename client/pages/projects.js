@@ -30,7 +30,7 @@ export default function Projects() {
             <div className="col-lg-6" style={{ textAlign: "center" }}>
               <Image
                 className="img-fluid"
-                src="/images/team.svg"
+                src="/images/dunkathon.png"
                 unsized
               />
             </div>
@@ -46,8 +46,8 @@ export default function Projects() {
                 }}
                 src="/images/jssstucse.jpg"
                 alt="dsc logo"
-                height= "250px"
-                width= "350px"
+                height="250px"
+                width="350px"
               ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>

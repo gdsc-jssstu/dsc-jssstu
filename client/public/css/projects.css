@@ -89,7 +89,7 @@ html * {
 }
 /* Style the counter cards */
 .card {
-  min-height: 28rem!important;
+  min-height: 32rem!important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 0px 15px 15px 15px;
   text-align: center;
