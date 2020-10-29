@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
+import Image from 'next/image';
 
 export default function Resources() {
   return (
@@ -23,7 +24,7 @@ export default function Resources() {
                 <p>&nbsp;</p>
               </div>
               <div className="col-lg-6" style={{ textAlign: "center" }}>
-                <img
+                <Image
                   className="img-fluid"
                   src="https://d33wubrfki0l68.cloudfront.net/4ca4b8ee50e95fb46c02681f286963aa6fa94c9f/4ead2/assets/img/kit/dunkathon.png"
                 />

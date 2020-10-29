@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
+import Image from 'next/image';
 
 export default function Projects() {
   return (
@@ -27,7 +28,7 @@ export default function Projects() {
               <p>&nbsp;</p>
             </div>
             <div className="col-lg-6" style={{ textAlign: "center" }}>
-              <img
+              <Image
                 className="img-fluid"
                 src="https://d33wubrfki0l68.cloudfront.net/4ca4b8ee50e95fb46c02681f286963aa6fa94c9f/4ead2/assets/img/kit/dunkathon.png"
               />
@@ -38,7 +39,7 @@ export default function Projects() {
         <div className="row">
           <div className="column">
             <div className="card">
-              <img
+              <Image
                 style={{
                   height: "100%",
                   width: "100%",
@@ -46,7 +47,7 @@ export default function Projects() {
                 }}
                 src="images/jssstucse.jpg"
                 alt="dsc logo"
-              ></img>
+              ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
                 {" "}
@@ -67,7 +68,7 @@ export default function Projects() {
               <p>&emsp;</p>
               <div className="icons small-icons">
                 <a href="#" target="_blank" rel="noopener">
-                  <img
+                  <Image
                     style={{ height: "5px", width: "5px" }}
                     src="images/Linkedin.svg"
                     className="circle-icon"
@@ -79,7 +80,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <img
+                  <Image
                     src="images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"
@@ -91,7 +92,7 @@ export default function Projects() {
 
           <div className="column">
             <div className="card">
-              <img
+              <Image
                 style={{
                   height: "169px",
                   width: "100%",
@@ -100,7 +101,7 @@ export default function Projects() {
                 }}
                 src="images/projectReachout.jpeg"
                 alt="dsc logo"
-              ></img>
+              ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
                 Project Reachout App
@@ -121,14 +122,14 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <img
+                  <Image
                     src="images/Youtube.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Youtube"
                   />
                 </a>
                 <a href="#" target="_blank" rel="noopener">
-                  <img
+                  <Image
                     src="images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"

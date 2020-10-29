@@ -1,20 +1,49 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Button, Snackbar, Slide } from "@material-ui/core";
 import { useDarkMode } from "./themeMode";
 import Head from "next/head";
 import AOS from "aos";
-import "aos/dist/aos.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 import Nav from "./nav";
 
 export const siteTitle = "DSC JSSSTU";
 
 export default function Layout({ children, page, headerRef }) {
   const [theme, toggleTheme] = useDarkMode();
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const handleNewVersion = (event) => {
+    window.workbox.addEventListener("controlling", (event) => {
+      window.location.reload();
+    });
+
+    window.workbox.messageSW({ type: "SKIP_WAITING" });
+  };
 
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
+    if (
+      typeof window !== "undefined" &&
+      "serviceWorker" in navigator &&
+      window.workbox !== undefined
+    ) {
+      window.workbox.addEventListener("waiting", handleClick);
+      window.workbox.addEventListener("externalwaiting", handleClick);
+    }
+
+    window.addEventListener("scroll", function () {
+      AOS.refresh();
+    });
   }, []);
 
   return (
@@ -85,8 +114,24 @@ export default function Layout({ children, page, headerRef }) {
         ></link>
       </Head>
 
-      <div className="success-message" id="success-message" />
-      <div className="error-message" id="error-message" />
+      <Snackbar
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "right",
+        }}
+        open={open}
+        TransitionComponent={function SlideTransition(props) {
+          return <Slide {...props} direction="left" />;
+        }}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="New version is available!"
+        action={
+          <Button color="secondary" size="small" onClick={handleNewVersion}>
+            Refresh
+          </Button>
+        }
+      />
 
       <div className={theme === "dark" ? "dark" : ""}>
         <Nav

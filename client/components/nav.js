@@ -96,7 +96,6 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {theme === "dark" ? (
               <img
                 src="images/DSC_JSSSTU-dark.png"
-                data-aos="fade-up"
                 className="logo-nav"
                 alt="DSC JSSSTU"
               />
@@ -110,7 +109,6 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {theme === "light" ? (
               <img
                 src="images/DSC_JSSSTU-color.png"
-                data-aos="fade-up"
                 className="logo-nav-light"
                 alt="DSC JSSSTU"
               />
