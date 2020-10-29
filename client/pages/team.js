@@ -66,10 +66,10 @@ export default function Team() {
 						</Link>
 						<div className="team-header-image">
 							<Image
-								src="images/team.svg"
+								src="/images/team.svg"
 								className="main-image"
 								alt="DSC VIT Team"
-							/>
+							  unsized />
 						</div>
 					</div>
 
