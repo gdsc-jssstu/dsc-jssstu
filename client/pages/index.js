@@ -30,6 +30,7 @@ export default function Home() {
                   src="/images/DSC_JSSSTU-dark.png"
                   className="logo"
                   alt="DSC JSSSTU"
+                  unsized
                 />
               ) : (
                   <></>
@@ -210,10 +211,11 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <img
-              src="images/Github.svg"
+            <Image
+              src="/images/Github.svg"
               className="circle-icon"
               alt="DSC JSSSTU GitHub"
+              unsized
             />
           </a>
           {/* <a
