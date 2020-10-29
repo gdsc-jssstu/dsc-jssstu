@@ -36,8 +36,9 @@ export default function Events() {
                   <source type="image/png" srcSet="images/speaker_banner.png" />
                   <Image
                     className="header-img"
-                    src="images/speaker_banner.png"
+                    src="/images/speaker_banner.png"
                     alt="DSC JSSSTU Events"
+                    unsized
                   />
                 </picture>
               </div>

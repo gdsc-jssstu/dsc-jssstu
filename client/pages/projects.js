@@ -30,7 +30,8 @@ export default function Projects() {
             <div className="col-lg-6" style={{ textAlign: "center" }}>
               <Image
                 className="img-fluid"
-                src="https://d33wubrfki0l68.cloudfront.net/4ca4b8ee50e95fb46c02681f286963aa6fa94c9f/4ead2/assets/img/kit/dunkathon.png"
+                src="/images/team.svg"
+                unsized
               />
             </div>
           </div>
@@ -41,12 +42,12 @@ export default function Projects() {
             <div className="card">
               <Image
                 style={{
-                  height: "100%",
-                  width: "100%",
                   objectFit: "contain",
                 }}
-                src="images/jssstucse.jpg"
+                src="/images/jssstucse.jpg"
                 alt="dsc logo"
+                height= "250px"
+                width= "350px"
               ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
@@ -70,9 +71,10 @@ export default function Projects() {
                 <a href="#" target="_blank" rel="noopener">
                   <Image
                     style={{ height: "5px", width: "5px" }}
-                    src="images/Linkedin.svg"
+                    src="/images/Linkedin.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Link"
+                    unsized
                   />
                 </a>
                 <a
@@ -81,9 +83,10 @@ export default function Projects() {
                   rel="noopener"
                 >
                   <Image
-                    src="images/Github.svg"
+                    src="/images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"
+                    unsized
                   />
                 </a>
               </div>
@@ -99,8 +102,9 @@ export default function Projects() {
                   backgroundColor: "#ffd904a1",
                   objectFit: "scale-down",
                 }}
-                src="images/projectReachout.jpeg"
+                src="/images/projectReachout.jpeg"
                 alt="dsc logo"
+                unsized
               ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
@@ -123,16 +127,18 @@ export default function Projects() {
                   rel="noopener"
                 >
                   <Image
-                    src="images/Youtube.svg"
+                    src="/images/Youtube.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Youtube"
+                    unsized
                   />
                 </a>
                 <a href="#" target="_blank" rel="noopener">
                   <Image
-                    src="images/Github.svg"
+                    src="/images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"
+                    unsized
                   />
                 </a>
               </div>

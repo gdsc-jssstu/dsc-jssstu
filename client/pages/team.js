@@ -66,10 +66,10 @@ export default function Team() {
 						</Link>
 						<div className="team-header-image">
 							<Image
-								src="images/team.svg"
+								src="/images/team.svg"
 								className="main-image"
 								alt="DSC VIT Team"
-							/>
+							  unsized />
 						</div>
 					</div>
 
@@ -266,6 +266,7 @@ export default function Team() {
 													<div className="container team-card-row">
 														<div className="row">
 															<div className="col-md-6 team-card-column">
+															<h2 className="team-row-heads text-center">FLUTTER</h2>
 																<TeamCard>
 																	<TeamCardFront title="Card title" faceImage="images/face.jpg"
 																		instagramLink="#" githubLink="#" linkedinLink="#">

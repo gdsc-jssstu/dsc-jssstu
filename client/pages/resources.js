@@ -26,7 +26,8 @@ export default function Resources() {
               <div className="col-lg-6" style={{ textAlign: "center" }}>
                 <Image
                   className="img-fluid"
-                  src="https://d33wubrfki0l68.cloudfront.net/4ca4b8ee50e95fb46c02681f286963aa6fa94c9f/4ead2/assets/img/kit/dunkathon.png"
+                  src="/images/team.svg"
+                  unsized
                 />
               </div>
             </div>

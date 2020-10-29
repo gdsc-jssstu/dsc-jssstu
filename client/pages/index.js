@@ -27,9 +27,10 @@ export default function Home() {
               <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
               {theme === "dark" ? (
                 <Image
-                  src="images/DSC_JSSSTU-dark.png"
+                  src="/images/DSC_JSSSTU-dark.png"
                   className="logo"
                   alt="DSC JSSSTU"
+                  unsized
                 />
               ) : (
                   <></>
@@ -40,9 +41,10 @@ export default function Home() {
               <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
               {theme === "light" ? (
                 <Image
-                  src="images/DSC_JSSSTU-color.png"
+                  src="/images/DSC_JSSSTU-color.png"
                   className="logo-light"
                   alt="DSC JSSSTU"
+                  unsized
                 />
               ) : (
                   <></>
@@ -89,7 +91,7 @@ export default function Home() {
             </svg>
           </div>
         </Link>
-        <Image src="images/landing.svg" className="main-image" alt="Home Page" />
+        <Image src="/images/landing.svg" className="main-image" alt="Home Page" unsized/>
       </div>
       <div className="container-main holded-container" id="our-work">
         <h1 data-aos="fade-up" className=" text-center">
@@ -168,9 +170,10 @@ export default function Home() {
             rel="noopener"
           >
             <Image
-              src="images/Instagram.svg"
+              src="/images/Instagram.svg"
               className="circle-icon"
               alt="DSC JSSSTU Instagram"
+              unsized
             />
           </a>
           {/* <a href="https://twitter.com/dscvit" target="_blank" rel="noopener">
@@ -186,9 +189,10 @@ export default function Home() {
             rel="noopener"
           >
             <Image
-              src="images/Linkedin.svg"
+              src="/images/Linkedin.svg"
               className="circle-icon"
               alt="DSC JSSSTU Linkedin"
+              unsized
             />
           </a>
           {/* <a
@@ -207,10 +211,11 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <img
-              src="images/Github.svg"
+            <Image
+              src="/images/Github.svg"
               className="circle-icon"
               alt="DSC JSSSTU GitHub"
+              unsized
             />
           </a>
           {/* <a
@@ -226,9 +231,10 @@ export default function Home() {
           </a> */}
           <a href="https://medium.com/dscjssstu" target="_blank" rel="noopener">
             <Image
-              src="images/Medium.svg"
+              src="/images/Medium.svg"
               className="circle-icon"
               alt="DSC JSSSTU Medium"
+              unsized
             />
           </a>
           <a
@@ -237,9 +243,10 @@ export default function Home() {
             rel="noopener"
           >
             <Image
-              src="images/Youtube.svg"
+              src="/images/Youtube.svg"
               className="circle-icon"
               alt="DSC JSSSTU Youtube"
+              unsized
             />
           </a>
         </div>
