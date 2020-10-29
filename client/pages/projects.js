@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -41,9 +41,9 @@ export default function Projects() {
                 }}
                 src="/images/jssstucse.jpg"
                 alt="dsc logo"
-                height="250px"
-                width="370px"
-              ></Image>
+                height={250}
+                width={370}
+              />
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
                 {" "}
@@ -62,14 +62,13 @@ export default function Projects() {
               </p>
 
               <p>&emsp;</p>
-              <div className="icons small-icons" style={{display: "flex", justifyContent: "center"}}>
+              <div className="icons small-icons">
                 <a href="#" target="_blank" rel="noopener">
-                  <Image
+                  <img
                     style={{ height: "5px", width: "5px" }}
                     src="/images/Linkedin.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Link"
-                    unsized
                   />
                 </a>
                 <a
@@ -77,11 +76,10 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <Image
+                  <img
                     src="/images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"
-                    unsized
                   />
                 </a>
               </div>
@@ -98,8 +96,8 @@ export default function Projects() {
                 }}
                 src="/images/projectReachout.jpeg"
                 alt="dsc logo"
-                height= "250px"
-                width= "300px"
+                height={250}
+                width={300}
               ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
@@ -115,25 +113,23 @@ export default function Projects() {
                 in their lives to cope up with this world.
               </p>
 
-              <div className="icons small-icons" style={{display: "flex", justifyContent: "center"}}>
+              <div className="icons small-icons">
                 <a
                   href="https://youtu.be/HMPDMOthVDU"
                   target="_blank"
                   rel="noopener"
                 >
-                  <Image
+                  <img
                     src="/images/Youtube.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Youtube"
-                    unsized
                   />
                 </a>
                 <a href="#" target="_blank" rel="noopener">
-                  <Image
+                  <img
                     src="/images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"
-                    unsized
                   />
                 </a>
               </div>

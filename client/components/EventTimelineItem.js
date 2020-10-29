@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import Image from "next/image";
 
 const EventTimelineItem = ({ event }) => {
   return (
@@ -19,7 +20,7 @@ const EventTimelineItem = ({ event }) => {
             <span className="etmln_timeline_dot"></span>
           </div>
           <div className="etmln_img_slider">
-            <Carousel renderThumbs={() => { }}>
+            <Carousel renderThumbs={() => {}}>
               {event.images.map((img, idx) => {
                 return (
                   <div
@@ -27,7 +28,7 @@ const EventTimelineItem = ({ event }) => {
                     data-aos="zoom-in-up"
                     key={{ idx }}
                   >
-                    <img className="etmln-img" src={img}></img>
+                    <Image className="etmln-img" src={img} unsized />
                   </div>
                 );
               })}

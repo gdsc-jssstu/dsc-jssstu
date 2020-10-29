@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Resources() {
   return (
@@ -24,11 +24,7 @@ export default function Resources() {
                 <p>&nbsp;</p>
               </div>
               <div className="col-lg-6" style={{ textAlign: "center" }}>
-                <Image
-                  className="img-fluid"
-                  src="/images/team.svg"
-                  unsized
-                />
+                <Image className="img-fluid" src="/images/team.svg" unsized />
               </div>
             </div>
           </div>

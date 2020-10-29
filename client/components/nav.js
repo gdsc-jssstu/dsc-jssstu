@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Nav({ page, headerRef, theme, toggleTheme }) {
   const menuRef = useRef(null);
@@ -94,10 +95,12 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
             <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
             {theme === "dark" ? (
-              <img
-                src="images/DSC_JSSSTU-dark.png"
+              <Image
+                src="/images/DSC_JSSSTU-dark.png"
                 className="logo-nav"
                 alt="DSC JSSSTU"
+                width={250}
+                height={55}
               />
             ) : (
               <></>
@@ -107,10 +110,12 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
             <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
             {theme === "light" ? (
-              <img
-                src="images/DSC_JSSSTU-color.png"
+              <Image
+                src="/images/DSC_JSSSTU-color.png"
                 className="logo-nav-light"
                 alt="DSC JSSSTU"
+                width={250}
+                height={55}
               />
             ) : (
               <></>
