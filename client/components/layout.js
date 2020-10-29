@@ -4,6 +4,7 @@ import { useDarkMode } from "./themeMode";
 import Head from "next/head";
 import AOS from "aos";
 import Nav from "./nav";
+const FontFaceObserver = require("fontfaceobserver");
 
 export const siteTitle = "DSC JSSSTU";
 
@@ -31,6 +32,21 @@ export default function Layout({ children, page, headerRef }) {
     window.workbox.messageSW({ type: "SKIP_WAITING" });
   };
 
+  const Fonts = () => {
+    const link = document.createElement("link");
+    link.href =
+      "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap";
+    link.rel = "stylesheet";
+
+    document.head.appendChild(link);
+
+    const openSans = new FontFaceObserver("Open Sans");
+
+    openSans.load().then(() => {
+      document.documentElement.classList.add("open-sans");
+    });
+  };
+
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
@@ -40,6 +56,8 @@ export default function Layout({ children, page, headerRef }) {
       window.workbox.addEventListener("waiting", handleClick);
       window.workbox.addEventListener("externalwaiting", handleClick);
     }
+
+    Fonts();
 
     window.addEventListener("scroll", function () {
       AOS.refresh();
@@ -72,7 +90,7 @@ export default function Layout({ children, page, headerRef }) {
                     JSS Science and Technology University, Mysore"
         />
         <meta property="og:image" content="favicon.ico" />
-        {/* <meta property="og:url" content="https://dscjssstu.netlify.com/" /> */}
+        <meta property="og:url" content="https://dsc-web.vercel.app/" />
 
         <link rel="manifest" href="/manifest.json" />
 
@@ -99,19 +117,9 @@ export default function Layout({ children, page, headerRef }) {
 
         <title>{siteTitle}</title>
 
-        {/* <!--     Links to css CDN's     --> */}
-        {/* <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-          rel="stylesheet"
-        /> */}
-
         {/* <!--     Links to css files     --> */}
         <link rel="stylesheet" href="css/index.css" />
         <link rel="stylesheet" href="css/svg.css" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
 
       <Snackbar
