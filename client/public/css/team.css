@@ -42,7 +42,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
   .main-image{
-      top: 30vh;
+      top: 35vh;
   }
 
 }
@@ -51,7 +51,7 @@
 @media (max-width: 767px) {
 
   .main-image{
-      top: 30vh;
+      top: 35vh;
       transform:translateY(0%);
       float: left;
       padding-left:15vw;
@@ -63,7 +63,7 @@
 @media (max-width: 480px) {
 
   .main-image{
-      top: 30vh;
+      top: 35vh;
       transform:translateY(0%);
       float: left;
       padding-left:15vw;
@@ -274,31 +274,71 @@ margin: 0 0.5rem 0 0.5rem!important;
 }
 
 .chapter-lead-card {
-background-color: #1967D2 !important;
+background-color: #FEF7E0 !important;
 }
 
 .execom .flip-card-front .card-body{
-background-color: #4285F4 !important;
-}
-
-.execom .flip-card-back .card-body{
 background-color: #D2E3FC !important;
 }
 
-.technical .flip-card-front .card-body{
-background-color: #34AB53 !important;
+.execom .flip-card-back .card-body{
+background-color: #4285F4 !important;
 }
 
-.technical .flip-card-back .card-body {
+.technical .flip-card-front .card-body{
 background-color: #CEEAD6 !important;
 }
 
+.technical .flip-card-back .card-body {
+background-color: #34AB53 !important;
+}
+
 .creative .flip-card-front .card-body{
-background-color: #EA4335 !important;
+background-color: #FAD2CF !important;
 }
 
 .creative .flip-card-back .card-body{
+background-color: #EA4335 !important;
+}
+
+.organisational .flip-card-front .card-body {
+background-color: #FEEFC3 !important;
+}
+
+.organisational .flip-card-back .card-body {
+background-color: #FBBC04 !important;
+}
+
+/*Dark Mode*/
+.dark .chapter-lead-card {
+background-color: #1967D2 !important;
+}
+
+.dark .execom .flip-card-front .card-body{
+background-color: #4285F4 !important;
+}
+
+.dark .execom .flip-card-back .card-body{
+background-color: #D2E3FC !important;
+color: #000 !important;
+}
+
+.dark .technical .flip-card-front .card-body{
+background-color: #34AB53 !important;
+}
+
+.dark .technical .flip-card-back .card-body {
+background-color: #CEEAD6 !important;
+color: #000 !important;
+}
+
+.dark .creative .flip-card-front .card-body{
+background-color: #EA4335 !important;
+}
+
+.dark .creative .flip-card-back .card-body{
 background-color: #FAD2CF !important;
+color: #000 !important;
 }
 
 .organisational .flip-card-front .card-body {
@@ -307,10 +347,7 @@ background-color: #FBBC04 !important;
 
 .organisational .flip-card-back .card-body {
 background-color: #FEEFC3 !important;
-}
-
-.sticky-top {
-top: 5em;
+color: #000 !important;
 }
 
 /*Card and Card Flip*/
@@ -380,114 +417,8 @@ transform: rotateX(0deg);
 transform: rotateY(-180deg);
 }
 
-/* Side Bar */
-
-@supports ((position: -webkit-sticky) or (position: sticky)) {
-.sticky-top {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  right: 0;
-  z-index: 1020;
-}
-}
-
-.sidebar-column{
-position: relative;
-width: 100%;
-padding-right: 15px;
-padding-left: 15px;
--ms-flex: 0 0 8.333333%;
-flex: 0 0 8.333333%;
-max-width: 8.333333%;
--ms-flex-order: 1;
-order: 1;
-padding-bottom: 1rem !important;
-margin-bottom: 1rem !important;
-float: right;
-}
-
-@media (min-width: 1200px) {
-.sidebar-column {
-  -ms-flex-order: 12;
-  order: 12;
-}
-}
-
-
-.sidebar {
-height: 100%;
-width: 0;
-position: fixed;
-z-index: 10000;
-top: 0;
-right: 0;
-background-color: #111;
-overflow-x: hidden;
-transition: 0.5s;
-padding-top: 60px;
-}
-
-.sidebar a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #818181;
-display: block;
-transition: 0.3s;
-}
-
-.sidebar a:hover {
-color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-}
-
-.openbtn {
-font-size: 20px;
-cursor: pointer;
-background-color: #111;
-color: white;
-padding: 10px 15px;
-border: none;
-}
-
-.openbtn:hover {
-background-color: #444;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-.sidebar {
-  padding-top: 15px;
-}
-
-.sidebar a {
-  font-size: 18px;
-}
-}
-
-/*The Sidebar Button*/
-#main{
-
-width: 115px;
-height: 0px;
-text-align:right;
-z-index:999;
-margin-top:-15px;
-transition: margin-left .5s;
-}
 
 /*Sidebar*/
-
-
 
 .bm-item {
 display: inline-block;
@@ -529,7 +460,15 @@ background: #bdc3c7;
 
 /* General sidebar styles */
 .bm-menu {
-background: #000;
+background: #fff !important;
+color: #000;
+padding: 2.5em 1.5em 0;
+font-size: 1.15em;
+}
+
+.dark .bm-menu {
+background: #000 !important;
+color: #fff;
 padding: 2.5em 1.5em 0;
 font-size: 1.15em;
 }

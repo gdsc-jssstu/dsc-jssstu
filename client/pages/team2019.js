@@ -267,6 +267,7 @@ export default function Team() {
 													<div className="container team-card-row">
 														<div className="row">
 															<div className="col-md-6 team-card-column">
+															<h2 className="team-row-heads text-center">FLUTTER</h2>
 																<TeamCard>
 																	<TeamCardFront title="Card title" faceImage="images/face.jpg"
 																		instagramLink="#" githubLink="#" linkedinLink="#">
