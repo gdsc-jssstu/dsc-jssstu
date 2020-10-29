@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Home() {
   const headerRef = useRef(null);
@@ -30,11 +30,13 @@ export default function Home() {
                   src="/images/DSC_JSSSTU-dark.png"
                   className="logo"
                   alt="DSC JSSSTU"
-                  unsized
+                  priority="true"
+                  width={350}
+                  height={80}
                 />
               ) : (
-                  <></>
-                )}
+                <></>
+              )}
             </picture>
             <picture>
               <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
@@ -44,11 +46,13 @@ export default function Home() {
                   src="/images/DSC_JSSSTU-color.png"
                   className="logo-light"
                   alt="DSC JSSSTU"
-                  unsized
+                  priority={true}
+                  width={350}
+                  height={80}
                 />
               ) : (
-                  <></>
-                )}
+                <></>
+              )}
             </picture>
           </div>
           <h2>Powered by Google Developers</h2>
@@ -91,7 +95,7 @@ export default function Home() {
             </svg>
           </div>
         </Link>
-        <Image src="/images/landing.svg" className="main-image" alt="Home Page" unsized />
+        <img src="/images/landing.svg" className="main-image" alt="Home Page" />
       </div>
       <div className="container-main holded-container" id="our-work">
         <h1 data-aos="fade-up" className=" text-center">
@@ -110,6 +114,26 @@ export default function Home() {
           WomenTechies, and tons of insightful workshops!
         </p>
       </div>
+
+      <div className="container-main holded-container">
+        <h1 data-aos="fade-up" className=" text-center">
+          About JSSSTU
+        </h1>
+        <p data-aos="fade-up" className="text-center extra-break">
+          JSS Science and Technology University, popularly known as SJCE or
+          JSSSTU, is a private university located in Mysore, Karnataka, India.
+          SJCE was Established in 1963. JSS S&T University is committed to
+          deliver high quality educational opportunities for youth and transform
+          not only its neighborhood but offer courses to equip aspiring youth to
+          meet the global needs of industry in every sector.
+        </p>
+        <a href="http://jssstuniv.in/" target="_blank" rel="noopener">
+          <div data-aos="fade-up" className="button-maker">
+            <div className="button-text">Learn More</div>
+          </div>
+        </a>
+      </div>
+
       <div className="container-main holded-container" id="team">
         <h1 data-aos="fade-up" className=" text-center">
           Get to know the team
@@ -146,7 +170,7 @@ export default function Home() {
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
           Our prime focus is to learn and disseminate knowledge. Our team roll
-          out blogs regularly on medium.
+          out blogs regularly on Medium.
         </p>
         <div data-aos="fade-up" className="buttons">
           <a href="https://medium.com/dscjssstu">
@@ -169,11 +193,10 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <Image
+            <img
               src="/images/Instagram.svg"
               className="circle-icon"
               alt="DSC JSSSTU Instagram"
-              unsized
             />
           </a>
           {/* <a href="https://twitter.com/dscvit" target="_blank" rel="noopener">
@@ -188,11 +211,10 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <Image
+            <img
               src="/images/Linkedin.svg"
               className="circle-icon"
               alt="DSC JSSSTU Linkedin"
-              unsized
             />
           </a>
           {/* <a
@@ -211,11 +233,10 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <Image
+            <img
               src="/images/Github.svg"
               className="circle-icon"
               alt="DSC JSSSTU GitHub"
-              unsized
             />
           </a>
           {/* <a
@@ -230,11 +251,10 @@ export default function Home() {
             />
           </a> */}
           <a href="https://medium.com/dscjssstu" target="_blank" rel="noopener">
-            <Image
+            <img
               src="/images/Medium.svg"
               className="circle-icon"
               alt="DSC JSSSTU Medium"
-              unsized
             />
           </a>
           <a
@@ -242,22 +262,37 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <Image
+            <img
               src="/images/Youtube.svg"
               className="circle-icon"
               alt="DSC JSSSTU Youtube"
-              unsized
             />
           </a>
         </div>
       </div>
       <div className="container-main holded-container">
         <h1 data-aos="fade-up" className=" text-center">
+          Partners
+        </h1>
+        <p data-aos="fade-up" className="text-center extra-break">
+          Thank you to our Partners for their support towards the community. If
+          you want to be showcased through DSC JSSSTU, contact us for
+          Sponsorship details.
+        </p>
+        <a href="/ideas" target="_blank" rel="noopener">
+          <div data-aos="fade-up" className="button-maker">
+            <div className="button-text">Get In Touch</div>
+          </div>
+        </a>
+      </div>
+
+      <div className="container-main holded-container">
+        <h1 data-aos="fade-up" className=" text-center">
           Submit an idea
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Didn’t get the chance to implement your favourite idea? Why not give
-          us a chance to bring it to real life.
+          Didn’t get a chance to implement your favourite idea? Why not give us
+          a chance to bring it to real life?
         </p>
         <a href="/ideas" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
@@ -267,8 +302,10 @@ export default function Home() {
       </div>
 
       <div className="footer container-main  container-main-last">
-        <div className="dark-light-toggle  text-center" id="dark-light-toggle">
-        </div>
+        <div
+          className="dark-light-toggle  text-center"
+          id="dark-light-toggle"
+        ></div>
       </div>
     </Layout>
   );

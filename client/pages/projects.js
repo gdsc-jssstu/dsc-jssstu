@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -19,20 +19,13 @@ export default function Projects() {
               <p>&nbsp;</p>
               <p>&nbsp;</p>
               <p>&nbsp;</p>
-              <h2 className="title">Projects</h2>
-              <h5 className="description">
+              <h1 className="title">Projects</h1>
+              <p className="description">
                 Learing goes hand-in-hand with building new and cool stuff. And
                 here, we keep building stuff all the time. Here are a few of
                 them.
-              </h5>
+              </p>
               <p>&nbsp;</p>
-            </div>
-            <div className="col-lg-6" style={{ textAlign: "center" }}>
-              <Image
-                className="img-fluid"
-                src="/images/dunkathon.png"
-                unsized
-              />
             </div>
           </div>
         </div>
@@ -43,12 +36,14 @@ export default function Projects() {
               <Image
                 style={{
                   objectFit: "contain",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
                 src="/images/jssstucse.jpg"
                 alt="dsc logo"
-                height="250px"
-                width="350px"
-              ></Image>
+                height={250}
+                width={370}
+              />
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
                 {" "}
@@ -69,12 +64,11 @@ export default function Projects() {
               <p>&emsp;</p>
               <div className="icons small-icons">
                 <a href="#" target="_blank" rel="noopener">
-                  <Image
+                  <img
                     style={{ height: "5px", width: "5px" }}
                     src="/images/Linkedin.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Link"
-                    unsized
                   />
                 </a>
                 <a
@@ -82,11 +76,10 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <Image
+                  <img
                     src="/images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"
-                    unsized
                   />
                 </a>
               </div>
@@ -97,14 +90,14 @@ export default function Projects() {
             <div className="card">
               <Image
                 style={{
-                  height: "169px",
-                  width: "100%",
-                  backgroundColor: "#ffd904a1",
-                  objectFit: "scale-down",
+                  objectFit: "contain",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
                 src="/images/projectReachout.jpeg"
                 alt="dsc logo"
-                unsized
+                height={250}
+                width={300}
               ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
@@ -126,19 +119,17 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <Image
+                  <img
                     src="/images/Youtube.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU Youtube"
-                    unsized
                   />
                 </a>
                 <a href="#" target="_blank" rel="noopener">
-                  <Image
+                  <img
                     src="/images/Github.svg"
                     className="circle-icon"
                     alt="DSC JSSSTU GitHub"
-                    unsized
                   />
                 </a>
               </div>

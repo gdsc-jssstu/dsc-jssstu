@@ -1,9 +1,13 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 
-export default props => {
+export default function Sidebar(props) {
   return (
-    <Menu {...props} right customBurgerIcon={ <img src="images/sidemenu.jpg" /> }>
+    <Menu
+      {...props}
+      right
+      customBurgerIcon={<img src="/images/sidemenu.jpg" />}
+    >
       <a className="menu-item" href="/team">
         2020
       </a>
@@ -13,4 +17,4 @@ export default props => {
       </a>
     </Menu>
   );
-};
+}
