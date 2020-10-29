@@ -1,8 +1,9 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useContext } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
 import Image from "next/image";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 export default function Home() {
   const headerRef = useRef(null);
@@ -12,6 +13,8 @@ export default function Home() {
     const localTheme = localStorage.getItem("theme");
     setTheme(localTheme);
   }, []);
+
+  const themeContext = useContext(ThemeContext);
 
   return (
     <Layout page="home" headerRef={headerRef}>
@@ -25,7 +28,7 @@ export default function Home() {
             <picture>
               <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
               <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
-              {theme === "dark" ? (
+              {themeContext.theme === "dark" ? (
                 <Image
                   src="/images/DSC_JSSSTU-dark.png"
                   className="logo"
@@ -41,7 +44,7 @@ export default function Home() {
             <picture>
               <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
               <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
-              {theme === "light" ? (
+              {themeContext.theme === "light" ? (
                 <Image
                   src="/images/DSC_JSSSTU-color.png"
                   className="logo-light"

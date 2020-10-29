@@ -9,7 +9,6 @@ export default function Events() {
     <Layout page="events">
       <Head>
         <title>{siteTitle} - Events</title>
-        <link rel="stylesheet" href="css/events.css" />
       </Head>
       <div
         className="main main-raised"
@@ -35,11 +34,11 @@ export default function Events() {
                   />
                   <source type="image/png" srcSet="images/speaker_banner.png" />
                   <Image
-                    className="header-img"
+                    className="events-header-img"
                     src="/images/speaker_banner.png"
                     alt="DSC JSSSTU Events"
-                    width={350}
-                    height={200}
+                    width={564/1.3}
+                    height={214/1.3}
                   />
                 </picture>
               </div>

@@ -1,0 +1,25 @@
+.spinnerDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    visibility: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.dark .spinnerDiv {
+    background: #333;
+}
+
+.loading .spinnerDiv {
+    visibility: 1;
+    opacity: 1;
+    z-index: -100;
+}

@@ -119,6 +119,7 @@ export default function Layout({ children, page, headerRef }) {
 
         {/* <!--     Links to css files     --> */}
         <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/events.css" />
         <link rel="stylesheet" href="css/svg.css" />
       </Head>
 
