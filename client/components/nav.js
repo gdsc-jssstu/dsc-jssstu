@@ -71,7 +71,7 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
               <Link href="#blog">Blog</Link>
             ) : (
               <>
-                <Link href="/blog">Blog</Link>
+                <Link href="https://medium.com/dscjssstu">Blog</Link>
               </>
             )}
           </h2>

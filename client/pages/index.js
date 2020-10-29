@@ -91,7 +91,7 @@ export default function Home() {
             </svg>
           </div>
         </Link>
-        <Image src="/images/landing.svg" className="main-image" alt="Home Page" unsized/>
+        <Image src="/images/landing.svg" className="main-image" alt="Home Page" unsized />
       </div>
       <div className="container-main holded-container" id="our-work">
         <h1 data-aos="fade-up" className=" text-center">
@@ -149,7 +149,7 @@ export default function Home() {
           out blogs regularly on medium.
         </p>
         <div data-aos="fade-up" className="buttons">
-          <a href="/blog">
+          <a href="https://medium.com/dscjssstu">
             <div className="button-maker" id="projects-button">
               <div className="button-text">Check out</div>
             </div>
@@ -268,7 +268,6 @@ export default function Home() {
 
       <div className="footer container-main  container-main-last">
         <div className="dark-light-toggle  text-center" id="dark-light-toggle">
-          <p>I want dark mode</p>
         </div>
       </div>
     </Layout>
