@@ -38,7 +38,8 @@ export default function Events() {
                     className="header-img"
                     src="/images/speaker_banner.png"
                     alt="DSC JSSSTU Events"
-                    unsized
+                    width= "350%"
+                    height= "200%"
                   />
                 </picture>
               </div>

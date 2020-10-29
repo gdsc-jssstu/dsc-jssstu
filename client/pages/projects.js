@@ -19,20 +19,13 @@ export default function Projects() {
               <p>&nbsp;</p>
               <p>&nbsp;</p>
               <p>&nbsp;</p>
-              <h2 className="title">Projects</h2>
-              <h5 className="description">
+              <h1 className="title">Projects</h1>
+              <p className="description">
                 Learing goes hand-in-hand with building new and cool stuff. And
                 here, we keep building stuff all the time. Here are a few of
                 them.
-              </h5>
+              </p>
               <p>&nbsp;</p>
-            </div>
-            <div className="col-lg-6" style={{ textAlign: "center" }}>
-              <Image
-                className="img-fluid"
-                src="/images/dunkathon.png"
-                unsized
-              />
             </div>
           </div>
         </div>
@@ -43,11 +36,13 @@ export default function Projects() {
               <Image
                 style={{
                   objectFit: "contain",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
                 src="/images/jssstucse.jpg"
                 alt="dsc logo"
                 height="250px"
-                width="350px"
+                width="370px"
               ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
@@ -67,7 +62,7 @@ export default function Projects() {
               </p>
 
               <p>&emsp;</p>
-              <div className="icons small-icons">
+              <div className="icons small-icons" style={{display: "flex", justifyContent: "center"}}>
                 <a href="#" target="_blank" rel="noopener">
                   <Image
                     style={{ height: "5px", width: "5px" }}
@@ -97,14 +92,14 @@ export default function Projects() {
             <div className="card">
               <Image
                 style={{
-                  height: "169px",
-                  width: "100%",
-                  backgroundColor: "#ffd904a1",
-                  objectFit: "scale-down",
+                  objectFit: "contain",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
                 src="/images/projectReachout.jpeg"
                 alt="dsc logo"
-                unsized
+                height= "250px"
+                width= "300px"
               ></Image>
               <p>&nbsp;</p>
               <h2 style={{ fontWeight: "400", color: "#06f" }}>
@@ -120,7 +115,7 @@ export default function Projects() {
                 in their lives to cope up with this world.
               </p>
 
-              <div className="icons small-icons">
+              <div className="icons small-icons" style={{display: "flex", justifyContent: "center"}}>
                 <a
                   href="https://youtu.be/HMPDMOthVDU"
                   target="_blank"

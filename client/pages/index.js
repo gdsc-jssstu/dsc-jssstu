@@ -110,6 +110,21 @@ export default function Home() {
           WomenTechies, and tons of insightful workshops!
         </p>
       </div>
+
+      <div className="container-main holded-container">
+        <h1 data-aos="fade-up" className=" text-center">
+          About JSSSTU
+        </h1>
+        <p data-aos="fade-up" className="text-center extra-break">
+          JSS Science and Technology University, popularly known as SJCE or JSSSTU, is a private university located in Mysore, Karnataka, India. SJCE was Established in 1963. JSS S&T University is committed to deliver high quality educational opportunities for youth and transform not only its neighborhood but offer courses to equip aspiring youth to meet the global needs of industry in every sector.
+        </p>
+        <a href="http://jssstuniv.in/" target="_blank" rel="noopener">
+          <div data-aos="fade-up" className="button-maker">
+            <div className="button-text">Learn More</div>
+          </div>
+        </a>
+      </div>
+
       <div className="container-main holded-container" id="team">
         <h1 data-aos="fade-up" className=" text-center">
           Get to know the team
@@ -146,7 +161,7 @@ export default function Home() {
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
           Our prime focus is to learn and disseminate knowledge. Our team roll
-          out blogs regularly on medium.
+          out blogs regularly on Medium.
         </p>
         <div data-aos="fade-up" className="buttons">
           <a href="https://medium.com/dscjssstu">
@@ -163,7 +178,7 @@ export default function Home() {
         <p data-aos="fade-up" className="text-center extra-break">
           We’re very active on social media.
         </p>
-        <div data-aos="fade-up" className="icons small-icons">
+        <div data-aos="fade-up" className="icons small-icons" style={{display: "flex", justifyContent: "center"}}>
           <a
             href="https://instagram.com/dscjssstu"
             target="_blank"
@@ -253,11 +268,25 @@ export default function Home() {
       </div>
       <div className="container-main holded-container">
         <h1 data-aos="fade-up" className=" text-center">
+          Partners
+        </h1>
+        <p data-aos="fade-up" className="text-center extra-break">
+          Thank you to our Partners for their support towards the community. If you want to be showcased through DSC JSSSTU, contact us for Sponsorship details.
+        </p>
+        <a href="/ideas" target="_blank" rel="noopener">
+          <div data-aos="fade-up" className="button-maker">
+            <div className="button-text">Get In Touch</div>
+          </div>
+        </a>
+      </div>
+
+      <div className="container-main holded-container">
+        <h1 data-aos="fade-up" className=" text-center">
           Submit an idea
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Didn’t get the chance to implement your favourite idea? Why not give
-          us a chance to bring it to real life.
+          Didn’t get a chance to implement your favourite idea? Why not give
+          us a chance to bring it to real life?
         </p>
         <a href="/ideas" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
