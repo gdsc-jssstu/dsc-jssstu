@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
-// import styles from "../styles/Home.module.css";
+import Image from 'next/image';
 
 export default function Home() {
   const headerRef = useRef(null);
@@ -26,27 +26,27 @@ export default function Home() {
               <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
               <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
               {theme === "dark" ? (
-                <img
+                <Image
                   src="images/DSC_JSSSTU-dark.png"
                   className="logo"
                   alt="DSC JSSSTU"
                 />
               ) : (
-                <></>
-              )}
+                  <></>
+                )}
             </picture>
             <picture>
               <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
               <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
               {theme === "light" ? (
-                <img
+                <Image
                   src="images/DSC_JSSSTU-color.png"
                   className="logo-light"
                   alt="DSC JSSSTU"
                 />
               ) : (
-                <></>
-              )}
+                  <></>
+                )}
             </picture>
           </div>
           <h2>Powered by Google Developers</h2>
@@ -89,7 +89,7 @@ export default function Home() {
             </svg>
           </div>
         </Link>
-        <img src="images/landing.svg" className="main-image" alt="Home Page" />
+        <Image src="images/landing.svg" className="main-image" alt="Home Page" />
       </div>
       <div className="container-main holded-container" id="our-work">
         <h1 data-aos="fade-up" className=" text-center">
@@ -167,7 +167,7 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <img
+            <Image
               src="images/Instagram.svg"
               className="circle-icon"
               alt="DSC JSSSTU Instagram"
@@ -185,7 +185,7 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <img
+            <Image
               src="images/Linkedin.svg"
               className="circle-icon"
               alt="DSC JSSSTU Linkedin"
@@ -225,7 +225,7 @@ export default function Home() {
             />
           </a> */}
           <a href="https://medium.com/dscjssstu" target="_blank" rel="noopener">
-            <img
+            <Image
               src="images/Medium.svg"
               className="circle-icon"
               alt="DSC JSSSTU Medium"
@@ -236,7 +236,7 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <img
+            <Image
               src="images/Youtube.svg"
               className="circle-icon"
               alt="DSC JSSSTU Youtube"

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import EventTimeline from "../components/EventTimeline";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from 'next/image';
 
 export default function Events() {
   return (
@@ -33,7 +34,7 @@ export default function Events() {
                     srcSet="images/speaker_banner.webp"
                   />
                   <source type="image/png" srcSet="images/speaker_banner.png" />
-                  <img
+                  <Image
                     className="header-img"
                     src="images/speaker_banner.png"
                     alt="DSC JSSSTU Events"

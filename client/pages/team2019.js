@@ -4,6 +4,7 @@ import Layout, { siteTitle } from "../components/layout";
 import SideBar from "../components/sidebar";
 import TeamBigCard from '../components/TeamBigCard';
 import { TeamCard, TeamCardFront, TeamCardBack } from '../components/TeamCard';
+import Image from 'next/image';
 
 export default function Team() {
 	return (
@@ -64,7 +65,7 @@ export default function Team() {
 							</div>
 						</Link>
 						<div className="team-header-image">
-							<img
+							<Image
 								src="images/team.svg"
 								className="main-image"
 								alt="DSC VIT Team"

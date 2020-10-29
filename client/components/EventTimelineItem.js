@@ -19,7 +19,7 @@ const EventTimelineItem = ({ event }) => {
             <span className="etmln_timeline_dot"></span>
           </div>
           <div className="etmln_img_slider">
-            <Carousel renderThumbs={() => {}}>
+            <Carousel renderThumbs={() => { }}>
               {event.images.map((img, idx) => {
                 return (
                   <div
