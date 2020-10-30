@@ -164,7 +164,7 @@
 }
 
 .etmln-img-container {
-    height: 350px;
+    height: 100%;
 }
 
 .etmln-img {
@@ -220,5 +220,8 @@
     .etmln_img_slider {
         width: 100%;
         height: inherit;
+    }
+    .etmln-img-container {
+        height: 350px;
     }
 }
