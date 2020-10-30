@@ -110,3 +110,8 @@ html * {
   height: 100px;
   width: 100px;
 }
+
+.project-circle-icon{
+  height: 2rem;
+  width: 2rem;
+}
