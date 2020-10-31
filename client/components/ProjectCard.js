@@ -31,12 +31,14 @@ const ProjectCard = ({project}) =>  {
 
   return (
     <ThemeProvider theme = {cardtheme}>
-      <Card style={{maxWidth: 345}}>
+      <Card style={{maxWidth: 345, minWidth: 330, height: "32rem"}}>
         <CardActionArea>
           <CardMedia
             style={{
-              height: 250,
+              maxWidth:330,
+              maxHeight:170,
               width: "auto",
+              height: "auto",
               margin: "auto",
             }}
             component="img"

@@ -19,8 +19,6 @@ export default function Projects() {
             <div className="col-lg-6">
               <p>&nbsp;</p>
               <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
               <h1 className="title">Projects</h1>
               <p className="description">
                 Learing goes hand-in-hand with building new and cool stuff. And
@@ -30,18 +28,18 @@ export default function Projects() {
               <p>&nbsp;</p>
             </div>
           </div>
-        </div>
 
-        <div className="row">
+          <div className="row">
 
-          {
-            projectData.map( (project,idx) =>
-              (<div className="column">
-                <ProjectCard project={project} key={idx} />
-              </div>)
-            )
-          }
+            {
+              projectData.map( (project,idx) =>
+                (<div className="column">
+                  <ProjectCard project={project} key={idx} />
+                </div>)
+              )
+            }
 
+          </div>
         </div>
       </div>
     </Layout>
