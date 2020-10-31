@@ -50,7 +50,7 @@ const ProjectCard = ({project}) =>  {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions style={{justifyContent: 'center'}}>
         {
           project.links.map((links,idx) =>
             (
