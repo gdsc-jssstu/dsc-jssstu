@@ -1,5 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { ThemeContext } from "../contexts/ThemeContext";
+import { useEffect, useState, useContext } from "react";
+
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import Card from '@material-ui/core/Card';
@@ -11,37 +13,32 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 250,
-  },
-  content: {
-    height: "16rem",
-  }
-});
-
 const ProjectCard = ({project}) =>  {
-  const classes = useStyles();
+  const [theme, setTheme] = useState("light");
 
-  /*const theme = createMuiTheme ({
+  useEffect(() => {
+    const localTheme = localStorage.getItem("theme");
+    setTheme(localTheme);
+  }, []);
+
+  const themeContext = useContext(ThemeContext);
+
+  const cardtheme = createMuiTheme ({
           palette:{
              type: themeContext.theme === "dark" ? "dark" : "light",
           },
-        });*/
+        });
 
   return (
-    /*<ThemeProvider theme = {theme}>*/
-      <Card className={classes.root}>
+    <ThemeProvider theme = {cardtheme}>
+      <Card style={{maxWidth: 345}}>
         <CardActionArea>
           <CardMedia
-            className={classes.media}
+            style={{height:250}}
             image={project.image}
             title={project.imageAlt}
           />
-          <CardContent className={classes.content}>
+          <CardContent style={{height: "16rem"}}>
             <Typography gutterBottom variant="h5" component="h2">
               {project.name}
             </Typography>
@@ -54,27 +51,24 @@ const ProjectCard = ({project}) =>  {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-          <a href={project.links[0].link} target="_blank" rel="noopener">
-            <img
-              src={project.links[0].icon}
-              className="project-circle-icon"
-              alt={project.links[0].alt}
-            />
-          </a>
-          </Button>
-          <Button size="small" color="primary">
-          <a href={project.links[1].link} target="_blank" rel="noopener">
-            <img
-              src={project.links[1].icon}
-              className="project-circle-icon"
-              alt={project.links[1].alt}
-            />
-          </a>
-          </Button>
+        {
+          project.links.map((links,idx) =>
+            (
+              <Button size="small" color="primary"  key={idx}>
+                  <a href={links.link} target="_blank" rel="noopener">
+                  <img
+                    src={links.icon}
+                    className="project-circle-icon"
+                    alt={links.alt}
+                  />
+                </a>
+              </Button>)
+          )
+        }
+
         </CardActions>
       </Card>
-    /*</ThemeProvider>*/
+    </ThemeProvider>
   );
 }
 

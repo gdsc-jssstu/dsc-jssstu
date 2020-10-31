@@ -35,9 +35,9 @@ export default function Projects() {
         <div className="row">
 
           {
-            projectData.map(project =>
+            projectData.map( (project,idx) =>
               (<div className="column">
-                <ProjectCard project={project} key={project.key} />
+                <ProjectCard project={project} key={idx} />
               </div>)
             )
           }

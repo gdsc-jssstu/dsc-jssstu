@@ -1,6 +1,5 @@
 const projectData= [
   {
-    key: "1",
     name: "JSSSTU CSE Department",
     image: "/images/jssstucse.jpg",
     imageAlt: "CSE SJCE",
@@ -21,7 +20,6 @@ const projectData= [
     },
 
     {
-      key: "2",
       name: "Project ReachOut",
       image: "/images/projectReachout.jpeg",
       imageAlt: "Project Reachout",
