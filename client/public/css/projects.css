@@ -29,6 +29,8 @@ html * {
   display: table;
   width: 40%;
   padding: 10px 10px;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 /* Responsive columns */
@@ -61,13 +63,22 @@ html * {
   }
 }
 
+.container-page{
+  margin: auto;
+}
+
+.col-lg-6{
+  text-align:center;
+  max-width:70vw;
+}
+
 /* Remove extra left and right margins, due to padding */
 .row {
-  width: 70%; /* Set full-width to expand the whole page */
-  display: flex;
-  justify-content: center;
+  width: 100%; /* Set full-width to expand the whole page */
+  display: flex !important;
+  justify-content: center !important;
   flex-wrap: wrap;
-  margin-left: 15%;
+  padding: 0 7% 0 7%;
   background: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
@@ -79,7 +90,6 @@ html * {
   background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)),
     url("../images/after-landing-dark.svg") center center fixed;
   background-size: cover;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 /* Clear floats after the columns */
 .row:after {
@@ -109,4 +119,9 @@ html * {
 .card_top {
   height: 100px;
   width: 100px;
+}
+
+.project-circle-icon{
+  height: 2rem;
+  width: 2rem;
 }
