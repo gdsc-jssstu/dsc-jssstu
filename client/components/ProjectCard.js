@@ -34,7 +34,12 @@ const ProjectCard = ({project}) =>  {
       <Card style={{maxWidth: 345}}>
         <CardActionArea>
           <CardMedia
-            style={{height:250}}
+            style={{
+              height: 250,
+              width: "auto",
+              margin: "auto",
+            }}
+            component="img"
             image={project.image}
             title={project.imageAlt}
           />
