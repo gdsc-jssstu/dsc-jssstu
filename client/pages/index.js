@@ -108,13 +108,11 @@ export default function Home() {
           data-aos="fade-up"
           className="continous-text text-center extra-break"
         >
-          We think slightly out of the box, we believe that a club’s resources
-          must not only be channeled into conducting events but also to
-          propagate learning and teaching, symbiotically.
+         We Believe that Together we can. We not only conduct events 
+         to impart learning but also various other activities and competitions!
         </p>
         <p data-aos="fade-up" className="text-center">
-          That said, we conduct two flagship events, namely, DevFest and
-          WomenTechies, and tons of insightful workshops!
+         “TEAM- Together Each Achieve more".
         </p>
       </div>
 
@@ -142,8 +140,8 @@ export default function Home() {
           Get to know the team
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          We’ve got a strong team filled with caffeine addicted developers,
-          gradients loving designers and machine like working managers.
+         We've got a strong team filled with passionate developers, 
+         dexterous designers and competent organisers!
         </p>
         <Link href="/team">
           <div data-aos="fade-up" className="button-maker">
@@ -153,11 +151,11 @@ export default function Home() {
       </div>
       <div className="container-main holded-container" id="updates">
         <h1 data-aos="fade-up" className=" text-center">
-          Updates
+          Projects
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          We are actively conducting workshops, and also contributing to the
-          development side by churning out high quality projects.
+          Proper execution of Knowledge leads to successful projects. 
+          Here are a few projects built by our team.
         </p>
         <Link href="/projects">
           <div data-aos="fade-up" className="buttons">
@@ -172,8 +170,8 @@ export default function Home() {
           Our Blogs
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Our prime focus is to learn and disseminate knowledge. Our team roll
-          out blogs regularly on Medium.
+          You learn by sharing your knowledge and we emphasize it! 
+          Our team disseminates their knowledge on Medium often.
         </p>
         <div data-aos="fade-up" className="buttons">
           <a href="https://medium.com/dscjssstu">
@@ -188,7 +186,7 @@ export default function Home() {
           Contact us
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          We’re very active on social media.
+         Reach out to us on these platforms! We're just a message away.
         </p>
         <div data-aos="fade-up" className="icons small-icons">
           <a
@@ -278,9 +276,9 @@ export default function Home() {
           Partners
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Thank you to our Partners for their support towards the community. If
-          you want to be showcased through DSC JSSSTU, contact us for
-          Sponsorship details.
+          Partners help us reach our goals and grow our community!
+          Thank You, for being one of them.
+          If you want to be one, contact us for Sponsorship Details.
         </p>
         <a href="/ideas" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
@@ -294,8 +292,8 @@ export default function Home() {
           Submit an idea
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Didn’t get a chance to implement your favourite idea? Why not give us
-          a chance to bring it to real life?
+          Tried implementing your idea and got stuck? Don't worry.
+          We got your back! Drop your idea here and we will implement it!
         </p>
         <a href="/ideas" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
