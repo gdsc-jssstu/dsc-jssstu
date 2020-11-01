@@ -56,10 +56,8 @@ export default function Home() {
             At DSC JSSSTU, our aim is to learn and teach. Developers, designers
             and managers come together under one roof to create a community
             which inspires thousands. Join Us!
-            <br />
-            <br />
-            Connect • Learn • Grow
           </p>
+          <p style={{ fontWeight: "400" }}>Connect • Learn • Grow</p>
         </div>
         <Link href="#our-work">
           <div className="main-down-arrow" id="down-arrow">
@@ -107,8 +105,12 @@ export default function Home() {
           We Believe that Together we can. We not only conduct events to impart
           learning but also various other activities and competitions!
         </p>
-        <p data-aos="fade-up" className="text-center">
-          “TEAM - Together Each Achieve More"
+        <p
+          data-aos="fade-up"
+          className="text-center"
+          style={{ fontWeight: "200" }}
+        >
+          TEAM - Together Each Achieve More
         </p>
       </div>
 
@@ -124,7 +126,7 @@ export default function Home() {
           not only its neighborhood but offer courses to equip aspiring youth to
           meet the global needs of industry in every sector.
         </p>
-        <a href="http://jssstuniv.in/" target="_blank" rel="noopener">
+        <a href="https://jssstuniv.in/" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Official Website</div>
           </div>
@@ -163,7 +165,7 @@ export default function Home() {
       </div>
       <div className="container-main holded-container" id="blog">
         <h1 data-aos="fade-up" className=" text-center">
-          Our Blogs
+          Our Blog
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
           You learn by sharing your knowledge and we emphasize it! Our team
@@ -172,7 +174,7 @@ export default function Home() {
         <div data-aos="fade-up" className="buttons">
           <a href="https://medium.com/dscjssstu">
             <div className="button-maker" id="projects-button">
-              <div className="button-text">Check out</div>
+              <div className="button-text">Check Out</div>
             </div>
           </a>
         </div>
@@ -296,7 +298,7 @@ export default function Home() {
         </p>
         <Link href="/ideas" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
-            <div className="button-text">Submit idea</div>
+            <div className="button-text">Submit Idea</div>
           </div>
         </Link>
       </div>
