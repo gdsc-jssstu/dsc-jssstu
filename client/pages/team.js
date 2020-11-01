@@ -14,8 +14,8 @@ export default function Team() {
 
         <link rel="stylesheet" href="css/team.css" />
       </Head>
-
-      <SideBar pageWrapId={"page-wrap"} outerContainerId={"top"} />
+{/* pageWrapId={"page-wrap"} outerContainerId={"top"} */}
+      
 
       <div id="page-wrap">
         <div className="team">
@@ -77,7 +77,9 @@ export default function Team() {
             className="team-cards-container container-main  container-main-last"
             id="our-work"
           >
+             <SideBar />
             <div className="row">
+             
               {/*Team Cards*/}
               <div className="col-xl-12">
                 <section className="team-cards">
