@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, useContext } from "react";
+import { useRef, useContext } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
@@ -7,13 +7,6 @@ import { ThemeContext } from "../contexts/ThemeContext";
 
 export default function Home() {
   const headerRef = useRef(null);
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    const localTheme = localStorage.getItem("theme");
-    setTheme(localTheme);
-  }, []);
-
   const themeContext = useContext(ThemeContext);
 
   return (
@@ -63,6 +56,9 @@ export default function Home() {
             At DSC JSSSTU, our aim is to learn and teach. Developers, designers
             and managers come together under one roof to create a community
             which inspires thousands. Join Us!
+            <br />
+            <br />
+            Connect • Learn • Grow
           </p>
         </div>
         <Link href="#our-work">
@@ -108,13 +104,11 @@ export default function Home() {
           data-aos="fade-up"
           className="continous-text text-center extra-break"
         >
-          We think slightly out of the box, we believe that a club’s resources
-          must not only be channeled into conducting events but also to
-          propagate learning and teaching, symbiotically.
+          We Believe that Together we can. We not only conduct events to impart
+          learning but also various other activities and competitions!
         </p>
         <p data-aos="fade-up" className="text-center">
-          That said, we conduct two flagship events, namely, DevFest and
-          WomenTechies, and tons of insightful workshops!
+          “TEAM - Together Each Achieve More"
         </p>
       </div>
 
@@ -132,7 +126,7 @@ export default function Home() {
         </p>
         <a href="http://jssstuniv.in/" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
-            <div className="button-text">Learn More</div>
+            <div className="button-text">Official Website</div>
           </div>
         </a>
       </div>
@@ -142,8 +136,8 @@ export default function Home() {
           Get to know the team
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          We’ve got a strong team filled with caffeine addicted developers,
-          gradients loving designers and machine like working managers.
+          We've got a strong team filled with passionate developers, dexterous
+          designers and competent organisers!
         </p>
         <Link href="/team">
           <div data-aos="fade-up" className="button-maker">
@@ -153,11 +147,11 @@ export default function Home() {
       </div>
       <div className="container-main holded-container" id="updates">
         <h1 data-aos="fade-up" className=" text-center">
-          Updates
+          Projects
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          We are actively conducting workshops, and also contributing to the
-          development side by churning out high quality projects.
+          Proper execution of Knowledge leads to successful projects. Here are a
+          few projects built by our team.
         </p>
         <Link href="/projects">
           <div data-aos="fade-up" className="buttons">
@@ -172,8 +166,8 @@ export default function Home() {
           Our Blogs
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Our prime focus is to learn and disseminate knowledge. Our team roll
-          out blogs regularly on Medium.
+          You learn by sharing your knowledge and we emphasize it! Our team
+          disseminates their knowledge on Medium often.
         </p>
         <div data-aos="fade-up" className="buttons">
           <a href="https://medium.com/dscjssstu">
@@ -188,7 +182,7 @@ export default function Home() {
           Contact us
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          We’re very active on social media.
+          Reach out to us on these platforms! We're just a message away.
         </p>
         <div data-aos="fade-up" className="icons small-icons">
           <a
@@ -278,13 +272,16 @@ export default function Home() {
           Partners
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Thank you to our Partners for their support towards the community. If
-          you want to be showcased through DSC JSSSTU, contact us for
-          Sponsorship details.
+          Partners help us reach our goals and grow our community! Thank You,
+          for being one of them.
+          <br />
+          If you are interested in being a Speaker at one of our events or want
+          to Sponsor us to get brand exposure and elevate your business identity
+          within the community, then drop us the details.
         </p>
-        <a href="/ideas" target="_blank" rel="noopener">
+        <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
-            <div className="button-text">Get In Touch</div>
+            <div className="button-text">Send Proposal</div>
           </div>
         </a>
       </div>
@@ -294,22 +291,17 @@ export default function Home() {
           Submit an idea
         </h1>
         <p data-aos="fade-up" className="text-center extra-break">
-          Didn’t get a chance to implement your favourite idea? Why not give us
-          a chance to bring it to real life?
+          Tried implementing your idea and got stuck? Don't worry. We got your
+          back! Drop your idea here and we will implement it!
         </p>
-        <a href="/ideas" target="_blank" rel="noopener">
+        <Link href="/ideas" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Submit idea</div>
           </div>
-        </a>
+        </Link>
       </div>
 
-      <div className="footer container-main  container-main-last">
-        <div
-          className="dark-light-toggle  text-center"
-          id="dark-light-toggle"
-        ></div>
-      </div>
+      <div className="footer container-main  container-main-last"></div>
     </Layout>
   );
 }
