@@ -4,9 +4,18 @@ import Layout, { siteTitle } from "../components/layout";
 import SideBar from "../components/sidebar";
 import TeamBigCard from "../components/TeamBigCard";
 import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
+<<<<<<< Updated upstream
 import Image from "next/image";
 import React, {useState} from 'react';
 import TeamOutline from "../components/TeamOutline";
+=======
+<<<<<<< HEAD
+=======
+import Image from "next/image";
+import React, {useState} from 'react';
+import TeamOutline from "../components/TeamOutline";
+>>>>>>> fda1c55... Team Timeline added
+>>>>>>> Stashed changes
 
 export default function Team() {
 
