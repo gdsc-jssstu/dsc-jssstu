@@ -5,6 +5,8 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import teamData from '../data/teamData';
+import TeamOutline from './TeamOutline';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,26 +25,23 @@ function getSteps() {
   return ['2019', '2020', '2021','2022'];
 }
 
-function getStepContent(stepIndex) {
-  switch (stepIndex) {
-    case 0:
-      return './team2019';
-    case 1:
-      return './team';
-    case 2:
-      return '#';
-    default:
-      return '#';
-  }
-}
+// function getStepContent(stepIndex) {
+//   teamData.map((team, index)=>{
+//       if(index === stepIndex)
+//          <TeamOutline team={team}/>
+//   });
+// }
 
 export default function HorizontalLabelPositionBelowStepper() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(1);
   const steps = getSteps();
 
-  const handleClick = (index) =>{
-    setActiveStep(index);
+  const handleClick = (stepIndex) =>{
+     setActiveStep(stepIndex);
+      const team = teamData.filter(team_info => team_info.index === stepIndex);
+      console.log(team[0]);
+      return <TeamOutline team={team[0]} />
   }
 
   return (
@@ -50,7 +49,7 @@ export default function HorizontalLabelPositionBelowStepper() {
       <Stepper activeStep={activeStep} alternativeLabel>
         {steps.map((label, index) => (
           <Step key={label}>
-            <StepLabel><Button onClick={()=>handleClick(index)} href={getStepContent(index)}>{label}</Button></StepLabel>
+            <StepLabel><Button onClick={()=>handleClick(index)} >{label}</Button></StepLabel>
           </Step>
         ))}
       </Stepper>
