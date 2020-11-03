@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import teamData from '../data/teamData';
 import TeamOutline from './TeamOutline';
+import {ThemeContext} from "../contexts/ThemeContext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,24 +33,25 @@ function getSteps() {
 //   });
 // }
 
-export default function HorizontalLabelPositionBelowStepper() {
+export default function HorizontalLabelPositionBelowStepper({setPage}) {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(1);
   const steps = getSteps();
+  const themeContext = useContext(ThemeContext);
 
-  const handleClick = (stepIndex) =>{
-     setActiveStep(stepIndex);
-      const team = teamData.filter(team_info => team_info.index === stepIndex);
-      console.log(team[0]);
-      return <TeamOutline team={team[0]} />
-  }
+  // const handleClick = (stepIndex) =>{
+  //    setActiveStep(stepIndex);
+  //     const team = teamData.filter(team_info => team_info.index === stepIndex);
+  //     console.log(team[0]);
+  //     return <TeamOutline team={team[0]} />
+  // }
 
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep} alternativeLabel>
+      <Stepper activeStep={activeStep} style={{background: 'rgba(0.0, 0.0, 0.0, 0.0)'}} alternativeLabel>
         {steps.map((label, index) => (
           <Step key={label}>
-            <StepLabel><Button onClick={()=>handleClick(index)} >{label}</Button></StepLabel>
+            <StepLabel><Button onClick={()=>{setPage(label); setActiveStep(index);}} className={classes.backButton} style={{color: themeContext.theme === 'dark' ? 'white' : 'black' }}>{label}</Button></StepLabel>
           </Step>
         ))}
       </Stepper>

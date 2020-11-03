@@ -1,7 +1,10 @@
 import React from 'react';
-import teamData from '../data/eventData';
+import teamData from '../data/teamData';
+import TeamBigCard from "../components/TeamBigCard";
+import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
 
-const TeamOutline= ({team}) => { 
+const TeamOutline= ({page}) => { 
+    const team = teamData[page];
 
      return (<div className="row">
              

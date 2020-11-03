@@ -5,8 +5,13 @@ import SideBar from "../components/sidebar";
 import TeamBigCard from "../components/TeamBigCard";
 import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
 import Image from "next/image";
+import React, {useState} from 'react';
+import TeamOutline from "../components/TeamOutline";
 
 export default function Team() {
+
+  const [page, setPage] = useState('2020');
+
   return (
     <Layout page="team">
       <Head>
@@ -77,8 +82,8 @@ export default function Team() {
             className="team-cards-container container-main  container-main-last"
             id="our-work"
           >
-             <SideBar />
-             
+             <SideBar setPage={setPage} />
+             <TeamOutline page= {page}/>
           </div>
         </div>
       </div>

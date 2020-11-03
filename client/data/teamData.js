@@ -1,7 +1,7 @@
- const teamData = [
- {
+ const teamData = {
+ "2020": {
         index: 0,
-        short_coor_text:" Some quick example text to build on the card title and make up the bulk of the cards content.",
+        short_coor_text:"A Some quick example text to build on the card title and make up the bulk of the cards content.",
         short_community_text:"Some quick example text to build on the card titleand make up the bulk of the cards content.",
         short_execom_text_1:"Some quick example text to build on the card",
         long_execom_text_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci.Nunc viverra in aliquam. Integereuismod, ex sit amet lobortis imperdiet, erossapien sodales nisi, at scelerisque liberolibero vitae ex. Nunc viverra in magna sedaliquam. Integer euismod, ex sit amet lobortisimperdiet, eros sapien sodales nisi, atscelerisque libero libero vitae ex. Nuncrhoncus vestibulum nunc a convallis.Integereuismod, ex sit amet lobortis imperdiet.",
@@ -56,9 +56,9 @@
         short_video_text_2:"Some quick example text to build on the card",
         long_video_text_2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci.Nunc viverra in aliquam. Integereuismod, ex sit amet lobortis imperdiet, erossapien sodales nisi, at scelerisque liberolibero vitae ex. Nunc viverra in magna sedaliquam. Integer euismod, ex sit amet lobortisimperdiet, eros sapien sodales nisi, atscelerisque libero libero vitae ex. Nuncrhoncus vestibulum nunc a convallis.Integereuismod, ex sit amet lobortis imperdiet.", 
  },  
-  {
+ "2019": {
         index : 1,
-        short_coor_text:" Some quick example text to build on the card title andmake up the bulk of the cards content.",
+        short_coor_text:"B Some quick example text to build on the card title andmake up the bulk of the cards content.",
         short_community_text:"Some quick example text to build on the card titleand make up the bulk of the cards content.",
         short_execom_text_1:"Some quick example text to build on the card",
         long_execom_text_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci.Nunc viverra in aliquam. Integereuismod, ex sit amet lobortis imperdiet, erossapien sodales nisi, at scelerisque liberolibero vitae ex. Nunc viverra in magna sedaliquam. Integer euismod, ex sit amet lobortisimperdiet, eros sapien sodales nisi, atscelerisque libero libero vitae ex. Nuncrhoncus vestibulum nunc a convallis.Integereuismod, ex sit amet lobortis imperdiet.",
@@ -110,7 +110,9 @@
         long_video_text_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci.Nunc viverra in aliquam. Integereuismod, ex sit amet lobortis imperdiet, erossapien sodales nisi, at scelerisque liberolibero vitae ex. Nunc viverra in magna sedaliquam. Integer euismod, ex sit amet lobortisimperdiet, eros sapien sodales nisi, atscelerisque libero libero vitae ex. Nuncrhoncus vestibulum nunc a convallis.Integereuismod, ex sit amet lobortis imperdiet.",            
         short_video_text_2:"Some quick example text to build on the card",
         long_video_text_2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut purus placerat, ultricies neque et, congue orci.Nunc viverra in aliquam. Integereuismod, ex sit amet lobortis imperdiet, erossapien sodales nisi, at scelerisque liberolibero vitae ex. Nunc viverra in magna sedaliquam. Integer euismod, ex sit amet lobortisimperdiet, eros sapien sodales nisi, atscelerisque libero libero vitae ex. Nuncrhoncus vestibulum nunc a convallis.Integereuismod, ex sit amet lobortis imperdiet.", 
- },                                 
- ];
+ }, 
+ "2021":{},
+ "2022":{},                                
+};
 
 export default teamData;
