@@ -4,7 +4,6 @@ import Layout, { siteTitle } from "../components/layout";
 import SideBar from "../components/sidebar";
 import TeamBigCard from "../components/TeamBigCard";
 import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
-import Image from "next/image";
 
 export default function Team() {
   return (
