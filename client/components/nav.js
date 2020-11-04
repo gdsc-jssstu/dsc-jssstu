@@ -153,9 +153,10 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
               </>
             )}
           </div>
+          {/*<!--
           <div className="menu-item">
             <Link href="/resources">Resources</Link>
-          </div>
+          </div>-->*/}
           <div className="menu-item">
             {page == "home" ? (
               <Link href="#blog">Blog</Link>
