@@ -26,25 +26,12 @@ function getSteps() {
   return ['2019', '2020', '2021','2022'];
 }
 
-// function getStepContent(stepIndex) {
-//   teamData.map((team, index)=>{
-//       if(index === stepIndex)
-//          <TeamOutline team={team}/>
-//   });
-// }
 
 export default function HorizontalLabelPositionBelowStepper({setPage}) {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(1);
   const steps = getSteps();
   const themeContext = useContext(ThemeContext);
-
-  // const handleClick = (stepIndex) =>{
-  //    setActiveStep(stepIndex);
-  //     const team = teamData.filter(team_info => team_info.index === stepIndex);
-  //     console.log(team[0]);
-  //     return <TeamOutline team={team[0]} />
-  // }
 
   return (
     <div className={classes.root}>

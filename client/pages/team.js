@@ -4,21 +4,10 @@ import Layout, { siteTitle } from "../components/layout";
 import SideBar from "../components/sidebar";
 import TeamBigCard from "../components/TeamBigCard";
 import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 import Image from "next/image";
 import React, {useState} from 'react';
 import TeamOutline from "../components/TeamOutline";
-=======
-<<<<<<< HEAD
-=======
-import Image from "next/image";
-import React, {useState} from 'react';
-import TeamOutline from "../components/TeamOutline";
->>>>>>> fda1c55... Team Timeline added
->>>>>>> Stashed changes
-=======
->>>>>>> upstream/main
+
 
 export default function Team() {
 
@@ -31,7 +20,7 @@ export default function Team() {
 
         <link rel="stylesheet" href="css/team.css" />
       </Head>
-{/* pageWrapId={"page-wrap"} outerContainerId={"top"} */}
+
       
 
       <div id="page-wrap">
