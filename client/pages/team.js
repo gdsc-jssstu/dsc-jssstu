@@ -7,6 +7,7 @@ import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
 import Image from "next/image";
 import React, {useState} from 'react';
 import TeamOutline from "../components/TeamOutline";
+import Grid from '@material-ui/core/Grid';
 
 
 export default function Team() {
@@ -83,8 +84,16 @@ export default function Team() {
             className="team-cards-container container-main  container-main-last"
             id="our-work"
           >
-             <SideBar setPage={setPage} />
+          <Grid container class="team-grid">
+            <Grid item sm={11} className="team-content-order">
              <TeamOutline page= {page}/>
+            </Grid>
+            <Grid item sm={1} className="sidebar-order">
+            <div class="sticky-top">
+             <SideBar setPage={setPage}/>
+             </div>
+            </Grid>
+          </Grid>
           </div>
         </div>
       </div>
