@@ -1,6 +1,11 @@
 .main-image{
   width: 30vw;
   min-width: 350px;
+  display: inline;
+}
+
+.main-text-holder{
+  float:left;
 }
 
 .container-main{
@@ -29,20 +34,12 @@
   max-height: unset;
 }
 
-/* Portrait tablets and small desktops */
-@media (min-width: 992px) and (max-width: 1180px) {
-
-  .main-image{
-      top: 50vh;
-  }
-
-}
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
   .main-image{
-      top: 35vh;
+
   }
 
 }
@@ -51,8 +48,7 @@
 @media (max-width: 767px) {
 
   .main-image{
-      top: 35vh;
-      transform:translateY(0%);
+
       float: left;
       padding-left:15vw;
       width: 350px;
@@ -63,8 +59,7 @@
 @media (max-width: 480px) {
 
   .main-image{
-      top: 35vh;
-      transform:translateY(0%);
+
       float: left;
       padding-left:15vw;
       width: 350px;

@@ -21,7 +21,7 @@ export default function Team() {
         <link rel="stylesheet" href="css/team.css" />
       </Head>
 
-      
+
 
       <div id="page-wrap">
         <div className="team">
@@ -30,9 +30,9 @@ export default function Team() {
               <h1 data-aos="fade-up" className="barlow-extralight">
                 The Team
               </h1>
-              <h2 data-aos="fade-up" className="barlow-medium">
-                Presenting board of 2020-2021
-              </h2>
+              <p data-aos="fade-up" className="barlow-medium">
+                Individuality counts but teamwork dynamites. At DSC JSSSTU we celebrate teamwork and attribute the success of DSC to the wonderful individuals who put untiring efforts for it.
+              </p>
             </div>
             <Link href="#our-work">
               <div className="main-down-arrow" id="down-arrow">
