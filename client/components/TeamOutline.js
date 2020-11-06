@@ -14,7 +14,7 @@ const TeamOutline= ({page}) => {
                   {/*Staff Coordinator*/}
                   <div className="container staff-lead">
                     <div className="row">
-                      <h2 className="team-row-heads ">STAFF COORDINATOR</h2>
+                      <h2 className="team-row-heads ">{team.section_1}</h2>
                       <hr />
                     </div>
                     <div className="row">
@@ -33,7 +33,7 @@ const TeamOutline= ({page}) => {
                     {/*Team Lead*/}
                     <div className="container chapter-lead">
                       <div className="row">
-                        <h2 className="team-row-heads ">COMMUNITY LEAD</h2>
+                        <h2 className="team-row-heads ">{team.section_2}</h2>
                         <hr />{" "}
                       </div>
                       <div className="row">
@@ -54,7 +54,7 @@ const TeamOutline= ({page}) => {
                       <div className="execom">
                         <div className="container team-card-row">
                           <div className="row">
-                            <h2 className="team-row-heads ">EXECOM</h2>
+                            <h2 className="team-row-heads ">{team.section_3}</h2>
                             <hr />{" "}
                           </div>
                           <div className="row">
@@ -112,7 +112,7 @@ const TeamOutline= ({page}) => {
                         <div className="technical">
                           <div className="row team-row">
                             <h2 className="section-heading mx-auto">
-                              TECHNICAL TEAM
+                              {team.section_4}
                             </h2>
                             <hr />{" "}
                           </div>
@@ -120,7 +120,7 @@ const TeamOutline= ({page}) => {
                           <div className="container team-card-row">
                             <div className="row">
                               <h2 className="team-row-heads">
-                                MACHINE LEARNING
+                                {team.section_5}
                               </h2>{" "}
                             </div>
                             <div className="row">

@@ -1,21 +1,21 @@
  const teamData = {
  "2019": {
         index: 1,
-
+        section_1:"STAFF COORDINATOR",
         coor_name: "Dr. M P Pushpalata",
         coor_pic:"images/face.jpg",
         short_coor_text:"Currently (in 2020), Head of the department of Computer Science and Engineering, with nearly three decades of teaching experience. Passionate and committed to inspire students to pursue academic and personal excellence. Driven by the motto, “Anything worth doing is worth doing well,” to create a challenging and engaging learning environment for students and self. My research focuses mainly on Machine Learning and Healthcare Informatics with a particular emphasis on the applications of healthcare technology to socially relevant issues. Currently guiding four (4) Ph.d Research scholars.",
         coor_instagram: "#",
         coor_github: "#",
         coor_linkedin: "#",
-
+        section_2:"COMMUNITY LEAD",
         community_name: "Santosh Umesh Shet",
         community_pic:"images/face.jpg",
         short_community_text:"The most dynamic person in DSC -presenting to all, the community lead of DSC JSSSTU 2019-20, Santosh Umesh Shet. Being a pro at bringing the team together for fun as well as work, Santosh himself contributes to the design as well as the management team of DSC. He has experience working as mentor and lead in various organisations for several years. Santosh is one of the efficient developers when it comes to building machine learning projects and Google Cloud. Not to be mentioned, he is one of the most humble men in power who would make everyone in the team feel comfortable.",
         community_instagram: "#",
         community_github: "#",
         community_linkedin: "#",
-
+        section_3:"EXECOM",
         execom_name_1: "Card Title",
         execom_pic_1:"images/face.jpg",
         short_execom_text_1:"Some quick example text to build on the card",
@@ -39,7 +39,8 @@
         execom_instagram_3: "#",
         execom_github_3: "#",
         execom_linkedin_3: "#",
-
+        section_4: "TECHNICAL TEAM",
+        section_5:"MACHINE LEARNING",
         ml_name_1: "Rajat Shrivastava",
         ml_pic_1:"images/face.jpg",
         short_ml_text_1:"An avid reader and learner, Rajat is...",
