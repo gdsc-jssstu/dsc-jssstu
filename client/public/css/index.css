@@ -524,6 +524,19 @@ input:focus {
   border: 1px solid #ffffff;
 }
 
+.bottomNav {
+  display: none;
+}
+
+.dark .bottomNav .MuiBottomNavigation-root {
+  background: #333;
+  color: #fff;
+}
+
+.dark .bottomNav .MuiBottomNavigation-root .MuiBottomNavigationAction-root {
+  color: #fff;
+}
+
 /* Large desktops and laptops */
 
 @media (max-width: 1400px) {
@@ -604,6 +617,9 @@ input:focus {
     width: 70%;
     margin: auto auto;
   }
+  .bottomNav {
+    display: block;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -651,6 +667,9 @@ input:focus {
   .holded-container p {
     width: 70%;
     margin: auto auto;
+  }
+  .bottomNav {
+    display: block;
   }
 }
 
@@ -716,5 +735,8 @@ input:focus {
   }
   .navbar-dsc-logo {
     top: 40%;
+  }
+  .bottomNav {
+    display: block;
   }
 }

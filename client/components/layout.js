@@ -5,6 +5,7 @@ import Head from "next/head";
 import AOS from "aos";
 import Nav from "./nav";
 const FontFaceObserver = require("fontfaceobserver");
+import MobileBottomNav from './MobileBottomNav';
 
 export const siteTitle = "DSC JSSSTU";
 
@@ -105,6 +106,8 @@ export default function Layout({ children, page, headerRef }) {
         <div name="top" id="top">
           {children}
         </div>
+
+        <MobileBottomNav page={page}/>
       </div>
     </div>
   );

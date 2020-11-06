@@ -183,10 +183,6 @@ height: 2px;
 }
 }
 
-.container-main{
-  padding-top:0rem;
-}
-
 .team-header, .team-cards .flip-card {
 animation: 1s ease-out 0s 1 slideInFromDown;
 }
@@ -229,11 +225,19 @@ margin-left: auto;
 @media only screen and (max-width: 600px) {
   .team-content-order{
     order: 2;
+    margin-top: 5rem !important;
   }
 
   .sidebar-order{
     order: 1;
     padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+
+  .team-content-order{
+    margin-top: 0rem !important;
   }
 }
 
