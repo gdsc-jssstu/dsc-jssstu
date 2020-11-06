@@ -2,6 +2,8 @@
  "2019": {
         index: 1,
 
+        section_1:"STAFF COORDINATOR",
+
         coor_name: "Dr. M P Pushpalata",
         coor_pic:"images/face.jpg",
         short_coor_text:"Currently (in 2020), Head of the department of Computer Science and Engineering, with nearly three decades of teaching experience. Passionate and committed to inspire students to pursue academic and personal excellence. Driven by the motto, “Anything worth doing is worth doing well,” to create a challenging and engaging learning environment for students and self. My research focuses mainly on Machine Learning and Healthcare Informatics with a particular emphasis on the applications of healthcare technology to socially relevant issues. Currently guiding four (4) Ph.d Research scholars.",
@@ -9,12 +11,16 @@
         coor_github: "#",
         coor_linkedin: "#",
 
+        section_2:"COMMUNITY LEAD",
+
         community_name: "Santosh Umesh Shet",
         community_pic:"images/face.jpg",
         short_community_text:"The most dynamic person in DSC -presenting to all, the community lead of DSC JSSSTU 2019-20, Santosh Umesh Shet. Being a pro at bringing the team together for fun as well as work, Santosh himself contributes to the design as well as the management team of DSC. He has experience working as mentor and lead in various organisations for several years. Santosh is one of the efficient developers when it comes to building machine learning projects and Google Cloud. Not to be mentioned, he is one of the most humble men in power who would make everyone in the team feel comfortable.",
         community_instagram: "#",
         community_github: "#",
         community_linkedin: "#",
+
+        section_3:"",
 
         execom_name_1: "Card Title",
         execom_pic_1:"images/face.jpg",
@@ -39,6 +45,10 @@
         execom_instagram_3: "#",
         execom_github_3: "#",
         execom_linkedin_3: "#",
+
+        section_4: "TECHNICAL TEAM",
+
+        section_5:"MACHINE LEARNING",
 
         ml_name_1: "Rajat Shrivastava",
         ml_pic_1:"images/face.jpg",
@@ -72,6 +82,8 @@
         ml_github_4: "#",
         ml_linkedin_4: "#",
 
+        section_6:"WEB",
+
         web_name_1: "Nitin Bhat",
         web_pic_1:"images/face.jpg",
         short_web_text_1:"Shining among the crowd is this articulate...",
@@ -87,6 +99,8 @@
         web_instagram_2: "#",
         web_github_2: "#",
         web_linkedin_2: "#",
+        
+        section_7:"ANDROID",
 
         android_name_1: "Bebikananda Waikhom",
         android_pic_1:"images/face.jpg",
@@ -103,6 +117,8 @@
         android_instagram_2: "#",
         android_github_2: "#",
         android_linkedin_2: "#",
+        
+        section_8:"FLUTTER",
 
         flutter_name_1: "Amith Kumar",
         flutter_pic_1:"images/face.jpg",
@@ -111,6 +127,8 @@
         flutter_instagram_1: "#",
         flutter_github_1: "#",
         flutter_linkedin_1: "#",
+        
+        section_9:"TECH ADVISOR",
 
         techadv_name_1: "Rakshak Gowda J",
         techadv_pic_1:"images/face.jpg",
@@ -119,6 +137,10 @@
         techadv_instagram_1: "#",
         techadv_github_1: "#",
         techadv_linkedin_1: "#",
+        
+        section_10:"CREATIVE TEAM",
+
+        section_11: " COMM AND OUTREACH",
 
         comm_name_1: "Chiranthan S",
         comm_pic_1:"images/face.jpg",
@@ -135,6 +157,8 @@
         comm_instagram_2: "#",
         comm_github_2: "#",
         comm_linkedin_2: "#",
+        
+        section_12:" GRAPHIC DESIGNER",
 
         graphic_name_1: "Hymavathi B U",
         graphic_pic_1:"images/face.jpg",
@@ -152,6 +176,8 @@
         graphic_github_2: "#",
         graphic_linkedin_2: "#",
 
+        section_13:"EDITORIAL",
+
         editorial_name_1: "Triveni",
         editorial_pic_1:"images/face.jpg",
         short_editorial_text_1:"Well organized,eager to learn and ambitious...",
@@ -167,6 +193,9 @@
         editorial_instagram_2: "#",
         editorial_github_2: "#",
         editorial_linkedin_2: "#",
+        
+        section_14:"ORGANISATIONAL TEAM",
+        section_15:"EVENT COORDINATOR",
 
         event_name_1: "Rishika",
         event_pic_1:"images/face.jpg",
@@ -184,6 +213,8 @@
         event_github_2: "#",
         event_linkedin_2: "#",
 
+        section_16:"OP EXEC",
+
         opexec_name_1: "Card Title",
         opexec_pic_1:"images/face.jpg",
         short_opexec_text_1:"Some quick example text to build on the card",
@@ -191,6 +222,8 @@
         opexec_instagram_1: "#",
         opexec_github_1: "#",
         opexec_linkedin_1: "#",
+        
+        section_17:"PR",
 
         pr_name_1: "Card Title",
         pr_pic_1:"images/face.jpg",
@@ -199,6 +232,8 @@
         pr_instagram_1: "#",
         pr_github_1: "#",
         pr_linkedin_1: "#",
+        
+        section_18:"VIDEO EDITORS",
 
         video_name_1: "Chyavan M C",
         video_pic_1:"images/face.jpg",
@@ -218,6 +253,8 @@
  },
  "2020": {
         index : 0,
+        
+        section_1:"STAFF COORDINATOR", 
 
         coor_name: "Card Title",
         coor_pic:"images/face.jpg",
@@ -225,6 +262,8 @@
         coor_instagram: "#",
         coor_github: "#",
         coor_linkedin: "#",
+        
+        section_2:"COMMUNITY LEAD",
 
         community_name: "Card Title",
         community_pic:"images/face.jpg",
@@ -232,6 +271,8 @@
         community_instagram: "#",
         community_github: "#",
         community_linkedin: "#",
+        
+        section_3:"EXECOM",
 
         execom_name_1: "Card Title",
         execom_pic_1:"images/face.jpg",
@@ -256,6 +297,10 @@
         execom_instagram_3: "#",
         execom_github_3: "#",
         execom_linkedin_3: "#",
+
+        section_4: "TECHNICAL TEAM",
+
+        section_5:"MACHINE LEARNING",
 
         ml_name_1: "Card Title",
         ml_pic_1:"images/face.jpg",
@@ -288,6 +333,8 @@
         ml_instagram_4: "#",
         ml_github_4: "#",
         ml_linkedin_4: "#",
+        
+        section_6:"WEB",
 
         web_name_1: "Card Title",
         web_pic_1:"images/face.jpg",
@@ -305,6 +352,8 @@
         web_github_2: "#",
         web_linkedin_2: "#",
 
+        section_7:"ANDROID",
+
         android_name_1: "Card Title",
         android_pic_1:"images/face.jpg",
         short_android_text_1:"Some quick example text to build on the card",
@@ -321,6 +370,8 @@
         android_github_2: "#",
         android_linkedin_2: "#",
 
+        section_8:"FLUTTER",
+
         flutter_name_1: "Card Title",
         flutter_pic_1:"images/face.jpg",
         short_flutter_text_1:"Some quick example text to build on the card",
@@ -329,6 +380,8 @@
         flutter_github_1: "#",
         flutter_linkedin_1: "#",
 
+        section_9:"TECH ADVISOR",
+
         techadv_name_1: "Card Title",
         techadv_pic_1:"images/face.jpg",
         short_techadv_text_1:"Some quick example text to build on the card",
@@ -336,6 +389,10 @@
         techadv_instagram_1: "#",
         techadv_github_1: "#",
         techadv_linkedin_1: "#",
+
+        section_10:"CREATIVE TEAM",
+
+        section_11: " COMM AND OUTREACH",
 
         comm_name_1: "Card Title",
         comm_pic_1:"images/face.jpg",
@@ -353,6 +410,8 @@
         comm_github_2: "#",
         comm_linkedin_2: "#",
 
+        section_12:" GRAPHIC DESIGNER",
+
         graphic_name_1: "Card Title",
         graphic_pic_1:"images/face.jpg",
         short_graphic_text_1:"Some quick example text to build on the card",
@@ -368,6 +427,8 @@
         graphic_instagram_2: "#",
         graphic_github_2: "#",
         graphic_linkedin_2: "#",
+
+        section_13:"EDITORIAL",
 
         editorial_name_1: "Card Title",
         editorial_pic_1:"images/face.jpg",
@@ -385,6 +446,9 @@
         editorial_github_2: "#",
         editorial_linkedin_2: "#",
 
+        section_14:"ORGANISATIONAL TEAM",
+        section_15:"EVENT COORDINATOR",
+
         event_name_1: "Card Title",
         event_pic_1:"images/face.jpg",
         short_event_text_1:"Some quick example text to build on the card",
@@ -401,6 +465,8 @@
         event_github_2: "#",
         event_linkedin_2: "#",
 
+        section_16:"OP EXEC",
+
         opexec_name_1: "Card Title",
         opexec_pic_1:"images/face.jpg",
         short_opexec_text_1:"Some quick example text to build on the card",
@@ -409,6 +475,8 @@
         opexec_github_1: "#",
         opexec_linkedin_1: "#",
 
+        section_17:"PR",
+
         pr_name_1: "Card Title",
         pr_pic_1:"images/face.jpg",
         short_pr_text_1:"Some quick example text to build on the card",
@@ -416,6 +484,8 @@
         pr_instagram_1: "#",
         pr_github_1: "#",
         pr_linkedin_1: "#",
+
+         section_18:"VIDEO EDITORS",
 
         video_name_1: "Card Title",
         video_pic_1:"images/face.jpg",
