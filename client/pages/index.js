@@ -257,7 +257,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://www.youtube.com/channel/UChpUfrwmW4MdNHRSC09cK2g"
+            href="https://www.youtube.com/channel/UCs7FLvZy-oflwwXZnUZkrJA"
             target="_blank"
             rel="noopener"
           >
