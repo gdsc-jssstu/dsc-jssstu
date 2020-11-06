@@ -193,7 +193,7 @@ const TeamOutline= ({page}) => {
                           {/*Web*/}
                           <div className="container team-card-row">
                             <div className="row">
-                              <h2 className="team-row-heads ">WEB</h2>{" "}
+                              <h2 className="team-row-heads ">{team.section_6}</h2>{" "}
                             </div>
                             <div className="row">
                               <div className="col-md-6">
@@ -233,7 +233,7 @@ const TeamOutline= ({page}) => {
                           {/*Android*/}
                           <div className="container team-card-row">
                             <div className="row">
-                              <h2 className="team-row-heads ">ANDROID</h2>{" "}
+                              <h2 className="team-row-heads ">{team.section_7}</h2>{" "}
                             </div>
                             <div className="row">
                               <div className="col-md-6">
@@ -275,7 +275,7 @@ const TeamOutline= ({page}) => {
                             <div className="row">
                               <div className="col-md-6 team-card-column">
                                 <h2 className="team-row-heads text-center">
-                                  FLUTTER
+                                  {team.section_8}
                                 </h2>
                                 <TeamCard>
                                   <TeamCardFront
@@ -294,7 +294,7 @@ const TeamOutline= ({page}) => {
                               </div>
                               <div className="col-md-6 team-card-column">
                                 <h2 className="team-row-heads text-center">
-                                  TECH ADVISOR
+                                  {team.section_9}
                                 </h2>
                                 <TeamCard>
                                   <TeamCardFront
@@ -320,7 +320,7 @@ const TeamOutline= ({page}) => {
                       <div className="creative">
                         <div className="row team-row">
                           <h2 className="section-heading mx-auto">
-                            CREATIVE TEAM
+                            {team.section_10}
                           </h2>
                           <hr />{" "}
                         </div>
@@ -328,7 +328,7 @@ const TeamOutline= ({page}) => {
                         <div className="container team-card-row">
                           <div className="row">
                             <h2 className="team-row-heads ">
-                              COMM AND OUTREACH
+                              {team.section_11}
                             </h2>{" "}
                           </div>
                           <div className="row">
@@ -370,7 +370,7 @@ const TeamOutline= ({page}) => {
                         <div className="container team-card-row">
                           <div className="row">
                             <h2 className="team-row-heads ">
-                              GRAPHIC DESIGNER
+                              {team.section_12}
                             </h2>{" "}
                           </div>
                           <div className="row">
@@ -411,7 +411,7 @@ const TeamOutline= ({page}) => {
                         {/*Editorial*/}
                         <div className="container team-card-row">
                           <div className="row">
-                            <h2 className="team-row-heads ">EDITORIAL</h2>{" "}
+                            <h2 className="team-row-heads ">{team.section_13}</h2>{" "}
                           </div>
                           <div className="row">
                             <div className="col-md-6">
@@ -453,7 +453,7 @@ const TeamOutline= ({page}) => {
                       <div className="organisational">
                         <div className="row team-row">
                           <h2 className="section-heading mx-auto">
-                            ORGANISATIONAL TEAM
+                            {team.section_14}
                           </h2>
                           <hr />{" "}
                         </div>
@@ -461,7 +461,7 @@ const TeamOutline= ({page}) => {
                         <div className="container team-card-row">
                           <div className="row">
                             <h2 className="team-row-heads ">
-                              EVENT COORDINATOR
+                              {team.section_15}
                             </h2>{" "}
                           </div>
                           <div className="row">
@@ -504,7 +504,7 @@ const TeamOutline= ({page}) => {
                         <div className="container team-card-row">
                           <div className="row">
                             <div className="col-md-6 team-card-column">
-                              <h2 className="team-row-heads">OP EXEC</h2>
+                              <h2 className="team-row-heads">{team.section_16}</h2>
                               <TeamCard>
                                 <TeamCardFront
                                   title={team.opexec_name_1}
@@ -521,7 +521,7 @@ const TeamOutline= ({page}) => {
                               </TeamCard>
                             </div>
                             <div className="col-md-6 team-card-column">
-                              <h2 className="team-row-heads text-center">PR</h2>
+                              <h2 className="team-row-heads text-center">{team.section_17}</h2>
                               <TeamCard>
                                 <TeamCardFront
                                   title={team.pr_name_1}
@@ -542,7 +542,7 @@ const TeamOutline= ({page}) => {
                         {/*Video Editor*/}
                         <div className="container team-card-row">
                           <div className="row">
-                            <h2 className="team-row-heads ">VIDEO EDITORS</h2>{" "}
+                            <h2 className="team-row-heads ">{team.section_18}</h2>{" "}
                           </div>
                           <div className="row">
                             <div className="col-md-6">
