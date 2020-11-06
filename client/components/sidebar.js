@@ -8,11 +8,9 @@ import Typography from '@material-ui/core/Typography';
 import teamData from '../data/teamData';
 import TeamOutline from './TeamOutline';
 import {ThemeContext} from "../contexts/ThemeContext";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-  },
   backButton: {
     marginRight: theme.spacing(1),
   },
@@ -23,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['2019', '2020', '2021','2022'];
+  return ['2019', '2020', '2021', '2022'];
 }
 
 
@@ -32,13 +30,29 @@ export default function HorizontalLabelPositionBelowStepper({setPage}) {
   const [activeStep, setActiveStep] = React.useState(1);
   const steps = getSteps();
   const themeContext = useContext(ThemeContext);
+  const matches = useMediaQuery('(min-width:600px)');
+  const orientation= (matches===true ? "vertical" : "horizontal");
+  const altlabel= (matches===true ? false : true);
 
   return (
-    <div className={classes.root}>
-      <Stepper activeStep={activeStep} style={{background: 'rgba(0.0, 0.0, 0.0, 0.0)'}} alternativeLabel>
+    <div style={{width: 20}}>
+      <Stepper
+        activeStep={activeStep}
+        style={{background: 'rgba(0.0, 0.0, 0.0, 0.0)',width: "100vw"}}
+        orientation={orientation}
+        alternativeLabel={altlabel}
+      >
         {steps.map((label, index) => (
           <Step key={label}>
-            <StepLabel><Button onClick={()=>{setPage(label); setActiveStep(index);}} className={classes.backButton} style={{color: themeContext.theme === 'dark' ? 'white' : 'black' }}>{label}</Button></StepLabel>
+            <StepLabel>
+              <Button
+                onClick={()=>{setPage(label); setActiveStep(index);}}
+                className={classes.backButton}
+                style={{color: themeContext.theme === 'dark' ? 'white' : 'black' }}
+              >
+                {label}
+              </Button>
+            </StepLabel>
           </Step>
         ))}
       </Stepper>
