@@ -188,7 +188,7 @@ animation: 1s ease-out 0s 1 slideInFromDown;
 }
 
 .team-cards-container{
---bs-gutter-x: 1.5rem;
+--bs-gutter-x: 3rem;
 width: 100%;
 padding-right: calc(var(--bs-gutter-x) / 2);
 padding-left: calc(var(--bs-gutter-x) / 2);
@@ -209,12 +209,17 @@ margin-left: auto;
   padding: 0 !important;
 }
 
+.MuiStepLabel-iconContainer {
+    padding-right: 0px !important;
+}
+
 @media only screen and (min-width: 600px) {
   .sticky-top{
     position: fixed;
     top: 35vh;
     display: block;
     align-self: flex-start;
+    padding-right:5rem;
   }
 
   .main-image{
@@ -222,6 +227,17 @@ margin-left: auto;
   }
 
 }
+
+@media only screen and (max-height: 500px) {
+  .sticky-top{
+    position: fixed;
+    top: 20vh;
+    display: block;
+    align-self: flex-start;
+    padding-right:5rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .team-content-order{
     order: 2;
@@ -376,6 +392,15 @@ background-color: #FBBC04 !important;
 .dark .organisational .flip-card-back .card-body {
 background-color: #FEEFC3 !important;
 color: #000 !important;
+}
+
+/*Stepper*/
+.MuiStepIcon-root.MuiStepIcon-completed {
+    color: #EA4335 !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+    color: #FBBC04 !important;
 }
 
 /*Card and Card Flip*/

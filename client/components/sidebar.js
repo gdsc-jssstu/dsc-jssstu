@@ -38,7 +38,7 @@ export default function HorizontalLabelPositionBelowStepper({setPage}) {
     <div style={{width: 20}}>
       <Stepper
         activeStep={activeStep}
-        style={{background: 'rgba(0.0, 0.0, 0.0, 0.0)',width: "100vw"}}
+        style={{background: 'rgba(0.0, 0.0, 0.0, 0.0)',width: "90vw"}}
         orientation={orientation}
         alternativeLabel={altlabel}
       >
