@@ -296,11 +296,11 @@ export default function Home() {
           Tried implementing your idea and got stuck? Don't worry. We got your
           back! Drop your idea here and we will implement it!
         </p>
-        <Link href="/ideas" target="_blank" rel="noopener">
+        <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
-            <div className="button-text">Submit Idea</div>
+            <div className="button-text">Submit Ideas</div>
           </div>
-        </Link>
+        </a>
       </div>
 
       <div className="footer container-main  container-main-last"></div>
