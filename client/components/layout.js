@@ -5,7 +5,7 @@ import Head from "next/head";
 import AOS from "aos";
 import Nav from "./nav";
 const FontFaceObserver = require("fontfaceobserver");
-import MobileBottomNav from './MobileBottomNav';
+import MobileBottomNav from "./MobileBottomNav";
 
 export const siteTitle = "DSC JSSSTU";
 
@@ -72,7 +72,12 @@ export default function Layout({ children, page, headerRef }) {
 
         {/* <!--     Links to css files     --> */}
         <link rel="stylesheet" href="css/index.css" />
-        <link rel="stylesheet" href="css/events.css" />
+        <link
+          rel="preload"
+          href="css/events.css"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
+        />
         <link rel="stylesheet" href="css/svg.css" />
       </Head>
 
@@ -107,7 +112,7 @@ export default function Layout({ children, page, headerRef }) {
           {children}
         </div>
 
-        <MobileBottomNav page={page}/>
+        <MobileBottomNav page={page} />
       </div>
     </div>
   );
