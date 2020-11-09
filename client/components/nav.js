@@ -1,9 +1,9 @@
 import { useRef, useEffect, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { IconButton } from '@material-ui/core';
-import Brightness5Icon from '@material-ui/icons/Brightness5';
-import NightsStayIcon from '@material-ui/icons/NightsStay';
+import { IconButton } from "@material-ui/core";
+import Brightness5Icon from "@material-ui/icons/Brightness5";
+import NightsStayIcon from "@material-ui/icons/NightsStay";
 import { ThemeContext } from "../contexts/ThemeContext";
 
 export default function Nav({ page, headerRef, theme, toggleTheme }) {
@@ -43,19 +43,19 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {page == "home" ? (
               <Link href="/#home">Home</Link>
             ) : (
-                <>
-                  <Link href="/">Home</Link>
-                </>
-              )}
+              <>
+                <Link href="/">Home</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             {page == "home" ? (
               <Link href="#team">Team</Link>
             ) : (
-                <>
-                  <Link href="/team">Team</Link>
-                </>
-              )}
+              <>
+                <Link href="/team">Team</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/events">Events</Link>
@@ -64,10 +64,10 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {page == "home" ? (
               <Link href="#updates">Projects</Link>
             ) : (
-                <>
-                  <Link href="/projects">Projects</Link>
-                </>
-              )}
+              <>
+                <Link href="/projects">Projects</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/resources">Resources</Link>
@@ -76,10 +76,10 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {page == "home" ? (
               <Link href="#blog">Blog</Link>
             ) : (
-                <>
-                  <Link href="https://medium.com/dscjssstu">Blog</Link>
-                </>
-              )}
+              <>
+                <Link href="https://medium.com/dscjssstu">Blog</Link>
+              </>
+            )}
           </h2>
           <h2 className="text-center" onClick={onMenuClose}>
             <Link href="/#contact">Contact Us</Link>
@@ -108,8 +108,8 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
                 height={55}
               />
             ) : (
-                <></>
-              )}
+              <></>
+            )}
           </picture>
           <picture>
             <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
@@ -123,8 +123,8 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
                 height={55}
               />
             ) : (
-                <></>
-              )}
+              <></>
+            )}
           </picture>
         </div>
         <div className="menu">
@@ -132,19 +132,19 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {page == "home" ? (
               <Link href="/#home">Home</Link>
             ) : (
-                <>
-                  <Link href="/">Home</Link>
-                </>
-              )}
+              <>
+                <Link href="/">Home</Link>
+              </>
+            )}
           </div>
           <div className="menu-item">
             {page == "home" ? (
               <Link href="#team">Team</Link>
             ) : (
-                <>
-                  <Link href="/team">Team</Link>
-                </>
-              )}
+              <>
+                <Link href="/team">Team</Link>
+              </>
+            )}
           </div>
           <div className="menu-item">
             <Link href="/events">Events</Link>
@@ -153,10 +153,10 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {page == "home" ? (
               <Link href="#updates">Projects</Link>
             ) : (
-                <>
-                  <Link href="/projects">Projects</Link>
-                </>
-              )}
+              <>
+                <Link href="/projects">Projects</Link>
+              </>
+            )}
           </div>
           {/*<!--
           <div className="menu-item">
@@ -166,10 +166,10 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {page == "home" ? (
               <Link href="#blog">Blog</Link>
             ) : (
-                <>
-                  <Link href="https://medium.com/dscjssstu">Blog</Link>
-                </>
-              )}
+              <>
+                <Link href="https://medium.com/dscjssstu">Blog</Link>
+              </>
+            )}
           </div>
           <div className="menu-item">
             <Link href="/#contact">Contact Us</Link>
@@ -179,17 +179,27 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
           </div>
         </div>
         <div className="menu-phone" id="menu-open">
-          <div style={{
-            height: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-          <IconButton color="white" aria-label="add an alarm" onClick={toggleTheme} style={{
-            color: themeContext.theme === 'dark' ? 'white' : 'black'
-          }}>
-            {themeContext.theme === 'dark' ? <NightsStayIcon /> : <Brightness5Icon />}
-          </IconButton>
+          <div
+            style={{
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <IconButton
+              aria-label="add an alarm"
+              onClick={toggleTheme}
+              style={{
+                color: themeContext.theme === "dark" ? "white" : "black",
+              }}
+            >
+              {themeContext.theme === "dark" ? (
+                <NightsStayIcon />
+              ) : (
+                <Brightness5Icon />
+              )}
+            </IconButton>
           </div>
         </div>
       </div>

@@ -28,7 +28,12 @@ const EventTimelineItem = ({ event }) => {
                     data-aos="zoom-in-up"
                     key={{ idx }}
                   >
-                    <Image className="etmln-img" src={img} unsized />
+                    <Image
+                      className="etmln-img"
+                      src={img}
+                      layout="fill"
+                      objectFit="contain"
+                    />
                   </div>
                 );
               })}

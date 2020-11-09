@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const TeamCard = function (props) {
   const [isFlipped, setFlip] = useState(false);
@@ -22,7 +23,14 @@ const TeamCardFront = function (props) {
   return (
     <div className="flip-card-front">
       {" "}
-      <img src={props.faceImage} className="card-img-top" alt="..." />
+      <Image
+        src={props.faceImage}
+        className="card-img-top"
+        alt="..."
+        height={350}
+        width={350}
+        layout="intrinsic"
+      />
       <div className="card-body text-center">
         <p className="card-title">{props.title}</p>
         <p className="team-social-media">

@@ -13,18 +13,21 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "aos": "^2.3.4",
     "fontfaceobserver": "^2.1.0",
-    "next": "^10.0.0",
+    "next": "^10.0.2-canary.5",
+    "next-plugin-preact": "^3.0.3",
     "next-pwa": "^3.1.5",
     "notistack": "^1.0.1",
     "nprogress": "^0.2.0",
-    "react-burger-menu": "^2.9.0",
-    "next-plugin-preact": "^3.0.3",
     "preact": "^10.5.5",
     "preact-render-to-string": "^5.1.11",
     "react": "npm:@preact/compat@0.0.3",
+    "react-burger-menu": "^2.9.0",
     "react-dom": "npm:@preact/compat@0.0.3",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2",
-    "react-responsive-carousel": "^3.2.10"
+    "react-responsive-carousel": "^3.2.10",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2"
   },
-  "homepage": "."
+  "homepage": ".",
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
 }

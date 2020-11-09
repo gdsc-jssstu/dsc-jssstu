@@ -2,17 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import SideBar from "../components/sidebar";
-import TeamBigCard from "../components/TeamBigCard";
-import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
-import Image from "next/image";
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import TeamOutline from "../components/TeamOutline";
-import Grid from '@material-ui/core/Grid';
-
+import Grid from "@material-ui/core/Grid";
 
 export default function Team() {
-
-  const [page, setPage] = useState('2020');
+  const [page, setPage] = useState("2020");
 
   return (
     <Layout page="team">
@@ -22,8 +17,6 @@ export default function Team() {
         <link rel="stylesheet" href="css/team.css" />
       </Head>
 
-
-
       <div id="page-wrap">
         <div className="team">
           <div className="container-fluid team-header main" id="home-scroll">
@@ -32,7 +25,9 @@ export default function Team() {
                 The Team
               </h1>
               <p data-aos="fade-up" className="barlow-medium">
-                Individuality counts but teamwork dynamites. At DSC JSSSTU we celebrate teamwork and attribute the success of DSC to the wonderful individuals who put untiring efforts for it.
+                Individuality counts but teamwork dynamites. At DSC JSSSTU we
+                celebrate teamwork and attribute the success of DSC to the
+                wonderful individuals who put untiring efforts for it.
               </p>
             </div>
             <Link href="#our-work">
@@ -84,16 +79,16 @@ export default function Team() {
             className="team-cards-container container-main  container-main-last"
             id="our-work"
           >
-          <Grid container class="team-grid">
-            <Grid item sm={11} className="team-content-order">
-             <TeamOutline page= {page}/>
+            <Grid container class="team-grid">
+              <Grid item sm={11} className="team-content-order">
+                <TeamOutline page={page} />
+              </Grid>
+              <Grid item sm={1} className="sidebar-order">
+                <div class="sticky-top">
+                  <SideBar setPage={setPage} />
+                </div>
+              </Grid>
             </Grid>
-            <Grid item sm={1} className="sidebar-order">
-            <div class="sticky-top">
-             <SideBar setPage={setPage}/>
-             </div>
-            </Grid>
-          </Grid>
           </div>
         </div>
       </div>

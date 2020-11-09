@@ -26,9 +26,9 @@ export default function Home() {
                   src="/images/DSC_JSSSTU-dark.png"
                   className="logo"
                   alt="DSC JSSSTU"
-                  priority="true"
                   width={350}
                   height={80}
+                  priority={true}
                 />
               ) : (
                 <></>
@@ -42,9 +42,9 @@ export default function Home() {
                   src="/images/DSC_JSSSTU-color.png"
                   className="logo-light"
                   alt="DSC JSSSTU"
-                  priority={true}
                   width={350}
                   height={80}
+                  priority={true}
                 />
               ) : (
                 <></>

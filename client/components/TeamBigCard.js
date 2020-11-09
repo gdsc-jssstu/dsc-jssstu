@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function TeamBigCard(props) {
   return (
@@ -6,10 +7,13 @@ export default function TeamBigCard(props) {
       <div className="row no-gutters">
         <div className="col-md-4">
           {" "}
-          <img
+          <Image
             src={props.faceImage}
             className="card-img-top"
             alt="team-lead"
+            height={350}
+            width={350}
+            layout="intrinsic"
           />{" "}
         </div>
         <div className="col-md-8">
