@@ -60,9 +60,9 @@ export default function Layout({ children, page, headerRef }) {
 
     Fonts();
 
-    window.addEventListener("scroll", function () {
-      AOS.refresh();
-    });
+    window.addEventListener("scroll", AOS.refresh(), { passive: true });
+    return () =>
+      window.removeEventListener("scroll", AOS.refresh(), { passive: true });
   }, []);
 
   return (

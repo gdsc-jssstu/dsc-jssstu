@@ -31,8 +31,9 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () =>
+      window.removeEventListener("scroll", handleScroll, { passive: true });
   }, []);
 
   return (
