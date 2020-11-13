@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["2019", "2020", "2021", "2022"];
+  return ["2019", "2020"];
 }
 
 export default function HorizontalLabelPositionBelowStepper({ setPage }) {

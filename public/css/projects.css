@@ -1,18 +1,17 @@
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgba(255,255,255,0);
-
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-.card{
-
-  font-size: .875rem;
+.card {
+  font-size: 0.875rem;
 }
 .dark .card {
-    background: #424242;
-    box-shadow: 9px 9px 16px rgba(205,209,214,.061), -9px -9px 16px rgba(255,255,255,.02);
+  background: #424242;
+  box-shadow: 9px 9px 16px rgba(205, 209, 214, 0.061),
+    -9px -9px 16px rgba(255, 255, 255, 0.02);
 }
-.para{
+.para {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
@@ -38,7 +37,6 @@ html * {
   .column {
     width: 70%;
   }
-
 }
 /* Responsive columns */
 @media screen and (max-width: 700px) {
@@ -58,18 +56,18 @@ html * {
     display: block;
     margin: auto;
   }
-  .row{
+  .row {
     margin: 0;
   }
 }
 
-.container-page{
+.container-page {
   margin: auto;
 }
 
-.col-lg-6{
-  text-align:center;
-  max-width:70vw;
+.col-lg-6 {
+  text-align: center;
+  max-width: 70vw;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -99,7 +97,7 @@ html * {
 }
 /* Style the counter cards */
 .card {
-  min-height: 32rem!important;
+  min-height: 32rem !important;
   width: 16rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 0px 15px 15px 15px;
@@ -121,7 +119,7 @@ html * {
   width: 100px;
 }
 
-.project-circle-icon{
+.project-circle-icon {
   height: 2rem;
   width: 2rem;
 }

@@ -334,7 +334,7 @@ body {
   padding: 10vw 2.5vw 3vw 10vw;
   width: 40%;
   max-width: 600px;
-  display:inline-block;
+  display: inline-block;
 }
 
 .main-image {
@@ -601,7 +601,7 @@ input:focus {
     cursor: pointer;
   }
   .main-text-holder {
-    padding-top:5rem;
+    padding-top: 5rem;
     width: 80%;
   }
   .main-image {
@@ -652,7 +652,7 @@ input:focus {
     display: inline-block;
   }
   .main-text-holder {
-    padding-top:5rem;
+    padding-top: 5rem;
     width: 80%;
   }
   .main-image {
@@ -702,7 +702,7 @@ input:focus {
     display: inline-block;
   }
   .main-text-holder {
-    padding-top:5rem;
+    padding-top: 5rem;
     width: 80%;
   }
   .main-image {
