@@ -14,3 +14,9 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Contributors
+
+<a href="https://github.com/dsc-jssstu/dsc-jssstu.github.io/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=dsc-jssstu/dsc-jssstu.github.io" />
+</a>
