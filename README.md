@@ -1,14 +1,16 @@
 ## About the app
 
-Lorem ipsum
-No server for now
+Official website source code of DSC JSSSTU.
+No custom server for now
 
 ## How to run the Client (Next.js)
 
-1. In another terminal, navigate to the `client` directory.
-2. Run `npm install` to install all dependencies.
-3. Run `npm run dev` to start the app
+First, run the development server:
 
-## Check if Client is working
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-1. With the two apps running, open your browser in http://localhost:3000/.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
