@@ -33,7 +33,7 @@ class MyDocument extends Document {
                     JSS Science and Technology University, Mysore"
         />
         <meta property="og:image" content="favicon.ico" />
-        <meta property="og:url" content="https://dsc-web.vercel.app/" />
+        <meta property="og:url" content="https://dsc-jssstu.github.io/" />
 
         <link rel="manifest" href="/manifest.json" />
 
