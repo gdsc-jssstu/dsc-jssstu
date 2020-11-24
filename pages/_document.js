@@ -34,6 +34,7 @@ class MyDocument extends Document {
         />
         <meta property="og:image" content="favicon.ico" />
         <meta property="og:url" content="https://dsc-jssstu.github.io/" />
+        <meta name="google-site-verification" content="p35m3CR4qO-DF23C0rnyNNBFbghDz6vHTl6s6bwy7v0" />
 
         <link rel="manifest" href="/manifest.json" />
 
