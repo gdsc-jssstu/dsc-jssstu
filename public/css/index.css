@@ -671,6 +671,9 @@ input:focus {
   .bottomNav {
     display: block;
   }
+  #down-arrow{
+    display: none;
+  }
 }
 
 /* Portrait phones and smaller */
@@ -738,5 +741,8 @@ input:focus {
   }
   .bottomNav {
     display: block;
+  }
+  #down-arrow{
+    display: none;
   }
 }
