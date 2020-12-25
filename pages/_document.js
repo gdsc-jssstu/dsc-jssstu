@@ -91,6 +91,7 @@ class MyDocument extends Document {
           <meta itemProp="image" content="favicon.ico" />
         </Head>
         <body>
+          <script src="/js/theme.js"></script>
           <Main />
           <NextScript />
         </body>
