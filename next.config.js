@@ -15,10 +15,5 @@ module.exports = withPreact(
     experimental: {
       modern: true,
     },
-    images: {
-      domains: ["res.cloudinary.com", "dsc-jssstu.github.io"],
-      loader: "cloudinary",
-      path: "https://res.cloudinary.com/dscjssstu/",
-    },
   })
 );
