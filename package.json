@@ -8,27 +8,27 @@
     "start": "cross-env NODE_ENV=production next start"
   },
   "dependencies": {
-    "@babel/core": "^7.12.3",
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@babel/core": "^7.12.10",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "aos": "^2.3.4",
     "fontfaceobserver": "^2.1.0",
-    "next": "^10.0.2-canary.9",
+    "next": "^10.0.4",
     "next-plugin-preact": "^3.0.3",
-    "next-pwa": "^3.1.5",
-    "notistack": "^1.0.1",
+    "next-pwa": "^5.0.1",
+    "notistack": "^1.0.3",
     "nprogress": "^0.2.0",
     "preact": "^10.5.7",
-    "preact-render-to-string": "^5.1.11",
+    "preact-render-to-string": "^5.1.12",
     "react": "npm:@preact/compat@0.0.3",
-    "react-burger-menu": "^2.9.0",
+    "react-burger-menu": "^3.0.2",
     "react-dom": "npm:@preact/compat@0.0.3",
-    "react-responsive-carousel": "^3.2.10",
+    "react-responsive-carousel": "^3.2.11",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2"
   },
   "homepage": ".",
   "devDependencies": {
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.3"
   }
 }
