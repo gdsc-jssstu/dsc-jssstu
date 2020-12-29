@@ -163,6 +163,11 @@
   }
 }
 
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
 hr {
   border: 0;
   clear: both;

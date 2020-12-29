@@ -13,7 +13,7 @@ export default function TeamBigCard(props) {
             alt="team-lead"
             height={350}
             width={350}
-            layout="intrinsic"
+            layout="responsive"
           />{" "}
         </div>
         <div className="col-md-8">

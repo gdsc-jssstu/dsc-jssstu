@@ -1,6 +1,6 @@
 const teamData2019 = {
   staffData: {
-    title: "STAFF COORDINATOR",
+    title: "DSC MENTOR",
     name: "Dr. M P Pushpalatha",
     image: "/images/hod.jpg",
     bio:
@@ -16,9 +16,9 @@ const teamData2019 = {
     image: "/images/team/2019/santosh.png",
     bio:
       "The most dynamic person in DSC -presenting to all, the community lead of DSC JSSSTU 2019-20, Santosh Umesh Shet. Being a pro at bringing the team together for fun as well as work, Santosh himself contributes to the design as well as the management team of DSC. He has experience working as mentor and lead in various organisations for several years. Santosh is one of the efficient developers when it comes to building machine learning projects and Google Cloud. Not to be mentioned, he is one of the most humble men in power who would make everyone in the team feel comfortable.",
-    instagram: "#",
-    linkedin: "#",
-    github: "#",
+    instagram: "https://www.instagram.com/1he_trouble_maker/",
+    linkedin: "https://www.linkedin.com/in/sanshet",
+    github: "https://github.com/santos97",
   },
 
   execomData: [

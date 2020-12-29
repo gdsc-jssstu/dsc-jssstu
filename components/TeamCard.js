@@ -29,7 +29,7 @@ const TeamCardFront = function (props) {
         alt="..."
         height={350}
         width={350}
-        layout="intrinsic"
+        layout="responsive"
       />
       <div className="card-body text-center">
         <p className="card-title">{props.title}</p>

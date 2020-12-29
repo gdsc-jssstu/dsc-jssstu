@@ -81,7 +81,7 @@ const TeamOutline = ({ page }) => {
                       <hr />{" "}
                     </>
                   ) : (
-                    <div className="col-xl-4 col-md-6">
+                    <div className="col-xl-4 col-md-6 mx-auto">
                       <TeamCard>
                         <TeamCardFront
                           title={execom.name}
@@ -123,7 +123,7 @@ const TeamOutline = ({ page }) => {
                         ) : (
                           <div className="row">
                             {subTeam.map((subTeamData) => (
-                              <div className="col-md-6">
+                              <div className="col-md-6 mx-auto">
                                 <TeamCard>
                                   <TeamCardFront
                                     title={subTeamData.name}

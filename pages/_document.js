@@ -46,10 +46,10 @@ class MyDocument extends Document {
                       JSS Science and Technology University, Mysore"
           />
           <meta property="og:image" content="favicon.ico" />
-          <meta property="og:url" content="https://dsc-jssstu.github.io/" />
+          <meta property="og:url" content="https://dscjssstu.in/" />
 
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:url" content="https://dsc-jssstu.github.io/" />
+          <meta name="twitter:url" content="https://dscjssstu.in/" />
           <meta name="twitter:title" content="DSC JSSSTU" />
           <meta
             name="twitter:description"
