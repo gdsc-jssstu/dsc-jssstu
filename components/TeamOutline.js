@@ -2,6 +2,7 @@ import React from "react";
 import teamData from "../data/teamData";
 import TeamBigCard from "../components/TeamBigCard";
 import { TeamCard, TeamCardFront, TeamCardBack } from "../components/TeamCard";
+import Image from "next/image";
 
 const TeamOutline = ({ page }) => {
   const team = teamData[page];
@@ -146,6 +147,29 @@ const TeamOutline = ({ page }) => {
                 ))}
               </>
             ))}
+
+            {/*2019 Junior Team*/}
+            {page == 2019 ? (
+              <div className="container">
+                <div className="row">
+                  <h2 className="team-row-heads">Junior Team</h2>
+                  <hr />{" "}
+                </div>
+                <div className="row">
+                  <div className="col-md-12 mx-auto">
+                    <Image
+                      src="/images/team/2019/jnr team.jpg"
+                      alt="DSC JSSSTU Junior Team"
+                      width={780}
+                      height={390}
+                      layout="responsive"
+                    />
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </section>
       </div>
