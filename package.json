@@ -23,9 +23,11 @@
     "preact-render-to-string": "^5.1.12",
     "react": "npm:@preact/compat@0.0.3",
     "react-burger-menu": "^3.0.2",
+    "react-confetti": "^6.0.0",
     "react-dom": "npm:@preact/compat@0.0.3",
     "react-responsive-carousel": "^3.2.11",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2"
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2",
+    "react-use": "^15.3.4"
   },
   "homepage": ".",
   "devDependencies": {
