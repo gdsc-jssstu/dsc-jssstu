@@ -12,8 +12,7 @@
     -9px -9px 16px rgba(255, 255, 255, 0.02);
 }
 .para {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font: 14px "Open Sans", sans-serif;
 }
 html * {
   -webkit-font-smoothing: antialiased;
@@ -22,23 +21,18 @@ html * {
 .navbar-dsc-logo {
   display: inline-block;
 }
-
-/* Float four columns side by side */
 .column {
   display: table;
   width: 40%;
-  padding: 10px 10px;
+  padding: 10px;
   display: flex !important;
   justify-content: center !important;
 }
-
-/* Responsive columns */
 @media screen and (max-width: 1080px) {
   .column {
     width: 70%;
   }
 }
-/* Responsive columns */
 @media screen and (max-width: 700px) {
   .column {
     width: 100%;
@@ -49,7 +43,6 @@ html * {
     text-align: center;
   }
 }
-/* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -60,50 +53,44 @@ html * {
     margin: 0;
   }
 }
-
 .container-page {
   margin: auto;
 }
-
 .col-lg-6 {
   text-align: center;
   max-width: 70vw;
 }
-
-/* Remove extra left and right margins, due to padding */
 .row {
-  width: 100%; /* Set full-width to expand the whole page */
+  width: 100%;
   display: flex !important;
   justify-content: center !important;
   flex-wrap: wrap;
-  padding: 0 7% 0 7%;
+  padding: 0 7%;
   background: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
-    url("../images/after-landing.svg") center center fixed;
+    url(../images/after-landing.svg) center center fixed;
   background-size: cover;
 }
 .dark .row {
   background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)),
-    url("../images/after-landing-dark.svg") center center fixed;
+    url(../images/after-landing-dark.svg) center center fixed;
   background-size: cover;
 }
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: block;
   clear: both;
 }
-/* Style the counter cards */
 .card {
   min-height: 32rem !important;
   width: 16rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 0px 15px 15px 15px;
+  padding: 0 15px 15px;
   text-align: center;
   font-size: large;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
   position: relative;
   transition: box-shadow 0.3s;
@@ -118,7 +105,6 @@ html * {
   height: 100px;
   width: 100px;
 }
-
 .project-circle-icon {
   height: 2rem;
   width: 2rem;

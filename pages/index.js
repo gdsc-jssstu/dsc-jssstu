@@ -95,7 +95,7 @@ export default function Home() {
         <img src="/images/landing.svg" className="main-image" alt="Home Page" />
       </div>
       <div className="container-main holded-container" id="our-work">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
           Our Focus
         </h1>
         <p
@@ -115,10 +115,13 @@ export default function Home() {
       </div>
 
       <div className="container-main holded-container">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
           About JSSSTU
         </h1>
-        <p data-aos="fade-up" className="text-center extra-break">
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
           JSS Science and Technology University, popularly known as SJCE or
           JSSSTU, is a private university located in Mysore, Karnataka, India.
           SJCE was Established in 1963. JSS S&T University is committed to
@@ -134,10 +137,13 @@ export default function Home() {
       </div>
 
       <div className="container-main holded-container" id="team">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
           Get to know the team
         </h1>
-        <p data-aos="fade-up" className="text-center extra-break">
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
           We've got a strong team filled with passionate developers, dexterous
           designers and competent organisers!
         </p>
@@ -147,11 +153,15 @@ export default function Home() {
           </div>
         </Link>
       </div>
+
       <div className="container-main holded-container" id="updates">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
           Projects
         </h1>
-        <p data-aos="fade-up" className="text-center extra-break">
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
           Proper execution of Knowledge leads to successful projects. Here are a
           few projects built by our team.
         </p>
@@ -163,11 +173,15 @@ export default function Home() {
           </div>
         </Link>
       </div>
+
       <div className="container-main holded-container" id="blog">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
           Our Blog
         </h1>
-        <p data-aos="fade-up" className="text-center extra-break">
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
           You learn by sharing your knowledge and we emphasize it! Our team
           disseminates their knowledge on Medium often.
         </p>
@@ -179,11 +193,15 @@ export default function Home() {
           </a>
         </div>
       </div>
+
       <div className="container-main holded-container" id="contact">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
           Contact us
         </h1>
-        <p data-aos="fade-up" className="text-center extra-break">
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
           Reach out to us on these platforms! We're just a message away.
         </p>
         <div data-aos="fade-up" className="icons small-icons">
@@ -198,7 +216,7 @@ export default function Home() {
               alt="DSC JSSSTU Instagram"
             />
           </a>
-          {/* <a href="https://twitter.com/dscvit" target="_blank" rel="noopener">
+          {/* <a href="https://twitter.com/dscjssstu" target="_blank" rel="noopener">
             <img
               src="images/Twitter.svg"
               className="circle-icon"
@@ -216,17 +234,6 @@ export default function Home() {
               alt="DSC JSSSTU Linkedin"
             />
           </a>
-          {/* <a
-            href="https://facebook.com/dscvitvellore"
-            target="_blank"
-            rel="noopener"
-          >
-            <img
-              src="images/Facebook.svg"
-              className="circle-icon"
-              alt="DSC JSSSTU Facebook"
-            />
-          </a> */}
           <a
             href="https://github.com/dsc-jssstu"
             target="_blank"
@@ -238,17 +245,6 @@ export default function Home() {
               alt="DSC JSSSTU GitHub"
             />
           </a>
-          {/* <a
-            href="https://www.behance.net/dsc-vit"
-            target="_blank"
-            rel="noopener"
-          >
-            <img
-              src="images/Behance.svg"
-              className="circle-icon"
-              alt="DSC JSSSTU Behance"
-            />
-          </a> */}
           <a href="https://medium.com/dscjssstu" target="_blank" rel="noopener">
             <img
               src="/images/Medium.svg"
@@ -269,11 +265,47 @@ export default function Home() {
           </a>
         </div>
       </div>
+
       <div className="container-main holded-container">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
+          Join us!
+        </h1>
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
+          Ready to hang out? Grab a seat in a voice channel. Designed so you can
+          pop in and out of voice and video conversations throughout the day.
+          Play games, have fun and enjoy geek time with us. Access to a global
+          network of student leaders, professional community organizers,
+          industry experts, and Googlers to gain mentorship and share knowledge.
+        </p>
+        <div data-aos="fade-up" className="buttons">
+          <a href="https://discord.gg/4A8YqmK" target="_blank" rel="noopener">
+            <div data-aos="fade-up" className="button-maker">
+              <div className="button-text">Discord</div>
+            </div>
+          </a>
+          <a
+            href="https://dsc.community.dev/jss-science-technology-university-mysuru/"
+            target="_blank"
+            rel="noopener"
+          >
+            <div data-aos="fade-up" className="button-maker">
+              <div className="button-text">Subscribe</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div className="container-main holded-container">
+        <h1 data-aos="fade-up" className="text-center">
           Partners
         </h1>
-        <p data-aos="fade-up" className="text-center extra-break">
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
           Partners help us reach our goals and grow our community! Thank You,
           for being one of them.
           <br />
@@ -289,12 +321,15 @@ export default function Home() {
       </div>
 
       <div className="container-main holded-container">
-        <h1 data-aos="fade-up" className=" text-center">
+        <h1 data-aos="fade-up" className="text-center">
           Submit an idea
         </h1>
-        <p data-aos="fade-up" className="text-center extra-break">
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
           Tried implementing your idea and got stuck? Don't worry. We got your
-          back! Drop your idea here and we will implement it!
+          back! Drop your idea here and we will help you implement it!
         </p>
         <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">

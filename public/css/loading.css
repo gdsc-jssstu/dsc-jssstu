@@ -13,11 +13,9 @@
   align-items: center;
   z-index: 1;
 }
-
 .dark .spinnerDiv {
   background: #333;
 }
-
 .loading .spinnerDiv {
   visibility: 1;
   opacity: 1;
