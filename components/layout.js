@@ -25,7 +25,7 @@ export default function Layout({ children, page, headerRef }) {
     setOpen(false);
   };
 
-  const handleNewVersion = (event) => {
+  const handleNewVersion = async () => {
     window.workbox.addEventListener("controlling", (event) => {
       window.location.reload();
     });
