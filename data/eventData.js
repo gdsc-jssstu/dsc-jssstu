@@ -3,49 +3,49 @@ const eventData = [
     name: "DSC WOW",
     date: "December 7, 2020",
     description:
-      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible.",
+      "DSC WOW is a collaborative event of 100+ DSCs from India, who have joined hands to bring together students, developers and communities under the same roof. They can attain knowledge from highly experienced industry professionals and can also polish their coding skills, or maybe just get started with their programming journey. DSC WOW stands for 'DSC Week of Wonders'. In addition to various sessions by the best speakers in their domains, there was a 48-hour hackathon called 'CodeOffDuty' with amazing problem statements and prizes! ",
     images: ["/images/events/androidPDA/img1-min.jpg"],
   },
   {
     name: "Android Study Jams",
     date: "November 25, 2020",
     description:
-      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible.",
+      "Android Study Jams are community-organized study groups for people learning how to build Android apps. It is a self-paced course where you have to follow the tracks and complete the tasks on the website, at the comfort of your home. Our facilitator, Puneeth B S, will be clearing your doubts related to Android and guide you to complete the course tracks. The best apps developed by the participants at the end of the program will stand a chance to be showcased by Google on its blogs & social media. This event is a part of Android Study Jam and will be focus on fundamentals of Kotlin programming language to become an Android Developer. ",
     images: ["/images/events/androidPDA/img1-min.jpg"],
   },
   {
     name: "DSC Samvad | 01. Behind The Scenes of Research",
     date: "November 7, 2020",
     description:
-      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible.",
+      "One of its kind, DSC Samvad is a series of intriguing talks with the most influential and tech-savvy speakers. This series aimed to share knowledge differently with students and give them the extra push to achieve their goals. These interactive sessions with speakers boosted students' confidence and helped change their perspective towards prospective domains and career options.",
     images: ["/images/events/androidPDA/img1-min.jpg"],
   },
   {
     name: "30 Days of Google Cloud",
     date: "October 5, 2020",
     description:
-      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible.",
+      "30 Days of Google Cloud program provided an opportunity to kickstart our career in cloud and get hands-on practice on Google Cloud Platform - the tool that powers apps like Google Search, Gmail and YouTube. As soon as the word was out about this unique and wonderful opportunity, all our peers and fellow students were eager to get enrolled and learn more about the technicalities of cloud. The program commenced on the 26th of September 2020 and concluded on the 5th of November 2020. Along the way we had our campus facilitator, Mr.Vijeth Vaishnav D (3rd year,CS) who was specially trained on Google Cloud to guide the students and he supported each and every student unconditionally throughout their journey. It was a successful program in which 164 students enrolled themselves from JSS STU. The program introduced students to Computing, Application Development, Big Data & Machine Learning using Google Cloud's training platform called Qwiklabs where they learnt each of these topics using self-paced labs that provided them temporary credentials to Google Cloud Platform, so that they could learn about cloud without any simulations.All the students who completed the quests expressed their gratitude for giving them an amazing opportunity to learn about the happenings of cloud. All of them wished that such mega events should be organized time and again giving the students a chance to amplify their talents as they prepare for their future.",
     images: ["/images/events/androidPDA/img1-min.jpg"],
   },
   {
     name: "Recruitment Drive - 2020",
     date: "September 12, 2020",
     description:
-      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible.",
+      "It was time to set new goals with higher expectations from all. DSC JSSSTU, under the guidance of Dr M P Pushpalatha - HOD of CSE Dept., came up with it's most awaited virtual Recruitment drive with 92 signups having 19 females from various departments and batches. The recruitment was divided into phases to find the polished ones of all. The first phase was an online test on 19th September conducted on HackerEarth platform for both Technical and Organisational positions with domain-specific questions such as coding, aptitude and problem-solving. After arduous aftermath, we went forward with 39 participants for the 2nd phase as an interview session held between 22nd - 24th September. Here, the organizational inquisitive participants went through a comprehensive interview about their endeavours. The technical participants on the other hand were asked about their deep knowledge and proficiency in the realm they are good at. Both the domains had their Hr awaiting on 27th September. Definitely, it wasn't a simple procedure to decide on the best amongst the crowd as all were great at their respective domains but after various meetings, we surfaced 13 participants joining our core team of DSC JSSSTU for the year 2020-21.",
     images: ["/images/events/androidPDA/img1-min.jpg"],
   },
   {
     name: "MPTs",
     date: "June 7, 2020",
     description:
-      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible.",
+      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible. Amidst the uncertainty of the pandemic, this series turned out to be a boon for those appearing for placements. This was a national-level event with a turnout of 800+ students attending from all corners of the country.",
     images: ["/images/events/androidPDA/img1-min.jpg"],
   },
   {
     name: "WiDS Datathon Workshop",
     date: "February 19, 2020",
     description:
-      "Series of Mock Placement Tests were conducted on June 7th & June 14th, 2020. This marked our first virtual event & got a massive response by having more than 500 registrations from across Karnataka. MPT is a Coding+Aptitude test, similar to our placement tests. Timed practice and preperation will be your baby steps to ace your placements. Apply what you've studied till now in a placement test which is as close to the real one as possible.",
+    "DSC JSS STU conducted a Datathon Workshop on 19th February 2020. A total of 44 students attended the workshop of which 27 were girls. The speaker, Usha Rengaraju, a principal Data Scientist, Polymath and the lead ambassador of WiDS Mysore, gave the students a hands-on experience on Kaggle. She gave a demo on how to make submissions for datathon using a sample data set, how to fork notebooks and much more. She also made students visualise  data sets using various visualisation tools such as matplotlib and pandas. Python Refresher course was conducted for students who were not very confident with it, which revised python concepts in brief. Usha also mentioned about the vast opportunities that the Kaggle platform holds for all the budding Data Scientists and how they can take baby steps into Deep learning. It was great to see someone as experienced and knowledgeable as her to  bring in so much enthusiasm and keep the students engaged for a duration of 5 hours. The DSC team put in a lot of effort to help the workshop run smoothly.  Refreshments and food were arranged for the attendees and the speaker. Attendance was provided for the students who attended the workshop. Overall ,the students found the workshop resourceful and the feedbacks were excellent.",
     images: ["/images/events/androidPDA/img1-min.jpg"],
   },
   {
