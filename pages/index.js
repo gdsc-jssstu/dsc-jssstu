@@ -300,6 +300,24 @@ export default function Home() {
 
       <div className="container-main holded-container">
         <h1 data-aos="fade-up" className="text-center">
+          Submit an idea
+        </h1>
+        <p
+          data-aos="fade-up"
+          className="continous-text text-center extra-break"
+        >
+          Tried implementing your idea and got stuck? Don't worry. We got your
+          back! Drop your idea here and we will help you implement it!
+        </p>
+        <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
+          <div data-aos="fade-up" className="button-maker">
+            <div className="button-text">Submit Ideas</div>
+          </div>
+        </a>
+      </div>
+
+      <div className="container-main holded-container">
+        <h1 data-aos="fade-up" className="text-center">
           Partners
         </h1>
         <p
@@ -316,24 +334,6 @@ export default function Home() {
         <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Send Proposal</div>
-          </div>
-        </a>
-      </div>
-
-      <div className="container-main holded-container">
-        <h1 data-aos="fade-up" className="text-center">
-          Submit an idea
-        </h1>
-        <p
-          data-aos="fade-up"
-          className="continous-text text-center extra-break"
-        >
-          Tried implementing your idea and got stuck? Don't worry. We got your
-          back! Drop your idea here and we will help you implement it!
-        </p>
-        <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
-          <div data-aos="fade-up" className="button-maker">
-            <div className="button-text">Submit Ideas</div>
           </div>
         </a>
       </div>

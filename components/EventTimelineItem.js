@@ -14,8 +14,8 @@ const EventTimelineItem = ({ event }) => {
             <span className="etmln_event_date" data-aos="fade-up">
               {event.date}
             </span>
-            <span className="etmln_event_discription" data-aos="fade-up">
-              {event.discription}
+            <span className="etmln_event_description" data-aos="fade-up">
+              {event.description}
             </span>
             <span className="etmln_timeline_dot"></span>
           </div>
