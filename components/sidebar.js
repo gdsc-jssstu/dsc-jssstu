@@ -9,7 +9,10 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const useStyles = makeStyles((theme) => ({
   backButton: {
-    marginRight: theme.spacing(1),
+    margin: theme.spacing(1),
+    "&:hover": {
+      background: "rgba(66, 133, 244, 0.4)",
+    },
   },
   instructions: {
     marginTop: theme.spacing(1),
