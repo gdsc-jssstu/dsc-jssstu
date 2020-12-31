@@ -18,19 +18,17 @@ export default function Layout({ children, page, headerRef }) {
   };
 
   const handleClose = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
+    if (reason === "clickaway") return;
 
     setOpen(false);
   };
 
-  const handleNewVersion = async () => {
-    window.workbox.addEventListener("controlling", (event) => {
+  const handleNewVersion = () => {
+    window.workbox.addEventListener("controlling", () => {
       window.location.reload();
     });
 
-    window.workbox.messageSW({ type: "SKIP_WAITING" });
+    window.workbox.messageSkipWaiting();
   };
 
   const Fonts = () => {
@@ -53,10 +51,8 @@ export default function Layout({ children, page, headerRef }) {
       typeof window !== "undefined" &&
       "serviceWorker" in navigator &&
       window.workbox !== undefined
-    ) {
+    )
       window.workbox.addEventListener("waiting", handleClick);
-      window.workbox.addEventListener("externalwaiting", handleClick);
-    }
 
     Fonts();
 
