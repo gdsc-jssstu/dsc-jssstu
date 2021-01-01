@@ -10,6 +10,23 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-Z3N5JRFEF9`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Z3N5JRFEF9', {
+                page_path: window.location.pathname,
+              });
+          `,
+            }}
+          />
           <meta charSet="utf-8" />
 
           <meta httpEquiv="content-type" content="text/html;charset=UTF-8" />
