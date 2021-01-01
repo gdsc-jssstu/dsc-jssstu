@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import Image from "next/image";
 import ProjectCard from "../components/ProjectCard";
 import projectData from "../data/projectData";
 
@@ -12,7 +11,7 @@ export default function Projects() {
         <link rel="stylesheet" href="css/projects.css" />
       </Head>
 
-      <div className="main main-raised" style={{ marginTop: "20"}}>
+      <div className="main main-raised" style={{ marginTop: "20" }}>
         {/*<div className="container">*/}
         <div className="container-page">
           <div className="row mt-5">
@@ -30,15 +29,11 @@ export default function Projects() {
           </div>
 
           <div className="row">
-
-            {
-              projectData.map( (project,idx) =>
-                (<div className="column">
-                  <ProjectCard project={project} key={idx} />
-                </div>)
-              )
-            }
-
+            {projectData.map((project, idx) => (
+              <div className="column">
+                <ProjectCard project={project} key={idx} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
