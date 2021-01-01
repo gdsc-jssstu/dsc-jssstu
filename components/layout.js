@@ -28,7 +28,7 @@ export default function Layout({ children, page, headerRef }) {
       window.location.reload();
     });
 
-    window.workbox.messageSkipWaiting();
+    window.workbox.messageSW({ type: "SKIP_WAITING" });
   };
 
   const Fonts = () => {
@@ -51,8 +51,10 @@ export default function Layout({ children, page, headerRef }) {
       typeof window !== "undefined" &&
       "serviceWorker" in navigator &&
       window.workbox !== undefined
-    )
+    ) {
       window.workbox.addEventListener("waiting", handleClick);
+      window.workbox.addEventListener("externalwaiting", handleClick);
+    }
 
     Fonts();
 
