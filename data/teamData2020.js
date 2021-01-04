@@ -117,7 +117,7 @@ const teamData2020 = {
                 "..it's probably Prahasith addressing someone. So don't blush out if he does that to you. This Math genius has a knack for getting things done. He loves Cricket and is amazingly good at it. He comes up with crazy ideas to do things and manages to be cool in tense situations, always cracking jokes, you just can't stop giggling when he's around. He is very resilient; a person you want to keep around. ",
               instagram: "https://nameless-reaches-86226.herokuapp.com/",
               linkedin: "https://www.linkedin.com/in/y-prahasith-12b829173/",
-              github: "https://github.com/YPrahasith/dsc-web",
+              github: "https://github.com/YPrahasith/",
             },
             {
               name: "Poorvi Shetty",
