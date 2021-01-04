@@ -4,27 +4,16 @@ import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
 import Image from "next/image";
 import { ThemeContext } from "../contexts/ThemeContext";
-import { useWindowSize, useTimeout } from "react-use";
-import Confetti from "react-confetti";
 
 export default function Home() {
   const headerRef = useRef(null);
   const themeContext = useContext(ThemeContext);
-
-  const { width, height } = useWindowSize();
-  const [isComplete] = useTimeout(3000);
 
   return (
     <Layout page="home" headerRef={headerRef}>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-
-      {width == "Infinity" || height == "Infinity" ? (
-        <></>
-      ) : (
-        <Confetti width={width} height={height} recycle={!isComplete()} />
-      )}
 
       <div className="main" id="home">
         <div className="main-text-holder">
@@ -105,7 +94,6 @@ export default function Home() {
         </Link>
         <img src="/images/landing.svg" className="main-image" alt="Home Page" />
       </div>
-
       <div className="container-main holded-container" id="our-work">
         <h1 data-aos="fade-up" className="text-center">
           Our Focus
