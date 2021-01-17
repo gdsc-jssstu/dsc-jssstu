@@ -1,11 +1,7 @@
 import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Stepper from "@material-ui/core/Stepper";
-import Step from "@material-ui/core/Step";
-import StepLabel from "@material-ui/core/StepLabel";
-import Button from "@material-ui/core/Button";
 import { ThemeContext } from "../contexts/ThemeContext";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { Stepper, Step, StepLabel, Button, useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   backButton: {

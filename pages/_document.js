@@ -44,11 +44,11 @@ class MyDocument extends Document {
           <meta
             name="description"
             content="Developer Student Clubs JSSSTU - powered by Google Developers
-                      JSS Science and Technology University, Mysore"
+                      JSS Science and Technology University - SJCE, Mysuru 2021"
           />
           <meta
             name="keywords"
-            content="dsc,dscindia,dscjssstu,dscjssmysore,jssstu,sjce"
+            content="dsc jssstu,dscjssstu,dsc jss mysore,dsc jss mysuru,dsc sjce,dsc jce,dsc jc,dsc mysore,dsc mysuru,jssstu,sjce,jss mysore,jss mysuru,dsc,dscindia,dsc india"
           />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
@@ -60,7 +60,7 @@ class MyDocument extends Document {
           <meta
             property="og:description"
             content="Developer Student Clubs JSSSTU - powered by Google Developers
-                      JSS Science and Technology University, Mysore"
+                      JSS Science and Technology University - SJCE, Mysuru 2021"
           />
           <meta property="og:image" content="favicon.ico" />
           <meta property="og:url" content="https://dscjssstu.in/" />
@@ -71,7 +71,7 @@ class MyDocument extends Document {
           <meta
             name="twitter:description"
             content="Developer Student Clubs JSSSTU - powered by Google Developers
-                      JSS Science and Technology University, Mysore"
+                      JSS Science and Technology University - SJCE, Mysuru 2021"
           />
           <meta
             name="twitter:image"

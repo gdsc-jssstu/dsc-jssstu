@@ -4,7 +4,7 @@ import Layout, { siteTitle } from "../components/layout";
 import SideBar from "../components/sidebar";
 import React, { useState } from "react";
 import TeamOutline from "../components/TeamOutline";
-import Grid from "@material-ui/core/Grid";
+import { Grid } from '@material-ui/core';
 
 export default function Team() {
   const [page, setPage] = useState("2020");
