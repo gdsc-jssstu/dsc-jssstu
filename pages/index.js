@@ -1,4 +1,5 @@
-import { useRef, useContext } from "react";
+import { useRef, useContext, useState, useEffect } from "react";
+import { Button, Snackbar, Slide } from "@material-ui/core";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
@@ -8,12 +9,62 @@ import { ThemeContext } from "../contexts/ThemeContext";
 export default function Home() {
   const headerRef = useRef(null);
   const themeContext = useContext(ThemeContext);
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") return;
+
+    setOpen(false);
+  };
+
+  const handleNewVersion = () => {
+    window.workbox.addEventListener("controlling", () => {
+      window.location.reload();
+    });
+
+    window.workbox.messageSkipWaiting();
+  };
+
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      "serviceWorker" in navigator &&
+      window.workbox !== undefined
+    ) {
+      window.workbox.addEventListener("waiting", handleClick);
+
+      window.workbox.register();
+    }
+  }, []);
 
   return (
     <Layout page="home" headerRef={headerRef}>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
+      <Snackbar
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "right",
+        }}
+        open={open}
+        TransitionComponent={function SlideTransition(props) {
+          return <Slide {...props} direction="left" />;
+        }}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="New version is available!"
+        action={
+          <Button color="secondary" size="small" onClick={handleNewVersion}>
+            Refresh
+          </Button>
+        }
+      />
 
       <div className="main" id="home">
         <div className="main-text-holder">

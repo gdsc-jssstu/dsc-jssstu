@@ -11,6 +11,7 @@ module.exports = withPreact(
     pwa: {
       disable: prod ? false : true,
       dest: "public",
+      register: false,
       skipWaiting: false,
       runtimeCaching,
     },
