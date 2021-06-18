@@ -10,7 +10,6 @@ module.exports = withPreact(
       dest: "public",
       register: false,
       skipWaiting: false,
-      cacheOnFrontEndNav: true,
     },
     experimental: {
       optimizeImages: true,

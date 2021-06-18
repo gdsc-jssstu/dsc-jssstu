@@ -13,12 +13,7 @@ export default function Team() {
     <Layout page="team">
       <Head>
         <title>{siteTitle} - Team</title>
-        <link
-          rel="preload"
-          href="css/team.css"
-          as="style"
-          onLoad="this.onload=null;this.rel='stylesheet'"
-        />
+        <link rel="stylesheet" href="css/team.css" />
       </Head>
 
       <div id="page-wrap">

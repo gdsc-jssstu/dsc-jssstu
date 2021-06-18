@@ -10,12 +10,7 @@ export default function Events() {
     <Layout page="events">
       <Head>
         <title>{siteTitle} - Events</title>
-        <link
-          rel="preload"
-          href="css/events.css"
-          as="style"
-          onLoad="this.onload=null;this.rel='stylesheet'"
-        />
+        <link rel="stylesheet" href="css/events.css" />
       </Head>
       <div
         className="main main-raised"

@@ -1,8 +1,15 @@
+import crypto from "crypto";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
 import { GA_TRACKING_ID } from "../lib/gtag";
 
 const isProduction = process.env.NODE_ENV === "production";
+
+const cspHashOf = (text) => {
+  const hash = crypto.createHash("sha256");
+  hash.update(text);
+  return `'sha256-${hash.digest("base64")}'`;
+};
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -10,36 +17,24 @@ class MyDocument extends Document {
   }
 
   render() {
+    let csp = `default-src 'self'; script-src 'self' ${cspHashOf(
+      NextScript.getInlineScriptSource(this.props)
+    )}`;
+    if (!isProduction) {
+      csp = `style-src 'self' 'unsafe-inline'; font-src 'self' data:; default-src 'self'; script-src 'unsafe-eval' 'self' ${cspHashOf(
+        NextScript.getInlineScriptSource(this.props)
+      )}`;
+    }
+
     return (
       <Html lang="en">
         <Head>
-          <Script src="/js/theme.js" strategy="beforeInteractive" />
-
-          {/* enable analytics script only for production */}
-          {isProduction && (
-            <>
-              <Script
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
-              <Script
-                dangerouslySetInnerHTML={{
-                  __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-                }}
-              />
-            </>
-          )}
-
           <meta charSet="utf-8" />
 
           <meta httpEquiv="content-type" content="text/html;charset=UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+          <meta httpEquiv="Content-Security-Policy" content={csp} />
+
           <meta name="theme-color" content="#141414" />
           <meta name="robots" content="all" />
 
@@ -89,6 +84,29 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@dscjssstu" />
 
           <link rel="manifest" href="/manifest.json" />
+
+          <Script src="/js/theme.js" strategy="beforeInteractive" />
+
+          {/* enable analytics script only for production */}
+          {isProduction && (
+            <>
+              <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+              />
+              <Script
+                dangerouslySetInnerHTML={{
+                  __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+                }}
+              />
+            </>
+          )}
 
           {/* <!-- Favicons --> */}
           <link rel="icon" href="/icons/favicons/favicon.ico" />

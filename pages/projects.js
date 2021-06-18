@@ -8,12 +8,7 @@ export default function Projects() {
     <Layout page="projects">
       <Head>
         <title>{siteTitle} - Projects</title>
-        <link
-          rel="preload"
-          href="css/projects.css"
-          as="style"
-          onLoad="this.onload=null;this.rel='stylesheet'"
-        />
+        <link rel="stylesheet" href="css/projects.css" />
       </Head>
 
       <div className="main main-raised" style={{ marginTop: "20" }}>
