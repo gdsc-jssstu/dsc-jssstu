@@ -4,7 +4,7 @@ import Layout, { siteTitle } from "../components/layout";
 import SideBar from "../components/sidebar";
 import React, { useState } from "react";
 import TeamOutline from "../components/TeamOutline";
-import { Grid } from '@material-ui/core';
+import { Grid } from "@material-ui/core";
 
 export default function Team() {
   const [page, setPage] = useState("2020");
@@ -13,8 +13,12 @@ export default function Team() {
     <Layout page="team">
       <Head>
         <title>{siteTitle} - Team</title>
-
-        <link rel="stylesheet" href="css/team.css" />
+        <link
+          rel="preload"
+          href="css/team.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
       </Head>
 
       <div id="page-wrap">
@@ -30,7 +34,7 @@ export default function Team() {
                 wonderful individuals who put untiring efforts for it.
               </p>
             </div>
-            <Link href="#our-work">
+            <Link href="#our-work" passHref>
               <div className="main-down-arrow" id="down-arrow">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +88,7 @@ export default function Team() {
                 <TeamOutline page={page} />
               </Grid>
               <Grid item sm={1} className="sidebar-order">
-                <div class="sticky-top">
+                <div className="sticky-top">
                   <SideBar setPage={setPage} />
                 </div>
               </Grid>

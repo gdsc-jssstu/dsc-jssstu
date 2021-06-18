@@ -1,14 +1,21 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import EventTimeline from "../components/EventTimeline";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
+import speakerBanner from "../public/images/speaker_banner.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Events() {
   return (
     <Layout page="events">
       <Head>
         <title>{siteTitle} - Events</title>
+        <link
+          rel="preload"
+          href="css/events.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
       </Head>
       <div
         className="main main-raised"
@@ -35,10 +42,11 @@ export default function Events() {
                   <source type="image/png" srcSet="images/speaker_banner.png" />
                   <Image
                     className="events-header-img"
-                    src="/images/speaker_banner.png"
+                    src={speakerBanner}
                     alt="DSC JSSSTU Events"
-                    width={564/1.3}
-                    height={214/1.3}
+                    width={564 / 1.3}
+                    height={214 / 1.3}
+                    placeholder="blur"
                   />
                 </picture>
               </div>

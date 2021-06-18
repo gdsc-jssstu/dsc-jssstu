@@ -34,21 +34,29 @@ const TeamCardFront = function (props) {
       <div className="card-body text-center">
         <p className="card-title">{props.title}</p>
         <p className="team-social-media">
-          <a href={props.instagramLink} target="_blank" rel="noopener">
+          <a
+            href={props.instagramLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="images/Instagram.svg"
               className="social-circle-icon"
               alt=""
             />
           </a>
-          <a href={props.githubLink} target="_blank" rel="noopener">
+          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
             <img
               src="images/Github.svg"
               className="social-circle-icon"
               alt=""
             />
           </a>
-          <a href={props.linkedinLink} target="_blank" rel="noopener">
+          <a
+            href={props.linkedinLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="images/Linkedin.svg"
               className="social-circle-icon"

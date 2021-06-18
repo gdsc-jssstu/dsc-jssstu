@@ -8,11 +8,15 @@ export default function Projects() {
     <Layout page="projects">
       <Head>
         <title>{siteTitle} - Projects</title>
-        <link rel="stylesheet" href="css/projects.css" />
+        <link
+          rel="preload"
+          href="css/projects.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
       </Head>
 
       <div className="main main-raised" style={{ marginTop: "20" }}>
-        {/*<div className="container">*/}
         <div className="container-page">
           <div className="row mt-5">
             <div className="col-lg-6">
@@ -30,8 +34,8 @@ export default function Projects() {
 
           <div className="row">
             {projectData.map((project, idx) => (
-              <div className="column">
-                <ProjectCard project={project} key={idx} />
+              <div className="column" key={idx}>
+                <ProjectCard project={project} />
               </div>
             ))}
           </div>

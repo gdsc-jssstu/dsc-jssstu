@@ -39,6 +39,7 @@ const TeamOutline = ({ page }) => {
                 <TeamBigCard
                   title={staffData.name}
                   faceImage={staffData.image}
+                  blurDataURL={staffData.blurDataURL}
                   instagramLink={staffData.instagram}
                   githubLink={staffData.github}
                   linkedinLink={staffData.linkedin}
@@ -109,11 +110,12 @@ const TeamOutline = ({ page }) => {
                   <h2 className="section-heading mx-auto">{teamVal}</h2>
                   <hr />{" "}
                 </div>
-                {teams[i].map((subVal) => (
+                {teams[i].map((subVal, idx) => (
                   <div
                     className={teamVal
                       .toLowerCase()
                       .substr(0, teamVal.indexOf(" "))}
+                    key={idx}
                   >
                     <div className="container team-card-row ">
                       {subVal.map((subTeam) =>
@@ -123,8 +125,8 @@ const TeamOutline = ({ page }) => {
                           </div>
                         ) : (
                           <div className="row">
-                            {subTeam.map((subTeamData) => (
-                              <div className="col-md-6 mx-auto">
+                            {subTeam.map((subTeamData, idx) => (
+                              <div className="col-md-6 mx-auto" key={idx}>
                                 <TeamCard>
                                   <TeamCardFront
                                     title={subTeamData.name}

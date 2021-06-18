@@ -5,6 +5,8 @@ import { IconButton } from "@material-ui/core";
 import Brightness5Icon from "@material-ui/icons/Brightness5";
 import NightsStayIcon from "@material-ui/icons/NightsStay";
 import { ThemeContext } from "../contexts/ThemeContext";
+import dscDark from "../public/images/DSC_JSSSTU-dark.png";
+import dscColor from "../public/images/DSC_JSSSTU-color.png";
 
 export default function Nav({ page, headerRef, theme, toggleTheme }) {
   const menuRef = useRef(null);
@@ -19,22 +21,22 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
     menuRef.current.style.display = "none";
   };
 
-  const handleScroll = () => {
-    const logoMark =
-      page === "home"
-        ? headerRef.current.getBoundingClientRect().top
-        : Number.NEGATIVE_INFINITY;
-
-    window.pageYOffset > logoMark
-      ? navRef.current.classList.add("navbar-scrolled")
-      : navRef.current.classList.remove("navbar-scrolled");
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const logoMark =
+        page === "home"
+          ? headerRef.current.getBoundingClientRect().top
+          : Number.NEGATIVE_INFINITY;
+
+      window.pageYOffset > logoMark
+        ? navRef.current.classList.add("navbar-scrolled")
+        : navRef.current.classList.remove("navbar-scrolled");
+    };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () =>
       window.removeEventListener("scroll", handleScroll, { passive: true });
-  }, []);
+  }, [headerRef, page]);
 
   return (
     <div>
@@ -97,36 +99,30 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
       </div>
       <div className="navbar" ref={navRef}>
         <div className="navbar-dsc-logo">
-          <picture>
-            <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
-            <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
-            {theme === "dark" ? (
-              <Image
-                src="/images/DSC_JSSSTU-dark.png"
-                className="logo-nav"
-                alt="DSC JSSSTU"
-                width={250}
-                height={55}
-              />
-            ) : (
-              <></>
-            )}
-          </picture>
-          <picture>
-            <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
-            <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
-            {theme === "light" ? (
-              <Image
-                src="/images/DSC_JSSSTU-color.png"
-                className="logo-nav-light"
-                alt="DSC JSSSTU"
-                width={250}
-                height={55}
-              />
-            ) : (
-              <></>
-            )}
-          </picture>
+          {theme === "dark" ? (
+            <Image
+              src={dscDark}
+              className="logo-nav"
+              alt="DSC JSSSTU"
+              width={250}
+              height={55}
+              placeholder="blur"
+            />
+          ) : (
+            <></>
+          )}
+          {theme === "light" ? (
+            <Image
+              src={dscColor}
+              className="logo-nav-light"
+              alt="DSC JSSSTU"
+              width={250}
+              height={55}
+              placeholder="blur"
+            />
+          ) : (
+            <></>
+          )}
         </div>
         <div className="menu">
           <div className="menu-item">
@@ -189,7 +185,7 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             }}
           >
             <IconButton
-              aria-label="add an alarm"
+              aria-label="change theme"
               onClick={toggleTheme}
               style={{
                 color: themeContext.theme === "dark" ? "white" : "black",

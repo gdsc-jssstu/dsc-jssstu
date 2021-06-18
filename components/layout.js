@@ -3,7 +3,6 @@ import { useDarkMode } from "./themeMode";
 import Head from "next/head";
 import AOS from "aos";
 import Nav from "./nav";
-const FontFaceObserver = require("fontfaceobserver");
 import MobileBottomNav from "./MobileBottomNav";
 
 export const siteTitle = "DSC JSSSTU";
@@ -11,24 +10,7 @@ export const siteTitle = "DSC JSSSTU";
 export default function Layout({ children, page, headerRef }) {
   const [theme, toggleTheme] = useDarkMode();
 
-  const Fonts = () => {
-    const link = document.createElement("link");
-    link.href =
-      "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap";
-    link.rel = "stylesheet";
-
-    document.head.appendChild(link);
-
-    const openSans = new FontFaceObserver("Open Sans");
-
-    openSans.load().then(() => {
-      document.documentElement.classList.add("open-sans");
-    });
-  };
-
   useEffect(() => {
-    Fonts();
-
     window.addEventListener("scroll", AOS.refresh(), { passive: true });
     return () =>
       window.removeEventListener("scroll", AOS.refresh(), { passive: true });
@@ -50,7 +32,7 @@ export default function Layout({ children, page, headerRef }) {
           rel="preload"
           href="css/events.css"
           as="style"
-          onload="this.onload=null;this.rel='stylesheet'"
+          onLoad="this.onload=null;this.rel='stylesheet'"
         />
         <link rel="stylesheet" href="css/svg.css" />
       </Head>

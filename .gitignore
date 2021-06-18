@@ -97,3 +97,11 @@ db_data
 
 # Mac specific file
 .DS_Store
+
+# PWA related files
+**/public/precache.*.js
+**/public/sw.js
+
+# Auto-generated files during build
+**/public/robots.txt
+**/public/sitemap.xml

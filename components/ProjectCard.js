@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { useEffect, useState, useContext } from "react";
 
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
 
 import {
   Card,
@@ -13,10 +13,9 @@ import {
   CardMedia,
   Button,
   Typography,
-} from '@material-ui/core';
+} from "@material-ui/core";
 
-
-const ProjectCard = ({project}) =>  {
+const ProjectCard = ({ project }) => {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
@@ -26,20 +25,20 @@ const ProjectCard = ({project}) =>  {
 
   const themeContext = useContext(ThemeContext);
 
-  const cardtheme = createMuiTheme ({
-          palette:{
-             type: themeContext.theme === "dark" ? "dark" : "light",
-          },
-        });
+  const cardtheme = createMuiTheme({
+    palette: {
+      type: themeContext.theme === "dark" ? "dark" : "light",
+    },
+  });
 
   return (
-    <ThemeProvider theme = {cardtheme}>
-      <Card style={{maxWidth: 345, minWidth: 330, height: "32rem"}}>
+    <ThemeProvider theme={cardtheme}>
+      <Card style={{ maxWidth: 345, minWidth: 330, height: "32rem" }}>
         <CardActionArea>
           <CardMedia
             style={{
-              maxWidth:330,
-              maxHeight:170,
+              maxWidth: 330,
+              maxHeight: 170,
               width: "auto",
               height: "auto",
               margin: "auto",
@@ -48,7 +47,7 @@ const ProjectCard = ({project}) =>  {
             image={project.image}
             title={project.imageAlt}
           />
-          <CardContent style={{height: "16rem"}}>
+          <CardContent style={{ height: "16rem" }}>
             <Typography gutterBottom variant="h5" component="h2">
               {project.name}
             </Typography>
@@ -60,26 +59,22 @@ const ProjectCard = ({project}) =>  {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions style={{justifyContent: 'center'}}>
-        {
-          project.links.map((links,idx) =>
-            (
-              <Button size="small" color="primary"  key={idx}>
-                  <a href={links.link} target="_blank" rel="noopener">
-                  <img
-                    src={links.icon}
-                    className="project-circle-icon"
-                    alt={links.alt}
-                  />
-                </a>
-              </Button>)
-          )
-        }
-
+        <CardActions style={{ justifyContent: "center" }}>
+          {project.links.map((links, idx) => (
+            <Button size="small" color="primary" key={idx}>
+              <a href={links.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={links.icon}
+                  className="project-circle-icon"
+                  alt={links.alt}
+                />
+              </a>
+            </Button>
+          ))}
         </CardActions>
       </Card>
     </ThemeProvider>
   );
-}
+};
 
 export default ProjectCard;

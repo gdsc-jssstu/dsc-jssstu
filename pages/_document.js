@@ -1,5 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
+import { GA_TRACKING_ID } from "../lib/gtag";
 
+const isProduction = process.env.NODE_ENV === "production";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -10,23 +13,29 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-Z3N5JRFEF9`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-Z3N5JRFEF9', {
-                page_path: window.location.pathname,
-              });
+          <Script src="/js/theme.js" strategy="beforeInteractive" />
+
+          {/* enable analytics script only for production */}
+          {isProduction && (
+            <>
+              <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+              />
+              <Script
+                dangerouslySetInnerHTML={{
+                  __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
           `,
-            }}
-          />
+                }}
+              />
+            </>
+          )}
+
           <meta charSet="utf-8" />
 
           <meta httpEquiv="content-type" content="text/html;charset=UTF-8" />
@@ -101,9 +110,13 @@ class MyDocument extends Document {
             href="/icons/favicons/favicon-16x16.png"
           />
           <meta itemProp="image" content="favicon.ico" />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
-          <script src="/js/theme.js"></script>
           <Main />
           <NextScript />
         </body>

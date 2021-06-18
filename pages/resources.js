@@ -24,7 +24,12 @@ export default function Resources() {
                 <p>&nbsp;</p>
               </div>
               <div className="col-lg-6" style={{ textAlign: "center" }}>
-                <Image className="img-fluid" src="/images/team.svg" unsized />
+                <Image
+                  className="img-fluid"
+                  src="/images/team.svg"
+                  alt="resources"
+                  unsized
+                />
               </div>
             </div>
           </div>

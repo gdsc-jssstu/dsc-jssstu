@@ -5,6 +5,8 @@ import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
 import Image from "next/image";
 import { ThemeContext } from "../contexts/ThemeContext";
+import dscDark from "../public/images/DSC_JSSSTU-dark.png";
+import dscColor from "../public/images/DSC_JSSSTU-color.png";
 
 export default function Home() {
   const headerRef = useRef(null);
@@ -69,38 +71,30 @@ export default function Home() {
       <div className="main" id="home">
         <div className="main-text-holder">
           <div className="main-text-holder-heading" ref={headerRef}>
-            <picture>
-              <source type="image/webp" srcSet="images/DSC_JSSSTU-dark.webp" />
-              <source type="image/png" srcSet="images/DSC_JSSSTU-dark.png" />
-              {themeContext.theme === "dark" ? (
-                <Image
-                  src="/images/DSC_JSSSTU-dark.png"
-                  className="logo"
-                  alt="DSC JSSSTU"
-                  width={350}
-                  height={80}
-                  priority={true}
-                />
-              ) : (
-                <></>
-              )}
-            </picture>
-            <picture>
-              <source type="image/webp" srcSet="images/DSC_JSSSTU-color.webp" />
-              <source type="image/png" srcSet="images/DSC_JSSSTU-color.png" />
-              {themeContext.theme === "light" ? (
-                <Image
-                  src="/images/DSC_JSSSTU-color.png"
-                  className="logo-light"
-                  alt="DSC JSSSTU"
-                  width={350}
-                  height={80}
-                  priority={true}
-                />
-              ) : (
-                <></>
-              )}
-            </picture>
+            {themeContext.theme === "dark" ? (
+              <Image
+                src={dscDark}
+                className="logo"
+                alt="DSC JSSSTU"
+                width={350}
+                height={80}
+                placeholder="blur"
+              />
+            ) : (
+              <></>
+            )}
+            {themeContext.theme === "light" ? (
+              <Image
+                src={dscColor}
+                className="logo-light"
+                alt="DSC JSSSTU"
+                width={350}
+                height={80}
+                placeholder="blur"
+              />
+            ) : (
+              <></>
+            )}
           </div>
           <h2>Powered by Google Developers</h2>
           <p className="continous-text">
@@ -110,7 +104,7 @@ export default function Home() {
           </p>
           <p style={{ fontWeight: "400" }}>Connect • Learn • Grow</p>
         </div>
-        <Link href="#our-work">
+        <Link href="#our-work" passHref>
           <div className="main-down-arrow" id="down-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.55 44.393">
               <g
@@ -180,7 +174,11 @@ export default function Home() {
           not only its neighborhood but offer courses to equip aspiring youth to
           meet the global needs of industry in every sector.
         </p>
-        <a href="https://jssstuniv.in/" target="_blank" rel="noopener">
+        <a
+          href="https://jssstuniv.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Official Website</div>
           </div>
@@ -195,10 +193,10 @@ export default function Home() {
           data-aos="fade-up"
           className="continous-text text-center extra-break"
         >
-          We've got a strong team filled with passionate developers, dexterous
-          designers and competent organisers!
+          We&apos;ve got a strong team filled with passionate developers,
+          dexterous designers and competent organisers!
         </p>
-        <Link href="/team">
+        <Link href="/team" passHref>
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Meet The Team</div>
           </div>
@@ -216,7 +214,7 @@ export default function Home() {
           Proper execution of Knowledge leads to successful projects. Here are a
           few projects built by our team.
         </p>
-        <Link href="/projects">
+        <Link href="/projects" passHref>
           <div data-aos="fade-up" className="buttons">
             <div className="button-maker" id="projects-button">
               <div className="button-text">Projects</div>
@@ -253,13 +251,13 @@ export default function Home() {
           data-aos="fade-up"
           className="continous-text text-center extra-break"
         >
-          Reach out to us on these platforms! We're just a message away.
+          Reach out to us on these platforms! We&apos;re just a message away.
         </p>
         <div data-aos="fade-up" className="icons small-icons">
           <a
             href="https://instagram.com/dscjssstu"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img
               src="/images/Instagram.svg"
@@ -277,7 +275,7 @@ export default function Home() {
           <a
             href="https://www.linkedin.com/company/dsc-jssstu"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img
               src="/images/Linkedin.svg"
@@ -288,7 +286,7 @@ export default function Home() {
           <a
             href="https://github.com/dsc-jssstu"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img
               src="/images/Github.svg"
@@ -296,7 +294,11 @@ export default function Home() {
               alt="DSC JSSSTU GitHub"
             />
           </a>
-          <a href="https://medium.com/dscjssstu" target="_blank" rel="noopener">
+          <a
+            href="https://medium.com/dscjssstu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="/images/Medium.svg"
               className="circle-icon"
@@ -306,7 +308,7 @@ export default function Home() {
           <a
             href="https://www.youtube.com/channel/UCs7FLvZy-oflwwXZnUZkrJA"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img
               src="/images/Youtube.svg"
@@ -332,7 +334,11 @@ export default function Home() {
           industry experts, and Googlers to gain mentorship and share knowledge.
         </p>
         <div data-aos="fade-up" className="buttons">
-          <a href="https://discord.gg/4A8YqmK" target="_blank" rel="noopener">
+          <a
+            href="https://discord.gg/4A8YqmK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div data-aos="fade-up" className="button-maker">
               <div className="button-text">Discord</div>
             </div>
@@ -340,7 +346,7 @@ export default function Home() {
           <a
             href="https://dsc.community.dev/jss-science-technology-university-mysuru/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <div data-aos="fade-up" className="button-maker">
               <div className="button-text">Subscribe</div>
@@ -357,10 +363,14 @@ export default function Home() {
           data-aos="fade-up"
           className="continous-text text-center extra-break"
         >
-          Tried implementing your idea and got stuck? Don't worry. We got your
-          back! Drop your idea here and we will help you implement it!
+          Tried implementing your idea and got stuck? Don&apos;t worry. We got
+          your back! Drop your idea here and we will help you implement it!
         </p>
-        <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
+        <a
+          href="mailto:dsc@jssstuniv.in"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Submit Ideas</div>
           </div>
@@ -382,7 +392,11 @@ export default function Home() {
           to Sponsor us to get brand exposure and elevate your business identity
           within the community, then drop us the details.
         </p>
-        <a href="mailto:dsc@jssstuniv.in" target="_blank" rel="noopener">
+        <a
+          href="mailto:dsc@jssstuniv.in"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div data-aos="fade-up" className="button-maker">
             <div className="button-text">Send Proposal</div>
           </div>
