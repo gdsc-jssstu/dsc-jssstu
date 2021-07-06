@@ -137,7 +137,7 @@ const teamData2020 = {
               linkedin: "#",
             },
             {
-              name: "Puneeth BS",
+              name: "BS Puneeth",
               image: "/images/team/2020/Puneeth_Android.jpg",
               short: 'He endures on the motto of "Keep Learning, Every Day".',
               bio: "This adage made him passionate about Softwares apart from Hardware. He's always in search of intriguing problems around him and loves accomplishing them too. He's fond of reading books, exploring new things and applying them to life. He is very approachable and loves building android apps. He is always looking for something that will fascinate him. He is a huge foodie, if you want to try out new cafes or restaurants, Puneet would be a fun partner!",
@@ -276,7 +276,7 @@ const teamData2020 = {
               linkedin: "https://www.linkedin.com/in/varun-vadivel-209ab1201",
             },
             {
-              name: "Ankitha",
+              name: "Ankitha S",
               image: "/images/team/2020/Ankitha_Event_Coordinator.jpg",
               short:
                 "Meet our Ankitha, the lively and cheerful girl in the club!!",

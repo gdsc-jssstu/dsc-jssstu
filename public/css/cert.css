@@ -123,6 +123,7 @@
   -ms-transform-origin: 0 100%;
   -webkit-transform-origin: 0 100%;
   unicode-bidi: bidi-override;
+  font-feature-settings: "liga" 0;
   -moz-font-feature-settings: "liga" 0;
 }
 
@@ -614,6 +615,19 @@
   font-family: "Roboto", sans-serif;
   color: #4285f4;
   text-transform: uppercase;
+}
+
+#author,
+#author a {
+  font-size: 10px;
+  font-family: "Open Sans";
+  color: #fff;
+  text-align: center;
+}
+#author {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
 }
 
 #certa {
