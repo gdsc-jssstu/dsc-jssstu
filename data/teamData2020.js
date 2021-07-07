@@ -276,18 +276,8 @@ const teamData2020 = {
               linkedin: "https://www.linkedin.com/in/varun-vadivel-209ab1201",
             },
             {
-              name: "Ankitha S",
-              image: "/images/team/2020/Ankitha_Event_Coordinator.jpg",
-              short:
-                "Meet our Ankitha, the lively and cheerful girl in the club!!",
-              bio: "A partner in crime for the craziest things one can do in their college life. She is street smart, loves taking trips and she's a huge foodie! Ankitha is very resourceful, enthusiastic, funny, has a good sense of humour and is super caring. You're lucky if you're her friend because she doesn't give up on you and stands up for you! Ankitha's reaction wouldn't change even if the world was coming to an end XD. You can always see her encouraging others and helping them come up.",
-              instagram: "#",
-              github: "#",
-              linkedin: "#",
-            },
-            {
-              name: "Preethi Alagundagi",
-              image: "/images/team/2020/Preethi_Event_Co.jpg",
+              name: "Preeti Alagundagi",
+              image: "/images/team/2020/Preeti_Event_Co.jpg",
               short:
                 "She is a woman of confidence, courage and she stands up for what she believes in.",
               bio: "She loves potato chips more than anything and will trade anything for a bag of chips XD. She is only silent till you get to know the real her. Can you believe this graceful girl is a swimmer and a tennis player! She is as resourceful as one can get, makes the best out of any given situation. A beautifully composed soul who can manage the worst situations gracefully.",

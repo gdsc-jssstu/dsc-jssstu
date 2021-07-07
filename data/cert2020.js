@@ -100,13 +100,8 @@ export const cert2020 = [
     date: "July 5, 2021",
   },
   {
-    id: "JST21CT4EV23",
-    name: "Ankitha S",
-    date: "July 5, 2021",
-  },
-  {
     id: "JST21CT4EV35",
-    name: "Preethi Alagundagi",
+    name: "Preeti Alagundagi",
     date: "July 5, 2021",
   },
   {

@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.0",
+    "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
     "aos": "^2.3.4",
     "html2canvas": "^1.0.0",
@@ -30,6 +30,6 @@
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
     "next-sitemap": "^1.6.133",
-    "webpack": "^5.42.1"
+    "webpack": "^5.43.0"
   }
 }
