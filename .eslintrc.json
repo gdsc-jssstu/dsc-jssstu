@@ -1,0 +1,6 @@
+{
+  "extends": "next",
+  "rules": {
+    "@next/next/no-document-import-in-page": "off" // Generates false positive on Windows (https://github.com/vercel/next.js/issues/28596)
+  }
+}
