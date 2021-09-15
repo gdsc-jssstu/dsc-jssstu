@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import "nprogress/nprogress.css";
 import NProgress from "nprogress";
+import Script from "next/script";
 import { useRouter } from "next/router";
 import ThemeContextProvider from "../contexts/ThemeContext";
 import * as gtag from "../lib/gtag";
@@ -32,9 +33,38 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <ThemeContextProvider>
-      <Component {...pageProps} />
-    </ThemeContextProvider>
+    <>
+      <Script strategy="beforeInteractive" src="/js/theme.js" />
+
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      {/* Enable analytics script only for production */}
+      {isProduction && (
+        <>
+          <Script
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+          />
+          <Script
+            strategy="afterInteractive"
+            id="ga-script"
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gtag.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
+        </>
+      )}
+
+      <ThemeContextProvider>
+        <Component {...pageProps} />
+      </ThemeContextProvider>
+    </>
   );
 }
 

@@ -1,7 +1,5 @@
 import crypto from "crypto";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
-import { GA_TRACKING_ID } from "../lib/gtag";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -52,7 +50,7 @@ class MyDocument extends Document {
           />
           <meta
             name="keywords"
-            content="dsc jssstu,dscjssstu,dsc jss mysore,dsc jss mysuru,dsc sjce,dsc jce,dsc jc,dsc mysore,dsc mysuru,jssstu,sjce,jss mysore,jss mysuru,dsc,dscindia,dsc india"
+            content="dsc jssstu,dscjssstu,dsc jss mysore,dsc jss mysuru,dsc jss,dsc sjce,dsc jce,dsc jc,dsc mysore,dsc mysuru,jssstu,sjce,jss mysore,jss mysuru,dsc,dscindia,dsc india,gdsc,gdsc jssstu,gdsc sjce,gdsc jc,gdsc jce,gdsc jss,gdsc mysore,gdsc mysuru"
           />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
@@ -84,29 +82,6 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@dscjssstu" />
 
           <link rel="manifest" href="/manifest.json" />
-
-          <Script src="/js/theme.js" strategy="beforeInteractive" />
-
-          {/* enable analytics script only for production */}
-          {isProduction && (
-            <>
-              <Script
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
-              <Script
-                dangerouslySetInnerHTML={{
-                  __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-                }}
-              />
-            </>
-          )}
 
           {/* <!-- Favicons --> */}
           <link rel="icon" href="/icons/favicons/favicon.ico" />
