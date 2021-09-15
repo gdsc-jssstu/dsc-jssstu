@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { Github, Instagram, Linkedin } from "./Icons";
 
 const TeamCard = function (props) {
   const [isFlipped, setFlip] = useState(false);
@@ -39,29 +40,17 @@ const TeamCardFront = function (props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="images/Instagram.svg"
-              className="social-circle-icon"
-              alt=""
-            />
+            <Instagram className="social-circle-icon" alt="" />
           </a>
           <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
-            <img
-              src="images/Github.svg"
-              className="social-circle-icon"
-              alt=""
-            />
+            <Github className="social-circle-icon" alt="" />
           </a>
           <a
             href={props.linkedinLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="images/Linkedin.svg"
-              className="social-circle-icon"
-              alt=""
-            />
+            <Linkedin className="social-circle-icon" alt="" />
           </a>
         </p>
         <p className="card-text">{props.children}</p>

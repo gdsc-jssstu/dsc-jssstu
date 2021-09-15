@@ -7,6 +7,7 @@ import NightsStayIcon from "@material-ui/icons/NightsStay";
 import { ThemeContext } from "../contexts/ThemeContext";
 import dscDark from "../public/images/DSC_JSSSTU-dark.png";
 import dscColor from "../public/images/DSC_JSSSTU-color.png";
+import { MenuImage } from "./Icons";
 
 export default function Nav({ page, headerRef, theme, toggleTheme }) {
   const menuRef = useRef(null);
@@ -91,11 +92,7 @@ export default function Nav({ page, headerRef, theme, toggleTheme }) {
             {theme === "light" ? "Dark theme" : "Light theme"}
           </h2>
         </div>
-        <img
-          src="images/menu-image.svg"
-          className="main-menu-image"
-          alt="Open Menu"
-        />
+        <MenuImage className="main-menu-image" alt="Open Menu" />
       </div>
       <div className="navbar" ref={navRef}>
         <div className="navbar-dsc-logo">

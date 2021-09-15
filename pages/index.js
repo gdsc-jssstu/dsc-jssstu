@@ -5,6 +5,14 @@ import Layout, { siteTitle } from "../components/layout";
 import Link from "next/link";
 import Image from "next/image";
 import { ThemeContext } from "../contexts/ThemeContext";
+import {
+  Landing,
+  Instagram,
+  Linkedin,
+  Github,
+  Medium,
+  Youtube,
+} from "../components/Icons";
 import dscDark from "../public/images/DSC_JSSSTU-dark.png";
 import dscColor from "../public/images/DSC_JSSSTU-color.png";
 
@@ -137,7 +145,7 @@ export default function Home() {
             </svg>
           </div>
         </Link>
-        <img src="/images/landing.svg" className="main-image" alt="Home Page" />
+        <Landing className="main-image" alt="Home Page" />
       </div>
       <div className="container-main holded-container" id="our-work">
         <h1 data-aos="fade-up" className="text-center">
@@ -259,11 +267,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/Instagram.svg"
-              className="circle-icon"
-              alt="DSC JSSSTU Instagram"
-            />
+            <Instagram className="circle-icon" alt="DSC JSSSTU Instagram" />
           </a>
           {/* <a href="https://twitter.com/dscjssstu" target="_blank" rel="noopener">
             <img
@@ -277,44 +281,28 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/Linkedin.svg"
-              className="circle-icon"
-              alt="DSC JSSSTU Linkedin"
-            />
+            <Linkedin className="circle-icon" alt="DSC JSSSTU Linkedin" />
           </a>
           <a
             href="https://github.com/dsc-jssstu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/Github.svg"
-              className="circle-icon"
-              alt="DSC JSSSTU GitHub"
-            />
+            <Github className="circle-icon" alt="DSC JSSSTU GitHub" />
           </a>
           <a
             href="https://medium.com/dscjssstu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/Medium.svg"
-              className="circle-icon"
-              alt="DSC JSSSTU Medium"
-            />
+            <Medium className="circle-icon" alt="DSC JSSSTU Medium" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCs7FLvZy-oflwwXZnUZkrJA"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/Youtube.svg"
-              className="circle-icon"
-              alt="DSC JSSSTU Youtube"
-            />
+            <Youtube className="circle-icon" alt="DSC JSSSTU Youtube" />
           </a>
         </div>
       </div>

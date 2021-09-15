@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { useEffect, useState, useContext } from "react";
 
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 
 import {
@@ -25,7 +25,7 @@ const ProjectCard = ({ project }) => {
 
   const themeContext = useContext(ThemeContext);
 
-  const cardtheme = createMuiTheme({
+  const cardtheme = createTheme({
     palette: {
       type: themeContext.theme === "dark" ? "dark" : "light",
     },

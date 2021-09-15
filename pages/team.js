@@ -5,6 +5,7 @@ import SideBar from "../components/sidebar";
 import React, { useState } from "react";
 import TeamOutline from "../components/TeamOutline";
 import { Grid } from "@material-ui/core";
+import { TeamIcon } from "../components/Icons";
 
 export default function Team() {
   const [page, setPage] = useState("2020");
@@ -66,11 +67,7 @@ export default function Team() {
               </div>
             </Link>
             <div className="team-header-image">
-              <img
-                src="/images/team.svg"
-                className="main-image"
-                alt="DSC JSSSTU Team"
-              />
+              <TeamIcon className="main-image" alt="DSC JSSSTU Team" />
             </div>
           </div>
 

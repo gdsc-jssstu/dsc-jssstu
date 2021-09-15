@@ -12,6 +12,7 @@ module.exports = withPreact(
       skipWaiting: false,
     },
     experimental: {
+      disableOptimizedLoading: false,
       optimizeImages: true,
       optimizeCss: true,
     },
