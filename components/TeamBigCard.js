@@ -2,7 +2,17 @@ import React from "react";
 import Image from "next/image";
 import { Github, Instagram, Linkedin } from "./Icons";
 
+import { decode } from "blurhash";
+import { getImgFromArr } from "array-to-image";
+
 export default function TeamBigCard(props) {
+  let blurDataURL = "";
+  if (process.browser) {
+    const pixels = decode(props.blurDataURL, 32, 32);
+    const image = getImgFromArr(pixels, 32, 32);
+    blurDataURL = image.src;
+  }
+
   return (
     <div className="flip-card chapter-lead-card">
       <div className="row no-gutters">
@@ -15,7 +25,7 @@ export default function TeamBigCard(props) {
             height={350}
             width={350}
             layout="responsive"
-            blurDataURL={props.blurDataURL}
+            blurDataURL={blurDataURL}
             placeholder="blur"
           />{" "}
         </div>

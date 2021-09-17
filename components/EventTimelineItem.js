@@ -2,6 +2,9 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 
+import { decode } from "blurhash";
+import { getImgFromArr } from "array-to-image";
+
 const EventTimelineItem = ({ event }) => {
   return (
     <>
@@ -20,25 +23,15 @@ const EventTimelineItem = ({ event }) => {
             <span className="etmln_timeline_dot"></span>
           </div>
           <div className="etmln_img_slider">
-            <Carousel
-              renderThumbs={() =>
-                event.images.map((img, idx) => {
-                  return (
-                    <Image
-                      key={idx}
-                      className="etmln-img"
-                      src={img.src}
-                      layout="fill"
-                      objectFit="contain"
-                      blurDataURL={img.blurDataURL}
-                      placeholder="blur"
-                      alt="DSC JSSSTU Event"
-                    />
-                  );
-                })
-              }
-            >
+            <Carousel showThumbs={false}>
               {event.images.map((img, idx) => {
+                let blurDataURL = "";
+                if (process.browser) {
+                  const pixels = decode(img.blurDataURL, 32, 32);
+                  const image = getImgFromArr(pixels, 32, 32);
+                  blurDataURL = image.src;
+                }
+
                 return (
                   <div
                     className="etmln-img-container"
@@ -50,7 +43,7 @@ const EventTimelineItem = ({ event }) => {
                       src={img.src}
                       layout="fill"
                       objectFit="contain"
-                      blurDataURL={img.blurDataURL}
+                      blurDataURL={blurDataURL}
                       placeholder="blur"
                       alt="DSC JSSSTU Event"
                     />
