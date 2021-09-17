@@ -20,7 +20,24 @@ const EventTimelineItem = ({ event }) => {
             <span className="etmln_timeline_dot"></span>
           </div>
           <div className="etmln_img_slider">
-            <Carousel showThumbs={false}>
+            <Carousel
+              renderThumbs={() =>
+                event.images.map((img, idx) => {
+                  return (
+                    <Image
+                      key={idx}
+                      className="etmln-img"
+                      src={img.src}
+                      layout="fill"
+                      objectFit="contain"
+                      blurDataURL={img.blurDataURL}
+                      placeholder="blur"
+                      alt="DSC JSSSTU Event"
+                    />
+                  );
+                })
+              }
+            >
               {event.images.map((img, idx) => {
                 return (
                   <div
