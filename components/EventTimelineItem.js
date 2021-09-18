@@ -26,7 +26,7 @@ const EventTimelineItem = ({ event }) => {
             <Carousel showThumbs={false}>
               {event.images.map((img, idx) => {
                 let blurDataURL = "";
-                if (process.browser) {
+                if (process.browser && img.blurDataURL) {
                   const pixels = decode(img.blurDataURL, 32, 32);
                   const image = getImgFromArr(pixels, 32, 32);
                   blurDataURL = image.src;
@@ -43,8 +43,8 @@ const EventTimelineItem = ({ event }) => {
                       src={img.src}
                       layout="fill"
                       objectFit="contain"
-                      blurDataURL={blurDataURL}
-                      placeholder="blur"
+                      blurDataURL={img.blurDataURL ? blurDataURL : undefined }
+                      placeholder={img.blurDataURL ? "blur" : undefined }
                       alt="DSC JSSSTU Event"
                     />
                   </div>

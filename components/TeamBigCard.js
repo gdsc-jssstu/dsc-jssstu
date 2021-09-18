@@ -7,7 +7,7 @@ import { getImgFromArr } from "array-to-image";
 
 export default function TeamBigCard(props) {
   let blurDataURL = "";
-  if (process.browser) {
+  if (process.browser && props.blurDataURL) {
     const pixels = decode(props.blurDataURL, 32, 32);
     const image = getImgFromArr(pixels, 32, 32);
     blurDataURL = image.src;
@@ -25,8 +25,8 @@ export default function TeamBigCard(props) {
             height={350}
             width={350}
             layout="responsive"
-            blurDataURL={blurDataURL}
-            placeholder="blur"
+            blurDataURL={props.blurDataURL ? blurDataURL : undefined }
+            placeholder={props.blurDataURL ? "blur" : undefined }
           />{" "}
         </div>
         <div className="col-md-8">
