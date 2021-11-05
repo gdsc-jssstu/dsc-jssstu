@@ -19,9 +19,9 @@ export default function Projects() {
               <p>&nbsp;</p>
               <h1 className="title">Projects</h1>
               <p className="description">
-                Learing goes hand-in-hand with building new and cool stuff. And
-                here, we keep building stuff all the time. Here are a few of
-                them.
+                Learning goes hand-in-hand with building new and cool projects.
+                Here, we build new things all the time! Here are a few of
+                them:
               </p>
               <p>&nbsp;</p>
             </div>
