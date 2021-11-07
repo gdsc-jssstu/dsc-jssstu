@@ -1,5 +1,98 @@
 const eventData = [
   {
+    name: "Git Set Code",
+    date: "October 8, 2021",
+    description:
+      "An online live event which dawned light upon topics such as Version Control System, Git, Open Source Contribution and Open Source Community Events which concluded with a Q&A interaction,  further encouraging students to participate in hacktober Projects.",
+    images: [
+      {
+        src: "/images/events/gitSetCode/gitSetCode.jpeg",
+        blurDataURL: "LXRMVgRj_4xtK1V@w0ofwfj?NaRk",
+      },
+    ],
+  },
+  {
+    name: "30 Days of Google Cloud",
+    date: "September 27, 2021",
+    description:
+      "A 30 days online event where the participants are intended to learn basics of Google cloud computing, Google assistant, machine learning, Al, Kubernetes with the assistance of Google Cloud's training program called Qwiklabs. After completion of the program, the participants received Google cloud certificate, skill badge on completion of quests and cool Google Cloud goodies. Poorvi Shetty was the facilitator for the event who helped out the participants with their queries along the way.",
+    images: [
+      {
+        src: "/images/events/30daysGCP/poster2.jpg",
+        blurDataURL: "L9R:HE9a~Wi]-=%#^+%MxIIT4mM{",
+      },
+    ],
+  },
+  {
+    name: "The Community Hour",
+    date: "June 28, 2021",
+    description:
+      "The Community Hour was an interactive conversation event on various topics like Graphic Designing, UI/UX, Photography, Content Creation, mobile app development, placement queries, thoughts on different operating systems etc",
+    images: [
+      {
+        src: "/images/events/communityHour/communityHour.jpg",
+        blurDataURL: "LNR:E9V@_NozVsjYtRfl?aaz9FV@",
+      },
+    ],
+  },
+  {
+    name: "DSC Samvad | 02 Road to Abroad",
+    date: "April 27, 2021",
+    description:
+      "Continuing the legacy of episode 1, DSC Samvad was back with its inspirational/informative talk with the objective of planning students' educational journey abroad. The speaker Indrajeet Prasad was triumphant in providing a roadmap to students in pursuing further education in Europe, myriad perks and scholarships opportunities.",
+    images: [
+      {
+        src: "/images/events/gdscSamvad/gdscSamvad.jpg",
+        blurDataURL: "LgE:_#ozTOWB^}aef+f8%NbHnej[",
+      },
+    ],
+  },
+  {
+    name: "Actions on Google",
+    date: "Febraury 25, 2021",
+    description:
+      "A technical event where we taught students to extend the functionality of Google Assistant with Actions. The event was facilitated by two core team members. Across-the-board all the partakers were indulged in formulating their own AI for their food ordering app with a doubt clearing session in the end.",
+    images: [
+      {
+        src: "/images/events/actionsOnGoogle/actionsOnGoogle.jpg",
+        blurDataURL: "L8S6St%3~Wox.8M{?HM{adad4n%3",
+      },
+    ],
+  },
+  {
+    name: "DSC LIT - Link Interact Think",
+    date: "Febraury 15, 2021",
+    description:
+      "This successful fun event incorporated an introduction to GDSC JSSSTU as well as a quick start to Google's Solution Challenge. This was the first offline event conducted in the term 2020-21. Students actively participated in various fun activities like pictionary, tic-tac-toe, hit the cans, and won many schwags and prizes. Students were given a brief introduction about the Solution Challenge and they were motivated to participate in it.",
+    images: [
+      {
+        src: "/images/events/lit/lit.jpg",
+        blurDataURL: "LDSY?baJ_MxFj1X8yDkERhVsIAn$",
+      },
+      {
+        src: "/images/events/lit/lit1.jpg",
+        blurDataURL: "L9D9Cvoz01aJIVRjxsoJ~ns:E2kW",
+      },
+      {
+        src: "/images/events/lit/lit2.jpg",
+        blurDataURL: "L3B:8I~p00InOvo}Nt$$-.M{MxMx",
+      },
+      {
+        src: "/images/events/lit/lit3.jpg",
+        blurDataURL: "LMKK=[DO00?w~p%MI9MdJo%NW=Md",
+      },
+      {
+        src: "/images/events/lit/lit4.jpg",
+        blurDataURL: "LDEVE7s?0LaKOsi{xrjF~laME3Sh",
+      },
+      {
+        src: "/images/events/lit/lit5.jpg",
+        blurDataURL: "LBC$Wa4.rB~WIV%L9yITnKw|%ya0",
+      },
+    ],
+  },
+  
+  {
     name: "DSC WOW",
     date: "December 7, 2020",
     description:
@@ -7,8 +100,9 @@ const eventData = [
     images: [
       {
         src: "/images/events/dscwow/timeline.jpg",
-        blurDataURL: "LHRfkDof~pbGxuWVRPof%2WBNGof",
+        blurDataURL: "LHRW0et7~pof%LWBM{of%2WBM|of",
       },
+     
     ],
   },
   {
