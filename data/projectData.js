@@ -42,7 +42,7 @@ const projectData = [
       },
     ],
   },
-  
+
   {
     name: "C-Safe App",
     image: "/images/c_safe.jpg",
@@ -89,7 +89,7 @@ const projectData = [
 
   {
     name: "Hacktoberfest Projects",
-    image: "/images/hacktoberfest.PNG",
+    image: "/images/hacktoberfest.png",
     imageAlt: "Hacktoberfest Projects",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
     domain: "Web",
@@ -159,8 +159,7 @@ const projectData = [
     imageAlt: "Links Page",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
     domain: "Web",
-    description:
-      "Tailored a specific page to showcase GDSC JSSSTU's links.",
+    description: "Tailored a specific page to showcase GDSC JSSSTU's links.",
     links: [
       {
         icon: "/images/Github.svg",
@@ -174,15 +173,14 @@ const projectData = [
       },
     ],
   },
-  
+
   {
     name: "GDSC Logo Generator",
     image: "/images/logo_generator.jpg",
     imageAlt: "Logo Generator",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
     domain: "Web",
-    description:
-      "A user-oriented tool to generate GDSC logos for any chapter.",
+    description: "A user-oriented tool to generate GDSC logos for any chapter.",
     links: [
       {
         icon: "/images/Github.svg",
@@ -218,7 +216,6 @@ const projectData = [
       },
     ],
   },
-
 ];
 
 export default projectData;

@@ -83,7 +83,7 @@ export default function Home() {
               <Image
                 src={dscDark}
                 className="logo"
-                alt="DSC JSSSTU"
+                alt="GDSC JSSSTU"
                 width={350}
                 height={80}
                 placeholder="blur"
@@ -95,7 +95,7 @@ export default function Home() {
               <Image
                 src={dscColor}
                 className="logo-light"
-                alt="DSC JSSSTU"
+                alt="GDSC JSSSTU"
                 width={350}
                 height={80}
                 placeholder="blur"
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
           <h2>Powered by Google Developers</h2>
           <p className="continous-text">
-            At DSC JSSSTU, our aim is to learn and teach. Developers, designers
+            At GDSC JSSSTU, our aim is to learn and teach. Developers, designers
             and managers come together under one roof to create a community
             which inspires thousands. Join Us!
           </p>
@@ -263,11 +263,11 @@ export default function Home() {
         </p>
         <div data-aos="fade-up" className="icons small-icons">
           <a
-            href="https://instagram.com/dscjssstu"
+            href="https://instagram.com/gdscjssstu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Instagram className="circle-icon" alt="DSC JSSSTU Instagram" />
+            <Instagram className="circle-icon" alt="GDSC JSSSTU Instagram" />
           </a>
           {/* <a href="https://twitter.com/dscjssstu" target="_blank" rel="noopener">
             <img
@@ -281,28 +281,28 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin className="circle-icon" alt="DSC JSSSTU Linkedin" />
+            <Linkedin className="circle-icon" alt="GDSC JSSSTU Linkedin" />
           </a>
           <a
-            href="https://github.com/dsc-jssstu"
+            href="https://github.com/gdsc-jssstu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github className="circle-icon" alt="DSC JSSSTU GitHub" />
+            <Github className="circle-icon" alt="GDSC JSSSTU GitHub" />
           </a>
           <a
             href="https://medium.com/dscjssstu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Medium className="circle-icon" alt="DSC JSSSTU Medium" />
+            <Medium className="circle-icon" alt="GDSC JSSSTU Medium" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCs7FLvZy-oflwwXZnUZkrJA"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Youtube className="circle-icon" alt="DSC JSSSTU Youtube" />
+            <Youtube className="circle-icon" alt="GDSC JSSSTU Youtube" />
           </a>
         </div>
       </div>
@@ -323,7 +323,7 @@ export default function Home() {
         </p>
         <div data-aos="fade-up" className="buttons">
           <a
-            href="https://discord.gg/4A8YqmK"
+            href="https://discord.dscjssstu.in/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -332,7 +332,7 @@ export default function Home() {
             </div>
           </a>
           <a
-            href="https://dsc.community.dev/jss-science-technology-university-mysuru/"
+            href="https://gdsc.community.dev/jss-science-technology-university-mysuru/"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -54,7 +54,7 @@ const eventData = [
       "A technical event where we taught students to extend the functionality of Google Assistant with Actions. The event was facilitated by two core team members. Across-the-board all the partakers were indulged in formulating their own AI for their food ordering app with a doubt clearing session in the end.",
     images: [
       {
-        src: "/images/events/actionsOnGoogle/actionsOnGoogle.jpg",
+        src: "/images/events/actionsOnGoogle/actionsongoogle.jpg",
         blurDataURL: "L8S6St%3~Wox.8M{?HM{adad4n%3",
       },
     ],
@@ -91,7 +91,7 @@ const eventData = [
       },
     ],
   },
-  
+
   {
     name: "DSC WOW",
     date: "December 7, 2020",
@@ -102,7 +102,6 @@ const eventData = [
         src: "/images/events/dscwow/timeline.jpg",
         blurDataURL: "LHRW0et7~pof%LWBM{of%2WBM|of",
       },
-     
     ],
   },
   {
