@@ -189,7 +189,7 @@ const projectData = [
       },
       {
         icon: "/images/link.svg",
-        link: "http://srivatsajoshi.me/abc/",
+        link: "https://logo.dscjssstu.in/",
         alt: "Webpage",
       },
     ],
