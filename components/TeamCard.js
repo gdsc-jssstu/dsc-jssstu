@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { Github, Instagram, Linkedin } from "./Icons";
+import { Github, Instagram, Linkedin, Twitter } from "./Icons";
 
 const TeamCard = function (props) {
   const [isFlipped, setFlip] = useState(false);
@@ -35,23 +35,42 @@ const TeamCardFront = function (props) {
       <div className="card-body text-center">
         <p className="card-title">{props.title}</p>
         <p className="team-social-media">
-          <a
-            href={props.instagramLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Instagram className="social-circle-icon" alt="" />
-          </a>
-          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
-            <Github className="social-circle-icon" alt="" />
-          </a>
-          <a
-            href={props.linkedinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Linkedin className="social-circle-icon" alt="" />
-          </a>
+          {props.instagramLink && (
+            <a
+              href={props.instagramLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram className="social-circle-icon" alt="" />
+            </a>
+          )}
+          {props.githubLink && (
+            <a
+              href={props.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="social-circle-icon" alt="" />
+            </a>
+          )}
+          {props.linkedinLink && (
+            <a
+              href={props.linkedinLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin className="social-circle-icon" alt="" />
+            </a>
+          )}
+          {props.twitterLink && (
+            <a
+              href={props.twitterLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter className="social-circle-icon" alt="" />
+            </a>
+          )}
         </p>
         <p className="card-text">{props.children}</p>
         <p className="read-more">Read More +</p>

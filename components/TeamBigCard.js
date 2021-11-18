@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Github, Instagram, Linkedin } from "./Icons";
+import { Github, Instagram, Linkedin, Twitter } from "./Icons";
 
 import { decode } from "blurhash";
 import { getImgFromArr } from "array-to-image";
@@ -33,27 +33,42 @@ export default function TeamBigCard(props) {
           <div className="card-body text-md-left text-center">
             <p className="card-title">{props.title}</p>
             <p className="team-social-media">
-              <a
-                href={props.instagramLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram className="social-circle-icon" alt="" />
-              </a>
-              <a
-                href={props.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="social-circle-icon" alt="" />
-              </a>
-              <a
-                href={props.linkedinLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin className="social-circle-icon" alt="" />
-              </a>
+              {props.instagramLink && (
+                <a
+                  href={props.instagramLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Instagram className="social-circle-icon" alt="" />
+                </a>
+              )}
+              {props.githubLink && (
+                <a
+                  href={props.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="social-circle-icon" alt="" />
+                </a>
+              )}
+              {props.linkedinLink && (
+                <a
+                  href={props.linkedinLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="social-circle-icon" alt="" />
+                </a>
+              )}
+              {props.twitterLink && (
+                <a
+                  href={props.twitterLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Twitter className="social-circle-icon" alt="" />
+                </a>
+              )}
             </p>
             <p className="card-text">{props.children}</p>
           </div>

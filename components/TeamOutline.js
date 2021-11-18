@@ -31,7 +31,7 @@ const TeamOutline = ({ page }) => {
           {/*Staff Coordinator*/}
           <div className="container staff-lead">
             <div className="row">
-              <h2 className="team-row-heads ">{staffData.title}</h2>
+              <h1 className="team-row-heads ">{staffData.title}</h1>
               <hr />
             </div>
             <div className="row">
@@ -43,6 +43,7 @@ const TeamOutline = ({ page }) => {
                   instagramLink={staffData.instagram}
                   githubLink={staffData.github}
                   linkedinLink={staffData.linkedin}
+                  twitterLink={staffData.twitter}
                 >
                   {staffData.bio}
                 </TeamBigCard>
@@ -53,7 +54,7 @@ const TeamOutline = ({ page }) => {
           {/*Team Lead*/}
           <div className="container chapter-lead">
             <div className="row">
-              <h2 className="team-row-heads">{leadData.title}</h2>
+              <h1 className="team-row-heads">{leadData.title}</h1>
               <hr />{" "}
             </div>
             <div className="row">
@@ -64,6 +65,7 @@ const TeamOutline = ({ page }) => {
                   instagramLink={leadData.instagram}
                   githubLink={leadData.github}
                   linkedinLink={leadData.linkedin}
+                  twitterLink={leadData.twitter}
                 >
                   {leadData.bio}
                 </TeamBigCard>
@@ -79,7 +81,7 @@ const TeamOutline = ({ page }) => {
                 {execomData.map((execom) =>
                   typeof execom === "string" ? (
                     <>
-                      <h2 className="team-row-heads ">{execom}</h2>
+                      <h1 className="team-row-heads ">{execom}</h1>
                       <hr />{" "}
                     </>
                   ) : (
@@ -91,6 +93,7 @@ const TeamOutline = ({ page }) => {
                           instagramLink={execom.instagram}
                           githubLink={execom.github}
                           linkedinLink={execom.linkedin}
+                          twitterLink={execom.twitter}
                         >
                           {execom.short}
                         </TeamCardFront>
@@ -107,7 +110,7 @@ const TeamOutline = ({ page }) => {
             {teamNames.map((teamVal, i) => (
               <>
                 <div className="row team-row">
-                  <h2 className="section-heading mx-auto">{teamVal}</h2>
+                  <h1 className="section-heading mx-auto">{teamVal}</h1>
                   <hr />{" "}
                 </div>
                 {teams[i].map((subVal, idx) => (
@@ -121,7 +124,12 @@ const TeamOutline = ({ page }) => {
                       {subVal.map((subTeam) =>
                         typeof subTeam === "string" ? (
                           <div className="row">
-                            <h2 className="team-row-heads">{subTeam}</h2>{" "}
+                            <h2
+                              className="team-row-heads"
+                              style={{ fontFamily: "monospace" }}
+                            >
+                              {subTeam}
+                            </h2>{" "}
                           </div>
                         ) : (
                           <div className="row">
@@ -134,6 +142,7 @@ const TeamOutline = ({ page }) => {
                                     instagramLink={subTeamData.instagram}
                                     githubLink={subTeamData.github}
                                     linkedinLink={subTeamData.linkedin}
+                                    twitterLink={subTeamData.twitter}
                                   >
                                     {subTeamData.short}
                                   </TeamCardFront>
