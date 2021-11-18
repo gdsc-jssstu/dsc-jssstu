@@ -25,8 +25,8 @@ export default function Team() {
                 The Team
               </h1>
               <p data-aos="fade-up" className="barlow-medium">
-                Individuality counts but teamwork dynamites. At DSC JSSSTU we
-                celebrate teamwork and attribute the success of DSC to the
+                Individuality counts but teamwork dynamites. At GDSC JSSSTU we
+                celebrate teamwork and attribute the success of GDSC to the
                 wonderful individuals who put untiring efforts for it.
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function Team() {
               </div>
             </Link>
             <div className="team-header-image">
-              <TeamIcon className="main-image" alt="DSC JSSSTU Team" />
+              <TeamIcon className="main-image" alt="GDSC JSSSTU Team" />
             </div>
           </div>
 
