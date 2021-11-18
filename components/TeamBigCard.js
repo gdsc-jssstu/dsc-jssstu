@@ -25,8 +25,8 @@ export default function TeamBigCard(props) {
             height={350}
             width={350}
             layout="responsive"
-            blurDataURL={props.blurDataURL ? blurDataURL : undefined }
-            placeholder={props.blurDataURL ? "blur" : undefined }
+            blurDataURL={"LRLUZ~Ri]VozL$xbV@Rj?uM{Oqof"}
+            placeholder={props.blurDataURL ? "blur" : undefined}
           />{" "}
         </div>
         <div className="col-md-8">

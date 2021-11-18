@@ -1,7 +1,13 @@
 import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { ThemeContext } from "../contexts/ThemeContext";
-import { Stepper, Step, StepLabel, Button, useMediaQuery } from '@material-ui/core';
+import {
+  Stepper,
+  Step,
+  StepLabel,
+  Button,
+  useMediaQuery,
+} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   backButton: {
@@ -17,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["2019", "2020"];
+  return ["2019", "2020", "2021"];
 }
 
 export default function HorizontalLabelPositionBelowStepper({ setPage }) {

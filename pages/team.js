@@ -8,7 +8,7 @@ import { Grid } from "@material-ui/core";
 import { TeamIcon } from "../components/Icons";
 
 export default function Team() {
-  const [page, setPage] = useState("2020");
+  const [page, setPage] = useState("2021");
 
   return (
     <Layout page="team">
