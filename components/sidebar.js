@@ -51,7 +51,7 @@ export default function HorizontalLabelPositionBelowStepper({ setPage }) {
                 <Chip
                   label={steps.length - index}
                   variant={index === activeStep ? "default" : "outlined"}
-                  color={index === activeStep ? "secondary" : ""}
+                  color={index === activeStep ? "secondary" : "default"}
                   style={{
                     color: themeContext.theme === "dark" ? "white" : "black",
                     fontWeight: "bold",

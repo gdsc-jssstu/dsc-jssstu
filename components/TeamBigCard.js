@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Github, Instagram, Linkedin, Twitter } from "./Icons";
 
@@ -6,12 +6,18 @@ import { decode } from "blurhash";
 import { getImgFromArr } from "array-to-image";
 
 export default function TeamBigCard(props) {
-  let blurDataURL = "";
-  if (process.browser && props.blurDataURL) {
-    const pixels = decode(props.blurDataURL, 32, 32);
-    const image = getImgFromArr(pixels, 32, 32);
-    blurDataURL = image.src;
-  }
+  // let blurDataURL = "";
+  const [blurDataURL, setBlurDataURL] = useState(undefined);
+
+  useEffect(() => {
+    if (process.browser && props.blurDataURL) {
+      const pixels = decode(props.blurDataURL, 32, 32);
+      const image = getImgFromArr(pixels, 32, 32);
+      // blurDataURL = image.src;
+      setBlurDataURL(image.src);
+      // console.log("blurDataURL:" + blurDataURL);
+    }
+  }, [props]);
 
   return (
     <div className="flip-card chapter-lead-card">
@@ -25,6 +31,8 @@ export default function TeamBigCard(props) {
             height={350}
             width={350}
             layout="responsive"
+            blurDataURL={blurDataURL}
+            placeholder={blurDataURL ? "blur" : undefined}
             // blurDataURL={props.blurDataURL ? blurDataURL : undefined}
             // placeholder={props.blurDataURL ? "blur" : undefined}
           />
