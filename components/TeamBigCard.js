@@ -49,7 +49,7 @@ export default function TeamBigCard(props) {
         </Grid>
         <Grid item xs={12} md={8} lg={8}>
           <div className="card-body text-md-left text-center">
-            <h3>{props.title}</h3>
+            <h2 className="text-quicksand-medium">{props.title}</h2>
             <div
               style={{
                 flexWrap: "wrap",
@@ -117,7 +117,7 @@ export default function TeamBigCard(props) {
                 </a>
               )}
             </div>
-            <p className="card-text">{props.children}</p>
+            <p className="card-text text-nunito-regular">{props.children}</p>
           </div>
         </Grid>
       </Grid>

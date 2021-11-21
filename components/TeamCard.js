@@ -27,7 +27,9 @@ const TeamCard = function (props) {
           width={150}
           // layout="responsive"
         />
-        <h3>{props.title}</h3>
+        <h3 style={{ fontSize: 24 }} className="text-quicksand-medium">
+          {props.title}
+        </h3>
         <div
           style={{
             flexWrap: "wrap",
@@ -97,7 +99,7 @@ const TeamCard = function (props) {
         </div>
       </div>
       <div className="card-body text-center">
-        <p className="card-text">{props.shortBio}</p>
+        <p className="card-text text-nunito-regular">{props.shortBio}</p>
         <div>
           <Button
             className={`team-${props.team}`}
@@ -123,9 +125,17 @@ const TeamCard = function (props) {
               }}
             >
               <div className="text-center">
-                <h2 style={{ color: "black" }}>{props.title}</h2>
+                <h2
+                  style={{ color: "black" }}
+                  className="text-quicksand-medium"
+                >
+                  {props.title}
+                </h2>
               </div>
-              <p className="card-text" style={{ color: "black" }}>
+              <p
+                className="card-text text-nunito-regular"
+                style={{ color: "black" }}
+              >
                 {props.children}
               </p>
             </Box>

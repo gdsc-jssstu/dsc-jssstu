@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Quicksand:wght@600&display=swap");
+
 .main-image {
   width: 30vw;
   min-width: 350px;
@@ -438,4 +440,13 @@
 
 .team-bg-organisational {
   background-color: #fbbc04 !important;
+}
+
+/* custom fonts */
+.text-nunito-regular {
+  font-family: "Nunito", sans-serif;
+}
+
+.text-quicksand-medium {
+  font-family: "Quicksand", sans-serif;
 }
