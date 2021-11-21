@@ -271,55 +271,55 @@
 .chapter-lead-card {
   background-color: #fef7e0 !important;
 }
-.execom .flip-card-front .card-body {
-  background-color: #d2e3fc !important;
+.execom .card-front {
+  color: #d2e3fc !important;
 }
-.execom .flip-card-back .card-body {
-  background-color: #4285f4 !important;
+.execom .flip-card-back {
+  color: #4285f4 !important;
 }
-.technical .flip-card-front .card-body {
-  background-color: #ceead6 !important;
+.technical .card-front {
+  color: #ceead6 !important;
 }
-.technical .flip-card-back .card-body {
-  background-color: #34ab53 !important;
+.technical .flip-card-back {
+  color: #34ab53 !important;
 }
-.creative .flip-card-front .card-body {
-  background-color: #fad2cf !important;
+.creative .card-front {
+  color: #fad2cf !important;
 }
-.creative .flip-card-back .card-body {
-  background-color: #ea4335 !important;
+.creative .flip-card-back {
+  color: #ea4335 !important;
 }
-.organisational .flip-card-front .card-body {
-  background-color: #feefc3 !important;
+.organisational .card-front {
+  color: #feefc3 !important;
 }
-.organisational .flip-card-back .card-body {
-  background-color: #fbbc04 !important;
+.organisational .flip-card-back {
+  color: #fbbc04 !important;
 }
 .dark .chapter-lead-card {
   background-color: #1967d2 !important;
 }
-.dark .execom .flip-card-front .card-body {
+.dark .execom .card-front .card-body {
   background-color: #4285f4 !important;
 }
 .dark .execom .flip-card-back .card-body {
   background-color: #d2e3fc !important;
   color: #000 !important;
 }
-.dark .technical .flip-card-front .card-body {
+.dark .technical .card-front .card-body {
   background-color: #34ab53 !important;
 }
 .dark .technical .flip-card-back .card-body {
   background-color: #ceead6 !important;
   color: #000 !important;
 }
-.dark .creative .flip-card-front .card-body {
+.dark .creative .card-front .card-body {
   background-color: #ea4335 !important;
 }
 .dark .creative .flip-card-back .card-body {
   background-color: #fad2cf !important;
   color: #000 !important;
 }
-.dark .organisational .flip-card-front .card-body {
+.dark .organisational .card-front .card-body {
   background-color: #fbbc04 !important;
 }
 .dark .organisational .flip-card-back .card-body {
@@ -389,4 +389,53 @@
 }
 .flip-card-back {
   transform: rotateY(-180deg);
+}
+
+.border-rounded {
+  border-radius: 50%;
+}
+
+@media (max-width: 432px) {
+  .team-card-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (min-width: 433px) {
+  .team-card-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.team-execom {
+  color: #4286f4e0 !important;
+}
+
+.team-bg-execom {
+  background-color: #4286f4e0 !important;
+}
+
+.team-technical {
+  color: #34ab53 !important;
+}
+
+.team-bg-technical {
+  background-color: #34ab53 !important;
+}
+
+.team-creative {
+  color: #ea4335 !important;
+}
+
+.team-bg-creative {
+  background-color: #ea4335 !important;
+}
+
+.team-organisational {
+  color: #fbbc04 !important;
+}
+
+.team-bg-organisational {
+  background-color: #fbbc04 !important;
 }

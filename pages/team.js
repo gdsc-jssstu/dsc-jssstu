@@ -15,6 +15,12 @@ export default function Team() {
       <Head>
         <title>{siteTitle} - Team</title>
         <link rel="stylesheet" href="css/team.css" />
+        <link
+          rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossOrigin="anonymous"
+        />
       </Head>
 
       <div id="page-wrap">
@@ -76,14 +82,22 @@ export default function Team() {
             id="our-work"
           >
             <Grid container class="team-grid">
-              <Grid item sm={11} className="team-content-order">
+              <Grid
+                item
+                sm={11}
+                className="team-content-order"
+                style={{
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              >
                 <TeamOutline page={page} />
               </Grid>
-              <Grid item sm={1} className="sidebar-order">
+              {/* <Grid item sm={1} className="sidebar-order">
                 <div className="sticky-top">
-                  <SideBar setPage={setPage} />
+                  <SideBar page={page} setPage={setPage} />
                 </div>
-              </Grid>
+              </Grid> */}
             </Grid>
           </div>
         </div>

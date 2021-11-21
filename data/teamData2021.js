@@ -44,7 +44,7 @@ const teamData2021 = {
       name: "Jayesh V Jain",
       image: "/images/team/2021/Jayesh.jpeg",
       short: "Introducing our Ravindra Jadeja- the all rounder of our team.",
-      bio: `Jayesh is explicitly intelligent, possesses par excellence management skills and has ability to get work done in the smartest way possible. He is an extremely humble, sweet, hardworking, considerate guy who is very approachable. He is exceedingly committed and is kind enough to encourage all the team members for their e`,
+      bio: `Jayesh is explicitly intelligent, possesses par excellence management skills and has ability to get work done in the smartest way possible. He is an extremely humble, sweet, hardworking, considerate guy who is very approachable.  He is exceedingly committed and is kind enough to encourage all the team members for their efforts. He is always up for challenges and YOU ASK HIM TO BUILD A SPACESHIP, HE WOULD DO IT!`,
       instagram: "https://instagram.com/jayeshvjain",
       github: "https://github.com/Jayeshvj",
       linkedin: "https://www.linkedin.com/in/jayesh-v-jain-180930183/",
