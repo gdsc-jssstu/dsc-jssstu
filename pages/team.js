@@ -36,7 +36,7 @@ export default function Team() {
                 wonderful individuals who put untiring efforts for it.
               </p>
             </div>
-            <Link href="#our-work" passHref>
+            <Link href="#our-team" passHref>
               <div className="main-down-arrow" id="down-arrow">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default function Team() {
 
           <div
             className="team-cards-container container-main  container-main-last"
-            id="our-work"
+            id="our-team"
           >
             <Grid container class="team-grid">
               <Grid
