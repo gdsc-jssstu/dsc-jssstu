@@ -1,7 +1,14 @@
 import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { ThemeContext } from "../contexts/ThemeContext";
-import { Stepper, Step, StepLabel, Button, useMediaQuery } from '@material-ui/core';
+import {
+  Stepper,
+  Step,
+  StepLabel,
+  Button,
+  useMediaQuery,
+  Chip,
+} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   backButton: {
@@ -17,12 +24,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["2019", "2020"];
+  return ["2021", "2020", "2019"];
 }
 
 export default function HorizontalLabelPositionBelowStepper({ setPage }) {
   const classes = useStyles();
-  const [activeStep, setActiveStep] = React.useState(1);
+  const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
   const themeContext = useContext(ThemeContext);
   const matches = useMediaQuery("(min-width:600px)");
@@ -39,7 +46,20 @@ export default function HorizontalLabelPositionBelowStepper({ setPage }) {
       >
         {steps.map((label, index) => (
           <Step key={label}>
-            <StepLabel>
+            <StepLabel
+              StepIconComponent={() => (
+                <Chip
+                  label={steps.length - index}
+                  variant={index === activeStep ? "default" : "outlined"}
+                  color={index === activeStep ? "secondary" : "default"}
+                  style={{
+                    color: themeContext.theme === "dark" ? "white" : "black",
+                    fontWeight: "bold",
+                    marginRight: "20px",
+                  }}
+                />
+              )}
+            >
               <Button
                 onClick={() => {
                   setPage(label);

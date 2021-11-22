@@ -8,13 +8,19 @@ import { Grid } from "@material-ui/core";
 import { TeamIcon } from "../components/Icons";
 
 export default function Team() {
-  const [page, setPage] = useState("2020");
+  const [page, setPage] = useState("2021");
 
   return (
     <Layout page="team">
       <Head>
         <title>{siteTitle} - Team</title>
         <link rel="stylesheet" href="css/team.css" />
+        <link
+          rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossOrigin="anonymous"
+        />
       </Head>
 
       <div id="page-wrap">
@@ -25,12 +31,12 @@ export default function Team() {
                 The Team
               </h1>
               <p data-aos="fade-up" className="barlow-medium">
-                Individuality counts but teamwork dynamites. At DSC JSSSTU we
-                celebrate teamwork and attribute the success of DSC to the
+                Individuality counts but teamwork dynamites. At GDSC JSSSTU we
+                celebrate teamwork and attribute the success of GDSC to the
                 wonderful individuals who put untiring efforts for it.
               </p>
             </div>
-            <Link href="#our-work" passHref>
+            <Link href="#our-team" passHref>
               <div className="main-down-arrow" id="down-arrow">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,23 +73,31 @@ export default function Team() {
               </div>
             </Link>
             <div className="team-header-image">
-              <TeamIcon className="main-image" alt="DSC JSSSTU Team" />
+              <TeamIcon className="main-image" alt="GDSC JSSSTU Team" />
             </div>
           </div>
 
           <div
             className="team-cards-container container-main  container-main-last"
-            id="our-work"
+            id="our-team"
           >
             <Grid container class="team-grid">
-              <Grid item sm={11} className="team-content-order">
+              <Grid
+                item
+                sm={11}
+                className="team-content-order"
+                style={{
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              >
                 <TeamOutline page={page} />
               </Grid>
-              <Grid item sm={1} className="sidebar-order">
+              {/* <Grid item sm={1} className="sidebar-order">
                 <div className="sticky-top">
-                  <SideBar setPage={setPage} />
+                  <SideBar page={page} setPage={setPage} />
                 </div>
-              </Grid>
+              </Grid> */}
             </Grid>
           </div>
         </div>

@@ -1,74 +1,149 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { Github, Instagram, Linkedin } from "./Icons";
+import { Box, Button, Modal } from "@material-ui/core";
 
 const TeamCard = function (props) {
-  const [isFlipped, setFlip] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  function onFlip() {
-    setFlip(!isFlipped);
-  }
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div
-      className={isFlipped ? "flip-card flipped" : "flip-card"}
-      id="1"
-      onClick={onFlip}
+      style={{
+        backgroundColor: "#f7f7f7",
+        color: "#333",
+        padding: 15,
+        borderRadius: 10,
+        margin: 5,
+      }}
     >
-      <div className="flip-card-inner">{props.children}</div>
-    </div>
-  );
-};
-
-const TeamCardFront = function (props) {
-  return (
-    <div className="flip-card-front">
-      {" "}
-      <Image
-        src={props.faceImage}
-        className="card-img-top"
-        alt="..."
-        height={350}
-        width={350}
-        layout="responsive"
-      />
+      <div className="text-center" style={{ marginBottom: 10 }}>
+        <Image
+          src={props.faceImage}
+          className="border-rounded"
+          alt={props.title}
+          height={150}
+          width={150}
+          // layout="responsive"
+        />
+        <h3 style={{ fontSize: 24 }} className="text-quicksand-medium">
+          {props.title}
+        </h3>
+        <div
+          style={{
+            flexWrap: "wrap",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: -10,
+          }}
+        >
+          {props.instagramLink && (
+            <a
+              href={props.instagramLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* <Instagram className="social-circle-icon" alt="" /> */}
+              <i
+                className="fab fa-instagram "
+                style={{
+                  color: "#f137a4",
+                }}
+              ></i>
+            </a>
+          )}
+          {props.githubLink && (
+            <a
+              href={props.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                className="fab fa-github "
+                style={{
+                  color: "#121212",
+                }}
+              ></i>
+            </a>
+          )}
+          {props.linkedinLink && (
+            <a
+              href={props.linkedinLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                className="fab fa-linkedin "
+                style={{
+                  color: "#0275d8",
+                }}
+              ></i>
+            </a>
+          )}
+          {props.twitterLink && (
+            <a
+              href={props.twitterLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                className="fab fa-twitter "
+                style={{
+                  color: "#5bc0de",
+                }}
+              ></i>
+            </a>
+          )}
+        </div>
+      </div>
       <div className="card-body text-center">
-        <p className="card-title">{props.title}</p>
-        <p className="team-social-media">
-          <a
-            href={props.instagramLink}
-            target="_blank"
-            rel="noopener noreferrer"
+        <p className="card-text text-nunito-regular">{props.shortBio}</p>
+        <div>
+          <Button
+            className={`team-${props.team}`}
+            size="small"
+            // style={{ color: "white" }}
+            onClick={handleOpen}
           >
-            <Instagram className="social-circle-icon" alt="" />
-          </a>
-          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
-            <Github className="social-circle-icon" alt="" />
-          </a>
-          <a
-            href={props.linkedinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Linkedin className="social-circle-icon" alt="" />
-          </a>
-        </p>
-        <p className="card-text">{props.children}</p>
-        <p className="read-more">Read More +</p>
+            Read More
+            <i className={`fas fa-plus fa-sm team-${props.team}`}></i>
+          </Button>
+          <Modal open={open} onClose={handleClose}>
+            <Box
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: 400,
+                backgroundColor: "white",
+                borderRadius: 15,
+                boxShadow: 24,
+                padding: "1.5rem",
+              }}
+            >
+              <div className="text-center">
+                <h2
+                  style={{ color: "black" }}
+                  className="text-quicksand-medium"
+                >
+                  {props.title}
+                </h2>
+              </div>
+              <p
+                className="card-text text-nunito-regular"
+                style={{ color: "black" }}
+              >
+                {props.children}
+              </p>
+            </Box>
+          </Modal>
+        </div>
       </div>
     </div>
   );
 };
 
-const TeamCardBack = function (props) {
-  return (
-    <div className="flip-card-back ">
-      <div className="card-body text-center">
-        <p className="card-text">{props.children}</p>
-        <p className="read-more">Go Back</p>
-      </div>
-    </div>
-  );
-};
-
-export { TeamCard, TeamCardFront, TeamCardBack };
+export default TeamCard;
