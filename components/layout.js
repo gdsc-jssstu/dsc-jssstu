@@ -5,7 +5,7 @@ import AOS from "aos";
 import Nav from "./nav";
 import MobileBottomNav from "./MobileBottomNav";
 
-export const siteTitle = "DSC JSSSTU";
+export const siteTitle = "GDSC JSSSTU";
 
 export default function Layout({ children, page, headerRef }) {
   const [theme, toggleTheme] = useDarkMode();

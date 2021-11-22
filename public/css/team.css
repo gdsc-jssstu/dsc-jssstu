@@ -445,8 +445,13 @@
 /* custom fonts */
 .text-nunito-regular {
   font-family: "Nunito", sans-serif;
+  font-size: 15px;
 }
 
 .text-quicksand-medium {
   font-family: "Quicksand", sans-serif;
+}
+
+.MuiFormControl-root {
+  min-width: 225px !important;
 }

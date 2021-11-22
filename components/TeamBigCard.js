@@ -38,8 +38,8 @@ export default function TeamBigCard(props) {
             src={props.faceImage}
             className="card-img-top border-rounded"
             alt="team-lead"
-            height={350}
-            width={350}
+            height={250}
+            width={250}
             layout="responsive"
             blurDataURL={blurDataURL}
             placeholder={blurDataURL ? "blur" : undefined}
@@ -67,7 +67,7 @@ export default function TeamBigCard(props) {
                 >
                   {/* <Instagram className="social-circle-icon" alt="" /> */}
                   <i
-                    className="fab fa-instagram "
+                    className="fab fa-instagram fa-lg"
                     style={{
                       color: "#f137a4",
                     }}
@@ -81,7 +81,7 @@ export default function TeamBigCard(props) {
                   rel="noopener noreferrer"
                 >
                   <i
-                    className="fab fa-github "
+                    className="fab fa-github fa-lg"
                     style={{
                       color: "#121212",
                     }}
@@ -95,7 +95,7 @@ export default function TeamBigCard(props) {
                   rel="noopener noreferrer"
                 >
                   <i
-                    className="fab fa-linkedin "
+                    className="fab fa-linkedin fa-lg"
                     style={{
                       color: "#0275d8",
                     }}
@@ -109,7 +109,7 @@ export default function TeamBigCard(props) {
                   rel="noopener noreferrer"
                 >
                   <i
-                    className="fab fa-twitter "
+                    className="fab fa-twitter fa-lg"
                     style={{
                       color: "#5bc0de",
                     }}

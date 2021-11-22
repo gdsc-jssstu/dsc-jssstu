@@ -16,6 +16,7 @@ const TeamCard = function (props) {
         padding: 15,
         borderRadius: 10,
         margin: 5,
+        height: "100%",
       }}
     >
       <div className="text-center" style={{ marginBottom: 10 }}>
@@ -47,7 +48,7 @@ const TeamCard = function (props) {
             >
               {/* <Instagram className="social-circle-icon" alt="" /> */}
               <i
-                className="fab fa-instagram "
+                className="fab fa-instagram fa-lg"
                 style={{
                   color: "#f137a4",
                 }}
@@ -61,7 +62,7 @@ const TeamCard = function (props) {
               rel="noopener noreferrer"
             >
               <i
-                className="fab fa-github "
+                className="fab fa-github fa-lg"
                 style={{
                   color: "#121212",
                 }}
@@ -75,7 +76,7 @@ const TeamCard = function (props) {
               rel="noopener noreferrer"
             >
               <i
-                className="fab fa-linkedin "
+                className="fab fa-linkedin fa-lg"
                 style={{
                   color: "#0275d8",
                 }}
@@ -89,7 +90,7 @@ const TeamCard = function (props) {
               rel="noopener noreferrer"
             >
               <i
-                className="fab fa-twitter "
+                className="fab fa-twitter fa-lg"
                 style={{
                   color: "#5bc0de",
                 }}
