@@ -14,7 +14,7 @@ const teamData2021 = {
   leadData: {
     title: "COMMUNITY LEAD",
     name: "Preeti Alagundagi",
-    image: "/images/team/2021/Preeti.jpg",
+    image: "/images/team/2021/Preeti.jpeg",
     blurDataURL: "LsN]%q~V%LE2?aR*RjRQRQRQt7xt",
     bio: `She knows the way,
 	Goes the way,
@@ -137,7 +137,7 @@ const teamData2021 = {
               image: "/images/team/2021/Abhilash.jpg",
               short:
                 "A perfect combination of both hardworking and street smart.",
-              bio: "Abhilash is a meticulous planner and always plans ahead for the future. His work ethics are the most talked about, he works extremely hard and never fails to impress everyone with his professionalism. He is a do-it-all kinda person who works hard and parties harder. He’s not one to get caught in the work and miss out the fun.",
+              bio: "Abhilash is a meticulous planner and always plans ahead for the future. His work ethics are the most talked about and never fails to impress everyone with his professionalism. He is a do-it-all kinda person who works hard and parties harder. He’s not one to get caught in the work and miss out the fun.",
               instagram: "https://www.instagram.com/a7_abhilash/",
               linkedin: "https://www.linkedin.com/in/abhilashmh/",
               github: "https://github.com/A7abhilash/",

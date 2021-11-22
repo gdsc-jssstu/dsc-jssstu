@@ -121,7 +121,7 @@ const TeamCard = function (props) {
                 backgroundColor: "white",
                 borderRadius: 15,
                 boxShadow: 24,
-                padding: 10,
+                padding: "1.5rem",
               }}
             >
               <div className="text-center">
