@@ -22,7 +22,7 @@ export default function Events() {
               <div className="header-text-container">
                 <h2 className="title">Events</h2>
                 <h5 className="description">
-                  Here at DSC JSSSTU we put the fun in functions and events.
+                  Here at GDSC JSSSTU we put the fun in functions and events.
                   Attend Study Jams / Hackathon / Developer Conferences to learn
                   more about the latest technologies. Interested in being a
                   Speaker at one of our events? Just drop us your Proposal.{" "}
