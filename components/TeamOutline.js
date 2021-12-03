@@ -97,6 +97,7 @@ const TeamOutline = () => {
                   onChange={(e) => setPage(e.target.value)}
                   labelId="select-chapter"
                   label="Chapter"
+                  inputProps={{ MenuProps: { disableScrollLock: true } }}
                 >
                   <MenuItem value={2021}>2021</MenuItem>
                   <MenuItem value={2020}>2020</MenuItem>

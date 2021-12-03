@@ -110,35 +110,56 @@ const TeamCard = function (props) {
             Read More
             <i className={`fas fa-plus fa-sm team-${props.team}`}></i>
           </Button>
-          <Modal open={open} onClose={handleClose}>
-            <Box
+          <Modal open={open} onClose={handleClose} disableScrollLock>
+            <div
               style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                width: 400,
-                backgroundColor: "white",
-                borderRadius: 15,
-                boxShadow: 24,
-                padding: "1.5rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "100vh",
               }}
             >
-              <div className="text-center">
-                <h2
-                  style={{ color: "black" }}
-                  className="text-quicksand-medium"
-                >
-                  {props.title}
-                </h2>
-              </div>
-              <p
-                className="card-text text-nunito-regular"
-                style={{ color: "black" }}
+              <Box
+                style={{
+                  // position: "absolute",
+                  // top: "50%",
+                  // left: "50%",
+                  // transform: "translate(-50%, -50%)",
+                  backgroundColor: "white",
+                  borderRadius: 15,
+                  boxShadow: 24,
+                  padding: "1.5rem",
+                  margin: "1rem",
+                  maxWidth: 400,
+                }}
+                className="team-card-box"
               >
-                {props.children}
-              </p>
-            </Box>
+                <div className="text-center">
+                  <h2
+                    style={{ color: "black" }}
+                    className="text-quicksand-medium"
+                  >
+                    {props.title}
+                  </h2>
+                </div>
+                <p
+                  className="card-text text-nunito-regular"
+                  style={{ color: "black" }}
+                >
+                  {props.children}
+                </p>
+                <div className="text-center">
+                  <Button
+                    className={`team-${props.team}`}
+                    size="small"
+                    // style={{ color: "white" }}
+                    onClick={handleClose}
+                  >
+                    <strong>Close</strong>
+                  </Button>
+                </div>
+              </Box>
+            </div>
           </Modal>
         </div>
       </div>
