@@ -1,22 +1,33 @@
+# GDSC JSSSTU
+
 ## About the app
 
-Official website source code of DSC JSSSTU.
-No custom server for now
+Official website source code of GDSC JSSSTU.
 
-## How to run the Client (Next.js)
+- You can see a live demo at **https://dscjssstu.in**
 
-First, run the development server:
+## Running locally in development mode
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+To get started, just clone the repository and run `npm install && npm run dev`:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    git clone https://github.com/gdsc-jssstu/dsc-jssstu.git
+    npm install
+    npm run dev
+
+## Building and deploying in production
+
+If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
+
+    npm install
+    npm run build
+    npm start
+
+You should run `npm run build` again any time you make changes to the site.
+
+Note: If you are already running a webserver on port 80 (e.g. Macs usually have the Apache webserver running on port 80) you can still start the example in production mode by passing a different port as an Environment Variable when starting (e.g. `PORT=3000 npm start`).
 
 ## Contributors
 
-<a href="https://github.com/dsc-jssstu/dsc-jssstu.github.io/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=dsc-jssstu/dsc-jssstu.github.io" />
+<a href="https://github.com/gdsc-jssstu/dsc-jssstu/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=gdsc-jssstu/dsc-jssstu" />
 </a>
