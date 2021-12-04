@@ -36,16 +36,16 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#141414" />
           <meta name="robots" content="all" />
 
-          <meta name="application-name" content="DSC JSSSTU" />
+          <meta name="application-name" content="GDSC JSSSTU" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
-          <meta name="apple-mobile-web-app-title" content="DSC JSSSTU" />
+          <meta name="apple-mobile-web-app-title" content="GDSC JSSSTU" />
           <meta
             name="description"
-            content="Developer Student Clubs JSSSTU - powered by Google Developers
+            content="Google Developer Student Clubs JSSSTU
                       JSS Science and Technology University - SJCE, Mysuru 2021"
           />
           <meta
@@ -54,14 +54,14 @@ class MyDocument extends Document {
           />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
-          <meta name="author" content="DSC JSSSTU" />
+          <meta name="author" content="GDSC JSSSTU" />
 
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="DSC JSSSTU" />
-          <meta property="og:site_name" content="DSC JSSSTU" />
+          <meta property="og:title" content="GDSC JSSSTU" />
+          <meta property="og:site_name" content="GDSC JSSSTU" />
           <meta
             property="og:description"
-            content="Developer Student Clubs JSSSTU - powered by Google Developers
+            content="Google Developer Student Clubs JSSSTU
                       JSS Science and Technology University - SJCE, Mysuru 2021"
           />
           <meta property="og:image" content="favicon.ico" />
@@ -69,17 +69,17 @@ class MyDocument extends Document {
 
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:url" content="https://dscjssstu.in/" />
-          <meta name="twitter:title" content="DSC JSSSTU" />
+          <meta name="twitter:title" content="GDSC JSSSTU" />
           <meta
             name="twitter:description"
-            content="Developer Student Clubs JSSSTU - powered by Google Developers
+            content="Google Developer Student Clubs JSSSTU
                       JSS Science and Technology University - SJCE, Mysuru 2021"
           />
           <meta
             name="twitter:image"
             content="/icons/favicons/android-chrome-192x192.png"
           />
-          <meta name="twitter:creator" content="@dscjssstu" />
+          <meta name="twitter:creator" content="@gdscjssstu" />
 
           <link rel="manifest" href="/manifest.json" />
 
