@@ -1,6 +1,6 @@
 const projectData = [
   {
-    name: "CSE Website",
+    name: "CSE Department Website",
     image: "/images/jssstucse.jpg",
     imageAlt: "CSE SJCE",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
@@ -12,34 +12,24 @@ const projectData = [
         icon: "/images/Github.svg",
         link: "https://github.com/gdsc-jssstu/jssstu-cse-webapp",
         alt: "Github",
-      },
-      {
-        icon: "/images/Linkedin.svg",
-        link: "#",
-        alt: "LinkedIn",
-      },
+      }
     ],
   },
 
   {
     name: "Project ReachOut",
     image: "/images/projectReachout.jpeg",
-    imageAlt: "Project Reachout",
+    imageAlt: "Project ReachOut",
     blurDataURL: "LPPs#CRj~q%MWBayofof%MofM{WB",
     domain: "Android",
     description:
-      "Project Reachout is an NGO which mainly focuses on upbringing talents and helping a bunch of specially-abled kids to bring joy in their lives to cope up with this world.",
+      "Project ReachOut is an NGO which mainly focuses on upbringing talents and helping a bunch of specially-abled kids to bring joy in their lives to cope up with this world.",
     links: [
       {
         icon: "/images/Youtube.svg",
         link: "https://youtu.be/HMPDMOthVDU",
         alt: "Youtube",
-      },
-      {
-        icon: "/images/Github.svg",
-        link: "#",
-        alt: "Github",
-      },
+      }
     ],
   },
 
@@ -66,9 +56,9 @@ const projectData = [
   },
 
   {
-    name: "ICMAN 2021 Website",
+    name: "ICEC3T 2021 Website",
     image: "/images/ICMAN.PNG",
-    imageAlt: "ICMAN 2021",
+    imageAlt: "ICEC3T 2021",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
     domain: "Web",
     description:
@@ -78,12 +68,7 @@ const projectData = [
         icon: "/images/Github.svg",
         link: "https://github.com/gdsc-jssstu/ICMAN_2021",
         alt: "Github",
-      },
-      {
-        icon: "/images/Linkedin.svg",
-        link: "#",
-        alt: "LinkedIn",
-      },
+      }
     ],
   },
 
@@ -92,25 +77,25 @@ const projectData = [
     image: "/images/hacktoberfest.png",
     imageAlt: "Hacktoberfest Projects",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
-    domain: "Web",
+    domain: "Web, Flutter",
     description:
-      "Simple projects for beginners to reinforce their open source  journey; generated web and Flutter repositories.",
+      "Simple projects for beginners to reinforce their open source journey; generated web and Flutter repositories.",
     links: [
       {
         icon: "/images/Github.svg",
         link: "https://github.com/gdsc-jssstu/todo-webapp",
-        alt: "Github",
+        alt: "Web Repo",
       },
       {
         icon: "/images/Github.svg",
         link: "https://github.com/gdsc-jssstu/booktracker-app",
-        alt: "Github",
+        alt: "Flutter Repo",
       },
     ],
   },
 
   {
-    name: "GDSC JSSSTU GCP Website",
+    name: "GDSC JSSSTU 30 Days of Google Cloud Website",
     image: "/images/gcp.jpg",
     imageAlt: "GDSC JSSSTU GCP Website",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
@@ -154,7 +139,7 @@ const projectData = [
   },
 
   {
-    name: "Links Page",
+    name: "GDSC JSSSTU Links Page",
     image: "/images/links_page.jpg",
     imageAlt: "Links Page",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
@@ -196,9 +181,9 @@ const projectData = [
   },
 
   {
-    name: "DSC Website",
+    name: "GDSC Website",
     image: "/images/dsc_website.jpg",
-    imageAlt: "DSC Website",
+    imageAlt: "GDSC Website",
     blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
     domain: "Web",
     description:

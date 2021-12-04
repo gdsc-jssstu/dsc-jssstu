@@ -104,7 +104,6 @@ export default function Home() {
               <></>
             )}
           </div>
-          <h2>Powered by Google Developers</h2>
           <p className="continous-text">
             At GDSC JSSSTU, our aim is to learn and teach. Developers, designers
             and managers come together under one roof to create a community
