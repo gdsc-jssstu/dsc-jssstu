@@ -112,7 +112,7 @@ const teamData2021 = {
           [
             {
               name: "Ritu Raj",
-              image: "/images/team/2021/Ritu.jpg",
+              image: "/images/team/2021/Ritu.JPG",
               short:
                 "Our family's devil in disguise; Ritu's humour gets darker by the day.",
               bio: "If you wanna learn how to carry conversations, Ritu is the one you go to. He's humourous, smart, passionate and enjoys everything he does. Not to mention he'll always have something to comment on about anything and everything. So we can confidently say he's super fun to hangout with! ",
