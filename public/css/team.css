@@ -402,6 +402,11 @@
     width: 60px;
     height: 60px;
   }
+
+  .team-card-box {
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
 }
 @media (min-width: 433px) {
   .team-card-image {
