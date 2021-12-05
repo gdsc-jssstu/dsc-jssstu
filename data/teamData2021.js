@@ -4,7 +4,7 @@ const teamData2021 = {
     name: "Dr. M P Pushpalatha",
     image: "/images/hod.jpg",
     blurDataURL: "LRLUZ~Ri]VozL$xbV@Rj?uM{Oqof",
-    bio: "Currently (in 2021), head of the department of Computer Science and Engineering, with nearly three decades of teaching experience. Passionate and committed to inspire students to pursue academic and personal excellence. Driven by the motto, “Anything worth doing is worth doing well,” to create a challenging and engaging learning environment for students and self. My research focuses mainly on Machine Learning and Healthcare Informatics with a particular emphasis on the applications of healthcare technology to socially relevant issues. Currently guiding four (4) Ph.d Research scholars.",
+    bio: "Currently (in 2021), head of the department of Computer Science and Engineering, with nearly three decades of teaching experience. Passionate and committed to inspire students to pursue academic and personal excellence. Driven by the motto, “Anything worth doing is worth doing well,” to create a challenging and engaging learning environment for students and self. My research focuses mainly on Machine Learning and Healthcare Informatics with a particular emphasis on the applications of healthcare technology to socially relevant issues. Currently guiding 6 PhD students with more than 50 research publications in reputed journals",
     instagram: "",
     linkedin: "",
     github: "",
