@@ -309,7 +309,7 @@ const teamData2021 = {
           "EDITORIAL",
           [
             {
-              name: "Darsha Sorokhaibham",
+              name: "Darsha Sorokhaibam",
               image: "/images/team/2021/Darsha.jpg",
               short:
                 "If you find someone cute who is petting doggus from our group, it’s 101% Darsha.",
