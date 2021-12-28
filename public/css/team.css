@@ -163,7 +163,7 @@
   animation: 1s ease-out 0 1 slideInFromDown;
 }
 .team-cards-container {
-  --bs-gutter-x: 3rem;
+  --bs-gutter-x: 1rem;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) / 2);
   padding-left: calc(var(--bs-gutter-x) / 2);

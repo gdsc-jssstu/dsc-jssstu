@@ -84,7 +84,7 @@ export default function Team() {
             <Grid container class="team-grid">
               <Grid
                 item
-                sm={11}
+                sm={12}
                 className="team-content-order"
                 style={{
                   marginLeft: "auto",
