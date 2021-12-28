@@ -1,5 +1,17 @@
 const eventData = [
   {
+    name: "Explore ML",
+    date: "27th November and 28th of November, 2021",
+    description:
+      "An interactive and informative two-day workshop on Machine learning conducted offline with hands-on application of the concepts and explanation of Machine Learning concepts from the scratch. ",
+    images: [
+      {
+        src: "/images/events/exploreML2021/exploreML.JPG",
+        blurDataURL: "",
+      },
+    ],
+  },
+  {
     name: "Git Set Code",
     date: "October 8, 2021",
     description:
