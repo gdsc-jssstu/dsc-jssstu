@@ -1,5 +1,17 @@
 const eventData = [
   {
+    name: "GDSC ELEVATE | EP 01: Resume 101",
+    date: "29th of November, 2021",
+    description:
+      "GDSC elevate is a series of episodes that is objective to provide guidance on soft skills, networking, resume building, communication skills, the importance of having a LinkedIn account, how to set up one, and many more. GDSC Elevate Series is your guiding light to learn things that are not in our syllabus but are extremely essential.",
+    images: [
+      {
+        src: "/images/events/elevate/elevate1.JPG",
+        blurDataURL: "",
+      },
+    ],
+  },
+  {
     name: "Explore ML",
     date: "27th November and 28th of November, 2021",
     description:
