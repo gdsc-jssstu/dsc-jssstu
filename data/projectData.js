@@ -56,6 +56,28 @@ const projectData = [
   },
 
   {
+    name: "7 Days of DSA Roadmap",
+    image: "/images/7dsa_project.PNG",
+    imageAlt: "7 Days of DSA Roadmap",
+    blurDataURL: "LLCs9Q9mV}xk%7jXR%ohIMxlt2Wb",
+    domain: "Web",
+    description:
+      "Roadmap for people getting started with DSA with valuable resources and important LeetCode problems. Users can also track their progress.",
+    links: [
+      {
+        icon: "/images/Github.svg",
+        link: "https://github.com/gdsc-jssstu/7-days-of-dsa/",
+        alt: "Github",
+      },
+      {
+        icon: "/images/link.svg",
+        link: "https://dsa-roadmap.dscjssstu.in/",
+        alt: "Webpage",
+      }
+    ],
+  },
+
+  {
     name: "ICEC3T 2021 Website",
     image: "/images/ICMAN.PNG",
     imageAlt: "ICEC3T 2021",

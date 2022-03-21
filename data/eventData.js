@@ -1,5 +1,17 @@
 const eventData = [
   {
+    name: "7 Days of DSA",
+    date: "20th to 26th of January, 2022",
+    description:
+      "7 Days of DSA was an online event on our community discord server under the channel #7daysofDSA. It was triumphant in fulfilling its objectives of sharing the most valuable resources and LeetCode problems on Data Structures and Algorithms developed by the technical team for consecutive seven days. Participants could track their progress with access to the tracking feature. After having shared the resources, there were regular interactive sessions where the technical team cleared the doubts of the participants.",
+    images: [
+      {
+        src: "/images/events/7daysofdsa/7dsa_event.PNG",
+        blurDataURL: "",
+      },
+    ],
+  },
+  {
     name: "GDSC ELEVATE | EP 01: Resume 101",
     date: "29th of November, 2021",
     description:
