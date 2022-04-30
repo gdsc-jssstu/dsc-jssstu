@@ -1,5 +1,29 @@
 const eventData = [
   {
+    name: "GDSC Break-Chain",
+    date: "24th of April, 2022",
+    description:
+      "GDSC Break-Chain was a one-day workshop on Blockchain Technology and Development. The workshop introduced the students to the concepts of Blockchain Technology and gave a glimpse into the future of the web. It ended with a hands-on project that the students got to work on with assistance from our student volunteers.",
+    images: [
+      {
+        src: "/images/events/breakchain/breakchain.png",
+        blurDataURL: "",
+      },
+    ],
+  },
+  {
+    name: "Tic-Tech-Toe",
+    date: "12th of April, 2022",
+    description:
+      "Tic-Tech-Toe was an event held exclusively to welcome the first years in to their interested technical domains. To allow a smooth introduction to the freshers , 8 speakers spoke fluently on 8 different domains. A query session was held for solving any doubts on the official discord community of GDSC-JSSSTU.",
+    images: [
+      {
+        src: "/images/events/tictechtoe/tictechtoe.png",
+        blurDataURL: "",
+      },
+    ],
+  },
+  {
     name: "7 Days of DSA",
     date: "20th to 26th of January, 2022",
     description:
@@ -15,7 +39,7 @@ const eventData = [
     name: "GDSC ELEVATE | EP 01: Resume 101",
     date: "29th of November, 2021",
     description:
-      "GDSC elevate is a series of episodes that is objective to provide guidance on soft skills, networking, resume building, communication skills, the importance of having a LinkedIn account, how to set up one, and many more. GDSC Elevate Series is your guiding light to learn things that are not in our syllabus but are extremely essential.",
+      "GDSC Elevate is a series of episodes that is objective to provide guidance on soft skills, networking, resume building, communication skills, the importance of having a LinkedIn account, how to set up one, and many more. GDSC Elevate Series is your guiding light to learn things that are not in our syllabus but are extremely essential.",
     images: [
       {
         src: "/images/events/elevate/elevate1.JPG",
