@@ -1,5 +1,17 @@
 const eventData = [
   {
+    name: "GDSC ELEVATE | EP 02: Competitive Programming vs Projects",
+    date: "8th of April, 2022",
+    description:
+      "GDSC Elevate Episode 2 explained the pros and cons of competitive programming and development. It elucidated open source. It also shared valuable resources to excel at the same. It furthermore counselled on how to accomplish a balance of Competitive Programming and Projects.",
+    images: [
+      {
+        src: "/images/events/elevate/elevate2.png",
+        blurDataURL: "",
+      },
+    ],
+  },
+  {
     name: "GDSC Break-Chain",
     date: "24th of April, 2022",
     description:
