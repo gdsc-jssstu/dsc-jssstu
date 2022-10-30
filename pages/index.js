@@ -12,6 +12,7 @@ import {
   Github,
   Medium,
   Youtube,
+  Twitter
 } from "../components/Icons";
 import dscDark from "../public/images/DSC_JSSSTU-dark.png";
 import dscColor from "../public/images/DSC_JSSSTU-color.png";
@@ -281,6 +282,13 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Linkedin className="circle-icon" alt="GDSC JSSSTU Linkedin" />
+          </a>
+          <a
+            href="https://twitter.com/gdscjssstu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter className="circle-icon" alt="GDSC JSSSTU Twitter" />
           </a>
           <a
             href="https://github.com/gdsc-jssstu"
